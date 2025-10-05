@@ -20,7 +20,7 @@ const Hero = () => {
         transition={{ duration: 1, type: 'spring', stiffness: 100 }}
       >
         <img
-          src="/profile-pic.jpg"
+          src="/public/profile-pic.jpg"
           alt="Adhi Vignesh"
           className="w-full h-full object-contain"
         />
