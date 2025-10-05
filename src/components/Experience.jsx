@@ -45,7 +45,7 @@ const Experience = () => {
           {/* Right: Certificate Image */}
           <div className="flex-1 flex justify-center md:justify-end">
             <img
-              src="/CER.jpg" // Put your certificate image in public folder
+              src="/public/CER.jpg" // Put your certificate image in public folder
               alt="Internship Certificate"
               className="w-[full] md:w-[600px] h-auto object-contain rounded-xl shadow-lg border border-gray-200"
             />

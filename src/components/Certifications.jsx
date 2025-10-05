@@ -7,28 +7,28 @@ const baseUrl = process.env.PUBLIC_URL || import.meta.env.BASE_URL || "";
 const certs = [
   {
     name: "Power BI Workshop - Office Master",
-    link: `${baseUrl}/certificates/P.BI.jpg`,
+    link: "/certificates/P.BI.jpg",
   },
   {
     name: "Programming Fundamentals using Python - Infosys Springboard",
-    link: `${baseUrl}/certificates/PYTHON.pdf`,
+    link: "/certificates/CER.jpg",
   },
   {
     name: "Data Analytics Virtual Job Simulation - Deloitte via Forage",
-    link: `${baseUrl}/certificates/DELOITTE.pdf`,
+    link: "/certificates/DELOITTE.jpg",
   },
   {
     name: "Elements of AI - University of Helsinki & MinnaLearn",
-    link: `${baseUrl}/certificates/AI.pdf`,
+    link: "/certificates/ELEMENTS-OF-AI.png",
   },
   {
     name: "Introduction to Artificial Intelligence - Infosys Springboard",
-    link: `${baseUrl}/certificates/INTRO_AI.pdf`,
+    link: "/certificates/INFO1.jpg",
   },
   {
     name: "Internship Completion Certificate - StaxTech",
-    link: `${baseUrl}/certificates/STAXTECH.pdf`,
-  },
+    link: "/certificates/STAXTECH-CERTIFICATE.pdf",
+  }
 ];
 
 const Certifications = () => {
