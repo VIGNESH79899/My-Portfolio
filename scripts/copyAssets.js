@@ -26,9 +26,10 @@ try {
   }
 
   // Copy certificates folder
-  const certSrc = path.join(publicDir, 'certficates');
-  const certDest = path.join(distDir, 'certficates');
-  copyDir(certSrc, certDest);
+  copyDir(path.join(publicDir, 'certficates'), path.join(distDir, 'certficates'));
+
+  // Copy music folder
+  copyDir(path.join(publicDir, 'music'), path.join(distDir, 'music'));
 
   // Copy resume files
   const resumes = ['Adhi_Vignesh_Resume.pdf', 'MY-RESUME-01.pdf', 'Resume-1.pdf'];
@@ -47,7 +48,7 @@ try {
     fs.copyFileSync(favSrc, path.join(distDir, 'favicon.ico'));
   }
 
-  console.log('✅ Postbuild asset synchronization complete: Certificates, Favicons & PDFs copied to dist!');
+  console.log('✅ Postbuild asset synchronization complete: Certificates, Music, Favicons & PDFs copied to dist!');
 } catch (err) {
   console.error('⚠️ Postbuild copyAssets warning:', err.message);
 }
