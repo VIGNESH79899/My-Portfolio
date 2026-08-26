@@ -342,7 +342,20 @@ const MusicPlayer = () => {
                 <span className="text-[10px] font-mono text-slate-400 shrink-0">{currentTrack.duration}</span>
               </div>
 
-              {isLocalTrackAvailable === true ? (
+              {/* Spotify Official Stream Player */}
+              {getSpotifyEmbedUrl(currentTrack) ? (
+                <iframe
+                  key={currentTrack.id}
+                  title={`${currentTrack.title} by ${currentTrack.artist} on Spotify`}
+                  src={getSpotifyEmbedUrl(currentTrack)}
+                  width="100%"
+                  height="80"
+                  frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="rounded-xl mb-3 shadow-md"
+                />
+              ) : isLocalTrackAvailable === true ? (
                 <audio
                   key={currentTrack.id}
                   controls
@@ -353,19 +366,6 @@ const MusicPlayer = () => {
                   <source src={getLocalAudioUrl(currentTrack)} type="audio/mpeg" />
                   Your browser does not support audio playback.
                 </audio>
-              ) : isLocalTrackAvailable === null ? (
-                <div className="mb-3 h-20 animate-pulse rounded-xl border border-slate-800 bg-slate-900" />
-              ) : getSpotifyEmbedUrl(currentTrack) ? (
-                <iframe
-                  title={`${currentTrack.title} by ${currentTrack.artist} on Spotify`}
-                  src={getSpotifyEmbedUrl(currentTrack)}
-                  width="100%"
-                  height="80"
-                  frameBorder="0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                  className="rounded-xl mb-3"
-                />
               ) : (
                 <a
                   href={getSpotifyUrl(currentTrack)}
@@ -386,8 +386,8 @@ const MusicPlayer = () => {
                 >
                   <FaStepBackward size={14} />
                 </button>
-                <span className="text-[10px] font-mono text-slate-500">
-                  {isLocalTrackAvailable ? 'Full local playback' : 'Spotify preview'}
+                <span className="text-[10px] font-mono text-slate-400 font-semibold">
+                  Official Spotify Stream
                 </span>
                 <div className="flex items-center gap-2">
                   <button
