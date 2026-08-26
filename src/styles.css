@@ -2,6 +2,131 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  scroll-behavior: smooth;
+@layer base {
+  :root {
+    --font-sans: 'Geist', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'Geist Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  }
+
+  body {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+    line-height: 1.65;
+    overflow-x: hidden;
+    background-color: #FAFAFD;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    letter-spacing: -0.035em;
+    font-weight: 700;
+  }
+
+  code, pre, kbd, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Technical Label Utility Class for Mono System Badges */
+.tech-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Glassmorphic & High-End Card Styling */
+.pro-card {
+  @apply bg-white dark:bg-slate-900 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300;
+}
+
+.pro-card-hover {
+  @apply bg-white dark:bg-slate-900 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-indigo-500/5 hover:border-indigo-400/50 dark:hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300;
+}
+
+.bento-card {
+  @apply relative overflow-hidden bg-white dark:bg-slate-900 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:shadow-indigo-500/5 hover:border-indigo-400/40 dark:hover:border-indigo-400/40 transition-all duration-300;
+}
+
+.glow-card {
+  @apply relative overflow-hidden bg-white dark:bg-slate-900 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-2xl transition-all duration-300 hover:border-indigo-400/50 dark:hover:border-indigo-400/40 hover:shadow-lg hover:shadow-indigo-500/5;
+}
+
+.pro-badge {
+  @apply px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60 transition-colors;
+}
+
+.pro-badge-indigo {
+  @apply px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 transition-colors;
+}
+
+.pro-badge-emerald {
+  @apply px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-300 border border-emerald-200/80 dark:border-emerald-800/80 transition-colors;
+}
+
+/* Gradient Text Accent - High-End Linear Style */
+.text-gradient {
+  background: linear-gradient(135deg, #4338CA 0%, #6D28D9 45%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-gradient {
+  background: linear-gradient(135deg, #818CF8 0%, #C084FC 45%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtly Animated Ambient Gradient Shimmer */
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+/* Mesh & Grid Patterns */
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.22) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.dark .bg-dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
+}
+
+.dark .bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.5);
 }
