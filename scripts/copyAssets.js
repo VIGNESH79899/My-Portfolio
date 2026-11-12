@@ -44,13 +44,13 @@ try {
     }
   }
 
-  // Copy favicons
-  const favFiles = ['favicon.svg', 'favicon.ico', 'favicon-32x32.png', 'apple-touch-icon.png'];
-  for (const fav of favFiles) {
-    const srcFav = path.join(publicDir, fav);
-    const destFav = path.join(distDir, fav);
-    if (fs.existsSync(srcFav)) {
-      fs.copyFileSync(srcFav, destFav);
+  // Copy favicons & SEO files
+  const rootPublicFiles = ['favicon.svg', 'favicon.ico', 'favicon-32x32.png', 'apple-touch-icon.png', 'robots.txt'];
+  for (const fileName of rootPublicFiles) {
+    const srcFile = path.join(publicDir, fileName);
+    const destFile = path.join(distDir, fileName);
+    if (fs.existsSync(srcFile)) {
+      fs.copyFileSync(srcFile, destFile);
     }
   }
 

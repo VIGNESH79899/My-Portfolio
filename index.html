@@ -33,10 +33,17 @@
     <meta name="theme-color" content="#F5F2EB" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1C1D19" media="(prefers-color-scheme: dark)" />
 
-    <!-- Fonts: Premium Editorial Typography (Manrope for Headings, Inter for Body) -->
+    <!-- Preload LCP Hero Portrait -->
+    <link rel="preload" as="image" type="image/webp" href="/images/developer-hoodie-mobile.webp" media="(max-width: 639px)" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/webp" href="/images/developer-hoodie.webp" media="(min-width: 640px)" fetchpriority="high" />
+
+    <!-- Fonts: Premium Editorial Typography (Non-blocking load to protect FCP/LCP) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    </noscript>
     
     <!-- Initial Theme Detection (Prevents Theme Flash, Default Light) -->
     <script>

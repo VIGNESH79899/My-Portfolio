@@ -164,21 +164,21 @@ const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
         </div>
 
         {/* Mobile / Tablet Controls (< 1024px) */}
-        <div className="flex lg:hidden items-center gap-2 shrink-0">
+        <div className="flex lg:hidden items-center gap-1.5 shrink-0">
           <button
             onClick={handleOpenSearch}
-            className="p-2 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 text-[#68675F] dark:text-[#C0BFB3] border border-[#D8D1C5]/80 dark:border-white/12 shadow-sm"
-            aria-label="Search"
+            className="w-10 h-10 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 text-[#52514B] dark:text-[#C0BFB3] border border-[#D8D1C5]/80 dark:border-white/12 shadow-sm flex items-center justify-center"
+            aria-label="Search portfolio"
           >
-            <Search className="w-3.5 h-3.5" />
+            <Search className="w-4 h-4" />
           </button>
 
           <button
             onClick={handleToggleDark}
-            className="p-2 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5]/80 dark:border-white/12 shadow-sm"
+            className="w-10 h-10 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5]/80 dark:border-white/12 shadow-sm flex items-center justify-center"
             aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
           >
-            {dark ? <Sun className="w-3.5 h-3.5 text-[#C1A17F]" /> : <Moon className="w-3.5 h-3.5 text-[#777C62]" />}
+            {dark ? <Sun className="w-4 h-4 text-[#C1A17F]" /> : <Moon className="w-4 h-4 text-[#555A44]" />}
           </button>
 
           <button
@@ -186,11 +186,11 @@ const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
               try { playClickSound(); } catch (e) {}
               setMenuOpen(!menuOpen);
             }}
-            className="p-2 rounded-full btn-venom !p-2 transition-all"
+            className="w-10 h-10 rounded-full btn-venom !p-0 flex items-center justify-center transition-all"
             aria-label="Toggle navigation menu"
             aria-expanded={menuOpen}
           >
-            {menuOpen ? <X className="w-3.5 h-3.5" /> : <Menu className="w-3.5 h-3.5" />}
+            {menuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
         </div>
 

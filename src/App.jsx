@@ -2,22 +2,21 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Navbar from "./components/Navbar";
 import HeroPlayground from "./components/HeroPlayground";
-import Projects from "./components/Projects";
-import FreelanceSpotlight from "./components/FreelanceSpotlight";
-import Experience from "./components/Experience";
-import Skills from "./components/Skills";
-import About from "./components/About";
-import Education from "./components/Education";
-import Certifications from "./components/Certifications";
-import Contact from "./components/Contact";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
-import SocialSidebar from "./components/SocialSidebar";
-import BackToTop from "./components/BackToTop";
-import ScrollProgress from "./components/ScrollProgress";
-import ParticleCursorTrail from "./components/ParticleCursorTrail";
 
-// Code-split heavy interactive and below-the-fold widgets for sub-second loading
+// Code-split below-the-fold sections and heavy interactive widgets for fast Mobile LCP/FCP
+const Projects = lazy(() => import("./components/Projects"));
+const FreelanceSpotlight = lazy(() => import("./components/FreelanceSpotlight"));
+const Experience = lazy(() => import("./components/Experience"));
+const About = lazy(() => import("./components/About"));
+const Education = lazy(() => import("./components/Education"));
+const Certifications = lazy(() => import("./components/Certifications"));
+const Contact = lazy(() => import("./components/Contact"));
+const CTA = lazy(() => import("./components/CTA"));
+const Footer = lazy(() => import("./components/Footer"));
+const SocialSidebar = lazy(() => import("./components/SocialSidebar"));
+const BackToTop = lazy(() => import("./components/BackToTop"));
+const ScrollProgress = lazy(() => import("./components/ScrollProgress"));
+const ParticleCursorTrail = lazy(() => import("./components/ParticleCursorTrail"));
 const ThreeMeshCanvas = lazy(() => import("./components/ThreeMeshCanvas"));
 const GitHubStatsWidget = lazy(() => import("./components/GitHubStatsWidget"));
 const CmdKModal = lazy(() => import("./components/CmdKModal"));
@@ -72,8 +71,8 @@ function App() {
     <div className="relative min-h-screen w-full max-w-full overflow-x-clip flex flex-col bg-[#F5F2EB] text-[#252722] dark:bg-[#1C1D19] dark:text-[#F5F2EB] font-sans selection:bg-[#777C62]/20 selection:text-[#252722] dark:selection:bg-[#ADB293]/25 dark:selection:text-[#F5F2EB]">
       
       {/* Background Decorators */}
-      <ErrorBoundary><ParticleCursorTrail /></ErrorBoundary>
-      <ErrorBoundary><ScrollProgress /></ErrorBoundary>
+      <ErrorBoundary><Suspense fallback={null}><ParticleCursorTrail /></Suspense></ErrorBoundary>
+      <ErrorBoundary><Suspense fallback={null}><ScrollProgress /></Suspense></ErrorBoundary>
       <ErrorBoundary>
         <Suspense fallback={null}>
           <ThreeMeshCanvas />
@@ -93,11 +92,10 @@ function App() {
       {/* Main Page Sections */}
       <main className="relative z-10 flex-1">
         <ErrorBoundary><HeroPlayground onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
-        <ErrorBoundary><Projects /></ErrorBoundary>
-        <ErrorBoundary><FreelanceSpotlight /></ErrorBoundary>
-        <ErrorBoundary><Experience /></ErrorBoundary>
-        {/* <ErrorBoundary><Skills /></ErrorBoundary> */}
-        <ErrorBoundary><About /></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="projects" className="py-24 min-h-[600px]" aria-hidden="true" />}><Projects /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="freelance" className="py-20 min-h-[420px]" aria-hidden="true" />}><FreelanceSpotlight /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="experience" className="py-20 min-h-[420px]" aria-hidden="true" />}><Experience /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="about" className="py-20 min-h-[480px]" aria-hidden="true" />}><About /></Suspense></ErrorBoundary>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <ErrorBoundary>
             <Suspense fallback={<div className="h-48 flex items-center justify-center text-xs font-mono text-[#68675F]">Loading Telemetry...</div>}>
@@ -105,18 +103,18 @@ function App() {
             </Suspense>
           </ErrorBoundary>
         </div>
-        <ErrorBoundary><Education /></ErrorBoundary>
-        <ErrorBoundary><Certifications /></ErrorBoundary>
-        <ErrorBoundary><Contact /></ErrorBoundary>
-        <ErrorBoundary><CTA /></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="education" className="py-20 min-h-[360px]" aria-hidden="true" />}><Education /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="certifications" className="py-20 min-h-[360px]" aria-hidden="true" />}><Certifications /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="contact" className="py-20 min-h-[420px]" aria-hidden="true" />}><Contact /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={null}><CTA /></Suspense></ErrorBoundary>
       </main>
 
       {/* Footer */}
-      <ErrorBoundary><Footer onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
+      <ErrorBoundary><Suspense fallback={null}><Footer onOpenCmdK={handleOpenCmdK} /></Suspense></ErrorBoundary>
 
       {/* Floating Controls */}
-      <ErrorBoundary><SocialSidebar /></ErrorBoundary>
-      <ErrorBoundary><BackToTop /></ErrorBoundary>
+      <ErrorBoundary><Suspense fallback={null}><SocialSidebar /></Suspense></ErrorBoundary>
+      <ErrorBoundary><Suspense fallback={null}><BackToTop /></Suspense></ErrorBoundary>
       <ErrorBoundary>
         <Suspense fallback={null}>
           <MusicPlayer />

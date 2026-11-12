@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FaDownload, FaArrowRight } from 'react-icons/fa';
 import { playClickSound } from '../utils/sound';
 
@@ -18,7 +17,7 @@ const HeroPlayground = () => {
           
           {/* Greeting & Name */}
           <div className="space-y-1">
-            <span className="text-lg sm:text-xl font-medium text-[#777C62] dark:text-[#ADB293] block">
+            <span className="text-lg sm:text-xl font-medium text-[#555A44] dark:text-[#ADB293] block">
               Hi, I'm
             </span>
             <h1 className="text-4xl sm:text-6xl lg:text-[76px] font-bold tracking-[-0.035em] text-[#252722] dark:text-[#F5F2EB] leading-[1.05] font-heading">
@@ -60,26 +59,33 @@ const HeroPlayground = () => {
 
         {/* Right Column (Col-5): Crisp Transparent Waist-Up Cutout Grounded at Hero Bottom */}
         <div className="lg:col-span-5 flex justify-center lg:justify-end self-end">
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="w-[290px] sm:w-[350px] md:w-[380px] lg:w-full max-w-[440px]"
-          >
-            <img
-              src={`${import.meta.env.BASE_URL}images/developer-hoodie.png`}
-              alt="Adhi Vignesh — Full-Stack Developer and Applied AI Engineer"
-              width={671}
-              height={953}
-              loading="eager"
-              decoding="async"
-              className="block w-full h-auto max-h-[430px] sm:max-h-[510px] lg:max-h-[590px] object-contain object-bottom select-none pointer-events-none"
-              style={{
-                maskImage: 'linear-gradient(to bottom, #000 97%, transparent 100%)',
-                WebkitMaskImage: 'linear-gradient(to bottom, #000 97%, transparent 100%)',
-              }}
-            />
-          </motion.div>
+          <div className="w-[290px] sm:w-[350px] md:w-[380px] lg:w-full max-w-[440px]">
+            <picture>
+              <source
+                media="(max-width: 639px)"
+                srcSet={`${import.meta.env.BASE_URL}images/developer-hoodie-mobile.webp`}
+                type="image/webp"
+              />
+              <source
+                srcSet={`${import.meta.env.BASE_URL}images/developer-hoodie.webp`}
+                type="image/webp"
+              />
+              <img
+                src={`${import.meta.env.BASE_URL}images/developer-hoodie.png`}
+                alt="Adhi Vignesh — Full-Stack Developer and Applied AI Engineer"
+                width={671}
+                height={953}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="block w-full h-auto max-h-[430px] sm:max-h-[510px] lg:max-h-[590px] object-contain object-bottom select-none pointer-events-none"
+                style={{
+                  maskImage: 'linear-gradient(to bottom, #000 97%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, #000 97%, transparent 100%)',
+                }}
+              />
+            </picture>
+          </div>
         </div>
 
       </div>
