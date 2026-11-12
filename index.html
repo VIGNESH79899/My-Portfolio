@@ -81,10 +81,11 @@
       .ssr-btn-light{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.5rem;border-radius:9999px;border:1px solid #C8C4B8;background:#FAF8F3;color:#252722;font-weight:700;font-size:.875rem;text-decoration:none}
       html.dark .ssr-btn-light{border-color:#3C3E36;background:#262822;color:#F5F2EB}
       .ssr-media{display:flex;justify-content:center;align-self:end}
-      .ssr-img{display:block;width:292px;max-width:100%;height:auto;max-height:430px;aspect-ratio:671/953;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(to bottom,#000 97%,transparent 100%);mask-image:linear-gradient(to bottom,#000 97%,transparent 100%)}
-      @media(min-width:640px){.ssr-hero{padding:8rem 1.5rem 0}.ssr-hi{font-size:1.25rem}.ssr-h1{font-size:3.75rem}.ssr-lead{font-size:1.875rem}.ssr-sub{font-size:1.125rem}.ssr-img{width:352px;max-height:510px}}
-      @media(min-width:768px){.ssr-img{width:382px}}
-      @media(min-width:1024px){.ssr-hero{padding:8rem 2rem 0;grid-template-columns:7fr 5fr;gap:2.5rem}.ssr-col{padding-bottom:5rem;align-self:center}.ssr-h1{font-size:76px}.ssr-lead{font-size:32px}.ssr-media{justify-content:flex-end}.ssr-img{width:min(442px,100%);max-height:590px}}
+      .ssr-wrap{width:288px;max-width:438px}
+      .ssr-img{display:block;width:100%;height:auto;max-height:430px;aspect-ratio:671/953;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(to bottom,#000 97%,transparent 100%);mask-image:linear-gradient(to bottom,#000 97%,transparent 100%)}
+      @media(min-width:640px){.ssr-hero{padding:8rem 1.5rem 0}.ssr-hi{font-size:1.25rem}.ssr-h1{font-size:3.75rem}.ssr-lead{font-size:1.875rem}.ssr-sub{font-size:1.125rem}.ssr-wrap{width:348px}.ssr-img{max-height:510px}}
+      @media(min-width:768px){.ssr-wrap{width:378px}}
+      @media(min-width:1024px){.ssr-hero{padding:8rem 2rem 0;grid-template-columns:7fr 5fr;gap:2.5rem}.ssr-col{padding-bottom:5rem;align-self:center}.ssr-h1{font-size:76px}.ssr-lead{font-size:32px}.ssr-media{justify-content:flex-end}.ssr-wrap{width:100%}.ssr-img{max-height:590px}}
     </style>
   </head>
   <body class="bg-[#F5F2EB] text-[#252722] dark:bg-[#1C1D19] dark:text-[#F5F2EB] antialiased selection:bg-[#777C62]/20 selection:text-[#252722] dark:selection:bg-[#ADB293]/25 dark:selection:text-[#F5F2EB] font-sans">
@@ -103,11 +104,13 @@
             </div>
           </div>
           <div class="ssr-media">
-            <picture>
-              <source media="(max-width: 639px)" srcset="./images/developer-hoodie-mobile.webp" type="image/webp" />
-              <source srcset="./images/developer-hoodie.webp" type="image/webp" />
-              <img src="./images/developer-hoodie.png" alt="Adhi Vignesh - Software Engineer &amp; AI Developer" width="671" height="953" loading="eager" decoding="async" fetchpriority="high" class="ssr-img" />
-            </picture>
+            <div class="ssr-wrap">
+              <picture>
+                <source media="(max-width: 639px)" srcset="./images/developer-hoodie-mobile.webp" type="image/webp" />
+                <source srcset="./images/developer-hoodie.webp" type="image/webp" />
+                <img src="./images/developer-hoodie.png" alt="Adhi Vignesh — Full-Stack Developer and Applied AI Engineer" width="671" height="953" loading="eager" decoding="async" fetchpriority="high" class="ssr-img" />
+              </picture>
+            </div>
           </div>
         </main>
       </div>

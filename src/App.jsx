@@ -52,19 +52,7 @@ function App() {
     window.addEventListener("pointerdown", triggerBelowFold, { passive: true, once: true });
     window.addEventListener("keydown", triggerBelowFold, { passive: true, once: true });
 
-    let timerId;
-    if (typeof window.requestIdleCallback === "function") {
-      const idleId = window.requestIdleCallback(triggerBelowFold, { timeout: 1800 });
-      return () => {
-        window.removeEventListener("scroll", triggerBelowFold);
-        window.removeEventListener("touchstart", triggerBelowFold);
-        window.removeEventListener("pointerdown", triggerBelowFold);
-        window.removeEventListener("keydown", triggerBelowFold);
-        if (typeof window.cancelIdleCallback === "function") window.cancelIdleCallback(idleId);
-      };
-    }
-
-    timerId = window.setTimeout(triggerBelowFold, 1800);
+    const timerId = window.setTimeout(triggerBelowFold, 6000);
     return () => {
       window.removeEventListener("scroll", triggerBelowFold);
       window.removeEventListener("touchstart", triggerBelowFold);
@@ -83,17 +71,7 @@ function App() {
       if (!cancelled) setAmbientReady(true);
     };
 
-    if (typeof window.requestIdleCallback === 'function') {
-      const idleId = window.requestIdleCallback(enableAmbient, { timeout: 1200 });
-      return () => {
-        cancelled = true;
-        if (typeof window.cancelIdleCallback === 'function') {
-          window.cancelIdleCallback(idleId);
-        }
-      };
-    }
-
-    const timerId = window.setTimeout(enableAmbient, 1200);
+    const timerId = window.setTimeout(enableAmbient, 5000);
     return () => {
       cancelled = true;
       window.clearTimeout(timerId);
@@ -136,17 +114,13 @@ function App() {
       
       {/* Background Decorators (deferred past first paint so Mobile LCP & main thread stay unblocked) */}
       {ambientReady && isFinePointer && (
-        <ErrorBoundary><Suspense fallback={null}><ParticleCursorTrail /></Suspense></ErrorBoundary>
+        <>
+          <ErrorBoundary><Suspense fallback={null}><ParticleCursorTrail /></Suspense></ErrorBoundary>
+          <ErrorBoundary><Suspense fallback={null}><ThreeMeshCanvas /></Suspense></ErrorBoundary>
+        </>
       )}
       {ambientReady && (
-        <>
-          <ErrorBoundary><Suspense fallback={null}><ScrollProgress /></Suspense></ErrorBoundary>
-          <ErrorBoundary>
-            <Suspense fallback={null}>
-              <ThreeMeshCanvas />
-            </Suspense>
-          </ErrorBoundary>
-        </>
+        <ErrorBoundary><Suspense fallback={null}><ScrollProgress /></Suspense></ErrorBoundary>
       )}
 
       {/* Cmd+K Quick Search Command Palette (loaded on open) */}
