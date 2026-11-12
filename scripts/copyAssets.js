@@ -25,6 +25,9 @@ try {
     fs.mkdirSync(distDir, { recursive: true });
   }
 
+  // Copy images folder
+  copyDir(path.join(publicDir, 'images'), path.join(distDir, 'images'));
+
   // Copy certificates folder
   copyDir(path.join(publicDir, 'certficates'), path.join(distDir, 'certficates'));
 
@@ -41,11 +44,14 @@ try {
     }
   }
 
-  // Copy favicon
-  const favSrc = path.join(publicDir, 'favicon.svg');
-  if (fs.existsSync(favSrc)) {
-    fs.copyFileSync(favSrc, path.join(distDir, 'favicon.svg'));
-    fs.copyFileSync(favSrc, path.join(distDir, 'favicon.ico'));
+  // Copy favicons
+  const favFiles = ['favicon.svg', 'favicon.ico', 'favicon-32x32.png', 'apple-touch-icon.png'];
+  for (const fav of favFiles) {
+    const srcFav = path.join(publicDir, fav);
+    const destFav = path.join(distDir, fav);
+    if (fs.existsSync(srcFav)) {
+      fs.copyFileSync(srcFav, destFav);
+    }
   }
 
   console.log('✅ Postbuild asset synchronization complete: Certificates, Music, Favicons & PDFs copied to dist!');

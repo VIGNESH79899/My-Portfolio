@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   FaLaptopCode, FaBrain, FaDatabase, FaGraduationCap, 
-  FaBuilding, FaChevronRight
+  FaBuilding, FaChevronRight, FaCheckCircle
 } from 'react-icons/fa';
+import { playClickSound } from '../utils/sound';
 
 // Step Data with Narrative Content & Card Visualizations
 const stepsData = [
@@ -26,7 +27,7 @@ const stepsData = [
       title: 'Academic & CS Foundation',
       subtitle: 'Aurora University • 2024–2028',
       tag: 'B.Tech CSE (AI & ML)',
-      icon: <FaGraduationCap className="text-indigo-600 dark:text-indigo-400 text-lg" />,
+      icon: <FaGraduationCap className="text-[#777C62] dark:text-[#ADB293] text-lg" />,
       desc: 'Data Structures, Algorithms, Linear Algebra, Machine Learning Theory, and System Design.',
       pipeline: ['CS Theory', 'Algorithms', 'Math & Linear Algebra', 'AI Systems']
     }
@@ -54,9 +55,9 @@ const stepsData = [
     },
     card: {
       title: 'Full-Stack SaaS Engineering',
-      subtitle: 'Workverse @ Sashverse Tech',
+      subtitle: 'Workverse @Sashverse Technologies',
       tag: 'Production SaaS',
-      icon: <FaLaptopCode className="text-indigo-600 dark:text-indigo-400 text-lg" />,
+      icon: <FaLaptopCode className="text-[#777C62] dark:text-[#ADB293] text-lg" />,
       desc: 'REST API architecture, SSE real-time streams, JWT auth, and PostgreSQL schema design.',
       pipeline: ['Client UI', 'REST / SSE API', 'Node.js Engine', 'PostgreSQL DB']
     }
@@ -77,7 +78,7 @@ const stepsData = [
       title: 'AI & Recommendation Engines',
       subtitle: 'NLP & ML Vectorization',
       tag: 'Machine Learning',
-      icon: <FaBrain className="text-purple-600 dark:text-purple-400 text-lg" />,
+      icon: <FaBrain className="text-[#8C7258] dark:text-[#C1A17F] text-lg" />,
       desc: 'Content-based movie recommendation systems, TF-IDF vector space, cosine similarity, and automated AI DOCX tools.',
       pipeline: ['Text Raw Data', 'TF-IDF Vector', 'Cosine Sim Matrix', 'Top Recommendations']
     }
@@ -98,7 +99,7 @@ const stepsData = [
       title: 'Real-Time Systems & Security',
       subtitle: 'PostgreSQL, SSE Streams & C Systems',
       tag: 'Databases & Systems',
-      icon: <FaDatabase className="text-emerald-600 dark:text-emerald-400 text-lg" />,
+      icon: <FaDatabase className="text-[#777C62] dark:text-[#ADB293] text-lg" />,
       desc: 'PostgreSQL, MySQL, MongoDB Atlas, Server-Sent Events (SSE), JWT role-based security, and C hash algorithms.',
       pipeline: ['Client Stream', 'JWT RBAC Auth', 'SQL Engine', 'Real-Time Event']
     }
@@ -106,7 +107,7 @@ const stepsData = [
 ];
 
 // Sub-Component for Interactive Engineering Card
-const InteractiveEngineeringCard = ({ data, isTouch, isReducedMotion, index, activeStepIndex, onCardClick }) => {
+const InteractiveEngineeringCard = ({ data, stepNum, isTouch, isReducedMotion, index, activeStepIndex, onCardClick }) => {
   const cardRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const [tilt, setTilt] = useState({ rx: 0, ry: 0 });
@@ -121,12 +122,10 @@ const InteractiveEngineeringCard = ({ data, isTouch, isReducedMotion, index, act
       const y = e.clientY - rect.top;
       setSpotlightPos({ x, y });
 
-      const xOffset = (x / rect.width - 0.5) * 4; // max 2 deg
-      const yOffset = (y / rect.height - 0.5) * -4; // max 2 deg
+      const xOffset = (x / rect.width - 0.5) * 4;
+      const yOffset = (y / rect.height - 0.5) * -4;
       setTilt({ rx: Math.max(-2, Math.min(2, yOffset)), ry: Math.max(-2, Math.min(2, xOffset)) });
-    } catch (err) {
-      // Fail silently without crashing render
-    }
+    } catch (err) {}
   };
 
   const handleMouseEnter = () => {
@@ -151,69 +150,93 @@ const InteractiveEngineeringCard = ({ data, isTouch, isReducedMotion, index, act
       onMouseLeave={handleMouseLeave}
       style={{
         transform: !isTouch && !isReducedMotion && isHovered
-          ? `perspective(1000px) rotateX(${tilt.rx}deg) rotateY(${tilt.ry}deg) translateY(-3px)`
+          ? `perspective(1000px) rotateX(${tilt.rx}deg) rotateY(${tilt.ry}deg) translateY(-2px)`
           : 'none',
-        transition: 'transform 250ms cubic-bezier(0.22, 1, 0.36, 1), border-color 200ms ease, box-shadow 200ms ease'
+        transition: 'transform 250ms cubic-bezier(0.22, 1, 0.36, 1), border-color 200ms ease, box-shadow 200ms ease, opacity 250ms ease'
       }}
-      className={`relative overflow-hidden p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-900 border transition-all duration-300 shadow-2xs cursor-pointer ${
+      className={`relative overflow-hidden p-5 sm:p-6 rounded-2xl bg-[#FFFDF9] dark:bg-[#252620] border transition-all duration-300 cursor-pointer group ${
         isActive
-          ? 'border-indigo-500/50 dark:border-indigo-400/50 shadow-md shadow-indigo-500/5 ring-1 ring-indigo-500/20'
-          : 'border-slate-200/80 dark:border-slate-800 hover:border-indigo-400/30'
+          ? 'border-[#777C62]/65 dark:border-[#ADB293]/60 shadow-lg ring-1 ring-[#777C62]/20'
+          : 'border-[#D8D1C5] dark:border-[#414239] shadow-2xs opacity-90 hover:opacity-100 hover:border-[#777C62]/45 hover:shadow-md'
       }`}
     >
+      {/* Top Hairline Accent Strip */}
+      <div
+        className={`absolute inset-x-0 top-0 h-[3px] transition-opacity duration-300 ${
+          isActive
+            ? 'bg-gradient-to-r from-[#777C62] via-[#ADB293] to-[#777C62] opacity-100'
+            : 'bg-gradient-to-r from-[#777C62]/50 via-[#ADB293]/50 to-[#777C62]/50 opacity-0 group-hover:opacity-100'
+        }`}
+      />
+
       {/* Soft Cursor Spotlight Glow */}
       {!isTouch && !isReducedMotion && isHovered && (
         <div
           className="pointer-events-none absolute inset-0 rounded-2xl transition-opacity duration-300"
           style={{
-            background: `radial-gradient(220px circle at ${spotlightPos.x}px ${spotlightPos.y}px, rgba(91, 75, 255, 0.07), transparent 80%)`
+            background: `radial-gradient(220px circle at ${spotlightPos.x}px ${spotlightPos.y}px, rgba(119, 124, 98, 0.08), transparent 80%)`
           }}
         />
       )}
 
       {/* Top Card Badge & Icon Header */}
-      <div className="flex items-center justify-between mb-3 relative z-10">
-        <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-100 dark:border-indigo-900/60 shrink-0">
-          {data.icon}
+      <div className="flex items-center justify-between gap-2 mb-3.5 relative z-10">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className={`w-10 h-10 rounded-xl border flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-105 ${
+            isActive
+              ? 'bg-[#777C62]/15 dark:bg-[#ADB293]/15 border-[#777C62]/40 dark:border-[#ADB293]/40'
+              : 'bg-[#E7E1D6]/65 dark:bg-[#303129] border-[#D8D1C5] dark:border-[#414239]'
+          }`}>
+            {data.icon}
+          </div>
+          <span className="text-[10px] font-mono font-bold text-[#68675F] dark:text-[#C0BFB3] tracking-wider">
+            MODULE {stepNum}
+          </span>
         </div>
-        <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-          {data.tag}
+
+        <span className={`shrink-0 px-2.5 py-1 rounded-full text-[10px] font-mono font-semibold flex items-center gap-1.5 transition-colors ${
+          isActive
+            ? 'bg-[#1C1D19] dark:bg-[#F5F2EB] text-[#F5F2EB] dark:text-[#1C1D19] shadow-xs'
+            : 'bg-[#E7E1D6]/75 dark:bg-[#303129] text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5] dark:border-[#414239]'
+        }`}>
+          {isActive && <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 dark:bg-emerald-600 animate-pulse" />}
+          <span>{data.tag}</span>
         </span>
       </div>
 
       {/* Title & Subtitle */}
       <div className="relative z-10 mb-2">
-        <h4 className="text-base font-bold text-slate-900 dark:text-white tracking-tight">
+        <h4 className="text-base font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight group-hover:text-[#777C62] dark:group-hover:text-[#ADB293] transition-colors">
           {data.title}
         </h4>
-        <span className="text-[11px] font-medium text-indigo-600 dark:text-indigo-400 block">
+        <span className="text-[11px] font-medium text-[#777C62] dark:text-[#ADB293] block mt-0.5">
           {data.subtitle}
         </span>
       </div>
 
       {/* Description */}
-      <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed relative z-10 mb-4 font-normal">
+      <p className="text-xs text-[#68675F] dark:text-[#C0BFB3] leading-relaxed relative z-10 mb-4 font-normal">
         {data.desc}
       </p>
 
       {/* Compact Interactive Micro-Visualization Pipeline */}
       {data.pipeline && (
-        <div className="relative z-10 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-          <span className="text-[9px] font-semibold uppercase tracking-wider text-slate-400 block mb-2">
-            Engineering Flow:
+        <div className="relative z-10 p-3 rounded-xl bg-[#F5F2EB]/75 dark:bg-[#1C1D19]/75 border border-[#D8D1C5]/80 dark:border-[#414239]">
+          <span className="text-[9px] font-bold uppercase tracking-wider text-[#68675F] dark:text-[#C0BFB3] block mb-2 font-mono">
+            Architecture Flow
           </span>
-          <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-mono text-slate-600 dark:text-slate-300">
+          <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-mono text-[#252722] dark:text-[#F5F2EB]">
             {data.pipeline.map((node, nIdx) => (
               <React.Fragment key={nIdx}>
-                <span className={`px-2 py-0.5 rounded border transition-colors ${
+                <span className={`px-2 py-0.5 rounded-md border transition-colors ${
                   (isHovered || isActive) && nIdx === data.pipeline.length - 1
-                    ? 'bg-indigo-600 text-white border-indigo-500 font-semibold'
-                    : 'bg-slate-50 dark:bg-slate-950 border-slate-200 dark:border-slate-800'
+                    ? 'bg-[#1C1D19] text-[#F5F2EB] dark:bg-[#F5F2EB] dark:text-[#1C1D19] border-transparent font-semibold shadow-2xs'
+                    : 'bg-[#FFFDF9] dark:bg-[#252620] border-[#D8D1C5] dark:border-[#414239]'
                 }`}>
                   {node}
                 </span>
                 {nIdx < data.pipeline.length - 1 && (
-                  <FaChevronRight className="text-[8px] text-indigo-400 shrink-0" />
+                  <FaChevronRight className="text-[8px] text-[#777C62] dark:text-[#ADB293] shrink-0" />
                 )}
               </React.Fragment>
             ))}
@@ -234,9 +257,7 @@ const About = () => {
       try {
         setIsTouchDevice(window.matchMedia('(pointer: coarse)').matches);
         setPrefersReducedMotion(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-      } catch (e) {
-        // Safe fallback
-      }
+      } catch (e) {}
     }
   }, []);
 
@@ -256,21 +277,20 @@ const About = () => {
             }
           });
         },
-        { threshold: 0.3 }
+        { threshold: 0.2, rootMargin: '-20% 0px -40% 0px' }
       );
 
       const elements = document.querySelectorAll('.step-narrative-block');
       elements.forEach((el) => observer.observe(el));
 
       return () => observer.disconnect();
-    } catch (e) {
-      // Safe fallback if IntersectionObserver fails
-    }
+    } catch (e) {}
   }, []);
 
-  const handleCardClick = (index) => {
+  const handleStepSelect = (index, scrollTarget = true) => {
+    try { playClickSound(); } catch (e) {}
     setActiveStep(index);
-    if (typeof document !== 'undefined') {
+    if (scrollTarget && typeof document !== 'undefined') {
       const targetEl = document.querySelector(`[data-step-index="${index}"]`);
       if (targetEl && targetEl.scrollIntoView) {
         targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -278,80 +298,137 @@ const About = () => {
     }
   };
 
+  const activeStepData = stepsData[activeStep] || stepsData[0];
+
   return (
-    <section id="about" className="py-20 px-6 bg-slate-50 dark:bg-slate-950 border-y border-slate-200/60 dark:border-slate-800/60 relative overflow-hidden">
+    <section id="about" className="py-24 px-6 bg-[#F5F2EB] dark:bg-[#1C1D19] border-y border-[#D8D1C5] dark:border-[#414239] relative overflow-hidden font-sans">
       
       {/* Background Radial Glow */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[350px] bg-indigo-500/5 blur-[120px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[350px] bg-[#777C62]/5 dark:bg-[#ADB293]/5 blur-[140px] pointer-events-none rounded-full" />
 
-      <div className="max-w-6xl mx-auto relative z-10 space-y-10">
+      <div className="max-w-6xl mx-auto relative z-10 space-y-8">
         
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-6 border-b border-slate-200/80 dark:border-slate-800/80">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-6 border-b border-[#D8D1C5] dark:border-[#414239]">
           <div>
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 inline-block mb-3">
+            <span className="pro-badge-olive mb-3 inline-block">
               ABOUT ME
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Background & Engineering Focus
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight">
+              Background &amp; Engineering Focus
             </h2>
+            <p className="text-xs sm:text-sm text-[#68675F] dark:text-[#C0BFB3] mt-2 font-normal">
+              From computer science fundamentals to production full-stack SaaS and applied AI engineering
+            </p>
           </div>
 
-          {/* Compact 01 -> 04 Scroll Progress Bar */}
-          <div className="flex items-center gap-3 bg-white dark:bg-slate-900 px-4 py-2 rounded-xl border border-slate-200/80 dark:border-slate-800 shadow-2xs self-start sm:self-auto">
-            <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 font-mono">01</span>
-            <div className="w-24 sm:w-32 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full relative overflow-hidden">
+          {/* Interactive 01 -> 04 Chapter Progress Capsule */}
+          <div className="flex items-center gap-3 bg-[#FFFDF9] dark:bg-[#252620] px-4 py-2 rounded-full border border-[#D8D1C5] dark:border-[#414239] shadow-2xs self-start sm:self-auto">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+            <span className="text-[11px] font-bold text-[#252722] dark:text-[#F5F2EB] font-mono">
+              {activeStepData.num}
+            </span>
+            <div className="w-20 sm:w-28 h-1.5 bg-[#E7E1D6] dark:bg-[#303129] rounded-full relative overflow-hidden">
               <div 
-                className="h-full bg-gradient-to-r from-indigo-600 to-purple-600 transition-all duration-300 rounded-full"
+                className="h-full bg-gradient-to-r from-[#777C62] to-[#ADB293] transition-all duration-300 rounded-full"
                 style={{ width: `${((activeStep + 1) / stepsData.length) * 100}%` }}
               />
             </div>
-            <span className="text-xs font-bold text-slate-400 font-mono">04</span>
+            <span className="text-[11px] font-bold text-[#68675F] dark:text-[#C0BFB3] font-mono">
+              0{stepsData.length}
+            </span>
           </div>
         </div>
 
+        {/* Interactive Venom Pillar Quick-Jump Tabs */}
+        <div className="flex flex-wrap items-center gap-2">
+          {stepsData.map((step, index) => {
+            const isActive = activeStep === index;
+            return (
+              <button
+                key={step.id}
+                type="button"
+                onClick={() => handleStepSelect(index, true)}
+                className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-heading font-semibold transition-all duration-200 cursor-pointer select-none ${
+                  isActive
+                    ? 'pill-venom-active shadow-md'
+                    : 'pill-venom-inactive hover:-translate-y-0.5'
+                }`}
+              >
+                <span className={`font-mono text-[10px] px-1.5 py-0.5 rounded-full leading-none ${
+                  isActive
+                    ? 'bg-white/20 text-current'
+                    : 'bg-[#E7E1D6] dark:bg-[#303129] text-[#68675F] dark:text-[#C0BFB3]'
+                }`}>
+                  {step.num}
+                </span>
+                <span>{step.label}</span>
+              </button>
+            );
+          })}
+        </div>
+
         {/* Storytelling Grid: Left Narrative Steps (7 Cols) / Right Interactive Cards (5 Cols) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           
           {/* Left Column: Narrative Steps */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:col-span-7 space-y-6">
             {stepsData.map((step, index) => {
               const isActive = activeStep === index;
               return (
                 <div
                   key={step.id}
                   data-step-index={index}
-                  className={`step-narrative-block transition-all duration-300 p-5 sm:p-6 rounded-2xl border ${
+                  onClick={() => handleStepSelect(index, false)}
+                  className={`step-narrative-block relative overflow-hidden transition-all duration-300 p-5 sm:p-6 rounded-2xl border cursor-pointer ${
                     isActive 
-                      ? 'bg-white dark:bg-slate-900 border-indigo-500/30 dark:border-indigo-400/30 shadow-xs' 
-                      : 'bg-transparent border-transparent opacity-85 hover:opacity-100'
+                      ? 'bg-[#FFFDF9] dark:bg-[#252620] border-[#777C62]/55 dark:border-[#ADB293]/50 shadow-md ring-1 ring-[#777C62]/15' 
+                      : 'bg-[#FFFDF9]/55 dark:bg-[#252620]/55 border-[#D8D1C5]/75 dark:border-[#414239]/75 opacity-85 hover:opacity-100 hover:bg-[#FFFDF9] dark:hover:bg-[#252620]'
                   }`}
                 >
+                  {/* Active Left Accent Rail */}
+                  <div
+                    className={`absolute left-0 top-4 bottom-4 w-[3px] rounded-r-full transition-opacity duration-300 ${
+                      isActive
+                        ? 'bg-gradient-to-b from-[#777C62] via-[#ADB293] to-[#777C62] opacity-100'
+                        : 'opacity-0'
+                    }`}
+                  />
+
                   {/* Step Header */}
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className={`text-xs font-mono font-extrabold px-2.5 py-1 rounded-md transition-colors ${
-                      isActive 
-                        ? 'bg-indigo-600 text-white' 
-                        : 'bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
-                    }`}>
-                      {step.num}
-                    </span>
-                    <span className={`text-xs font-bold uppercase tracking-wider transition-colors ${
-                      isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-400'
-                    }`}>
-                      {step.label}
-                    </span>
+                  <div className="flex items-center justify-between gap-3 mb-3">
+                    <div className="flex items-center gap-2.5">
+                      <span className={`text-[11px] font-mono font-bold px-2.5 py-1 rounded-full transition-colors ${
+                        isActive 
+                          ? 'bg-[#1C1D19] text-[#F5F2EB] dark:bg-[#F5F2EB] dark:text-[#1C1D19] shadow-2xs' 
+                          : 'bg-[#E7E1D6] dark:bg-[#303129] text-[#68675F] dark:text-[#C0BFB3]'
+                      }`}>
+                        {step.num}
+                      </span>
+                      <span className={`text-xs font-mono font-bold uppercase tracking-wider transition-colors ${
+                        isActive ? 'text-[#777C62] dark:text-[#ADB293]' : 'text-[#68675F] dark:text-[#C0BFB3]'
+                      }`}>
+                        {step.label}
+                      </span>
+                    </div>
+
+                    {isActive && (
+                      <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-[#777C62]/12 dark:bg-[#ADB293]/15 text-[#5E634D] dark:text-[#C6CCAA] border border-[#777C62]/25 dark:border-[#ADB293]/25">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                        <span>Active Focus</span>
+                      </span>
+                    )}
                   </div>
 
                   {/* Step Title */}
-                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight mb-3">
                     {step.title}
                   </h3>
 
                   {/* Narrative Text */}
-                  <div className="space-y-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  <div className="space-y-3 text-sm text-[#68675F] dark:text-[#C0BFB3] leading-relaxed">
                     {step.narrative.map((paragraph, pIdx) => (
-                      <p key={pIdx} className={paragraph.type === 'lead' ? 'text-slate-800 dark:text-slate-200 font-medium' : ''}>
+                      <p key={pIdx} className={paragraph.type === 'lead' ? 'text-[#252722] dark:text-[#F5F2EB] font-medium' : ''}>
                         {paragraph.text}
                       </p>
                     ))}
@@ -359,27 +436,30 @@ const About = () => {
 
                   {/* Highlighted Sashverse Case Study Block inside Step 02 */}
                   {step.productionBlock && (
-                    <div className="mt-4 p-4 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/50 border border-indigo-200/80 dark:border-indigo-800/80 space-y-2">
+                    <div className="relative overflow-hidden mt-5 p-4 sm:p-5 rounded-xl bg-[#F5F2EB]/90 dark:bg-[#1C1D19]/70 border border-[#777C62]/35 dark:border-[#ADB293]/35 space-y-2.5 shadow-2xs">
+                      <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-[#777C62] via-[#ADB293] to-[#777C62]" />
                       <div className="flex items-center justify-between flex-wrap gap-2">
-                        <span className="text-[10px] font-bold text-indigo-700 dark:text-indigo-300 tracking-wider uppercase flex items-center gap-1">
-                          <FaBuilding className="text-xs" /> {step.productionBlock.badge}
+                        <span className="text-[10px] font-bold text-[#5E634D] dark:text-[#ADB293] tracking-wider uppercase flex items-center gap-1.5 font-mono">
+                          <FaBuilding className="text-xs" />
+                          <span>{step.productionBlock.badge}</span>
                         </span>
-                        <span className="text-[10px] font-semibold text-slate-500 bg-white dark:bg-slate-900 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-800">
-                          {step.productionBlock.period}
+                        <span className="inline-flex items-center gap-1.5 text-[10px] font-mono font-semibold text-[#252722] dark:text-[#F5F2EB] bg-[#FFFDF9] dark:bg-[#252620] px-2.5 py-0.5 rounded-full border border-[#D8D1C5] dark:border-[#414239]">
+                          <FaCheckCircle className="text-[9px] text-emerald-500" />
+                          <span>{step.productionBlock.period}</span>
                         </span>
                       </div>
 
-                      <h4 className="text-sm font-bold text-slate-900 dark:text-white">
-                        {step.productionBlock.company} — <span className="text-indigo-600 dark:text-indigo-400">{step.productionBlock.project}</span>
+                      <h4 className="text-sm font-bold text-[#252722] dark:text-[#F5F2EB] font-heading">
+                        {step.productionBlock.company} — <span className="text-[#777C62] dark:text-[#ADB293]">{step.productionBlock.project}</span>
                       </h4>
 
-                      <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                      <p className="text-xs text-[#68675F] dark:text-[#C0BFB3] leading-relaxed font-normal">
                         {step.productionBlock.desc}
                       </p>
 
-                      <div className="flex flex-wrap gap-1 pt-1">
+                      <div className="flex flex-wrap gap-1.5 pt-1">
                         {(step.productionBlock.techs || step.productionBlock.stack || []).map((t, tIdx) => (
-                          <span key={tIdx} className="px-2 py-0.5 rounded text-[10px] font-medium bg-white dark:bg-slate-900 text-indigo-700 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/60">
+                          <span key={tIdx} className="px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-[#FFFDF9] dark:bg-[#252620] text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5] dark:border-[#414239]">
                             {t}
                           </span>
                         ))}
@@ -388,9 +468,9 @@ const About = () => {
                   )}
 
                   {/* Keyword Chips */}
-                  <div className="flex flex-wrap gap-1.5 pt-3">
+                  <div className="flex flex-wrap gap-1.5 pt-4 mt-4 border-t border-[#D8D1C5]/60 dark:border-[#414239]/70">
                     {step.highlights.map((kw, kIdx) => (
-                      <span key={kIdx} className="px-2.5 py-1 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60">
+                      <span key={kIdx} className="px-3 py-1 rounded-full text-[11px] font-medium bg-[#E7E1D6]/60 dark:bg-[#303129]/75 text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5] dark:border-[#414239]">
                         {kw}
                       </span>
                     ))}
@@ -402,14 +482,14 @@ const About = () => {
           </div>
 
           {/* Right Column: Engineering Cards & Visual Connection System */}
-          <div className="lg:col-span-5 relative space-y-6 lg:sticky lg:top-28">
+          <div className="lg:col-span-5 relative space-y-5 lg:sticky lg:top-24">
             
-            {/* Desktop Vertical Connection Line with Slow Purple Pulse Signal */}
-            <div className="hidden lg:block absolute left-1/2 top-4 bottom-4 -translate-x-1/2 w-0.5 bg-slate-200/80 dark:bg-slate-800 pointer-events-none z-0">
+            {/* Desktop Vertical Connection Line */}
+            <div className="hidden lg:block absolute left-1/2 top-6 bottom-6 -translate-x-1/2 w-0.5 bg-[#D8D1C5] dark:bg-[#414239] pointer-events-none z-0">
               {!prefersReducedMotion && (
                 <div 
-                  className="w-1.5 h-1.5 bg-indigo-500 rounded-full shadow-xs -translate-x-[2px] transition-all duration-500"
-                  style={{ top: `${(activeStep / (stepsData.length - 1)) * 90 + 5}%`, position: 'absolute' }}
+                  className="w-2.5 h-2.5 bg-emerald-500 ring-4 ring-[#F5F2EB] dark:ring-[#1C1D19] rounded-full shadow-xs -translate-x-[4px] transition-all duration-500"
+                  style={{ top: `${(activeStep / (stepsData.length - 1)) * 88 + 6}%`, position: 'absolute' }}
                 />
               )}
             </div>
@@ -419,11 +499,12 @@ const About = () => {
               <div key={step.id} className="relative z-10">
                 <InteractiveEngineeringCard
                   data={step.card}
+                  stepNum={step.num}
                   isTouch={isTouchDevice}
                   isReducedMotion={prefersReducedMotion}
                   index={index}
                   activeStepIndex={activeStep}
-                  onCardClick={handleCardClick}
+                  onCardClick={(idx) => handleStepSelect(idx, true)}
                 />
               </div>
             ))}
@@ -438,6 +519,3 @@ const About = () => {
 };
 
 export default About;
-
-
-

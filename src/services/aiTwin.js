@@ -9,10 +9,9 @@ export const getRelevantContext = (userMsg) => {
     contextParts.push(`SKILLS: Languages: ${PORTFOLIO_KNOWLEDGE.skills.languages.join(", ")}. Frontend: ${PORTFOLIO_KNOWLEDGE.skills.frontend.join(", ")}. Backend: ${PORTFOLIO_KNOWLEDGE.skills.backend.join(", ")}. Databases: ${PORTFOLIO_KNOWLEDGE.skills.databases.join(", ")}. AI/ML: ${PORTFOLIO_KNOWLEDGE.skills.aiml.join(", ")}.`);
   }
 
-  if (q.includes("sashverse") || q.includes("workverse") || q.includes("internship") || q.includes("staxtech") || q.includes("experience")) {
-    const sash = PORTFOLIO_KNOWLEDGE.experience[0];
-    const stax = PORTFOLIO_KNOWLEDGE.experience[1];
-    contextParts.push(`EXPERIENCE:\n1. ${sash.company} (${sash.period}): ${sash.role} on ${sash.platform}. Tech: ${sash.tech.join(", ")}. Highlights: ${sash.highlights.join("; ")}.\n2. ${stax.company} (${stax.period}): ${stax.role}. Tech: ${stax.tech.join(", ")}. Highlights: ${stax.highlights.join("; ")}.`);
+  if (q.includes("sashverse") || q.includes("workverse") || q.includes("internship") || q.includes("staxtech") || q.includes("experience") || q.includes("chandeshwara") || q.includes("freelance") || q.includes("client") || q.includes("ecommerce") || q.includes("gongadi")) {
+    const expList = PORTFOLIO_KNOWLEDGE.experience.map((e, idx) => `${idx + 1}. ${e.company} (${e.period}): ${e.role} on ${e.platform}. Tech: ${e.tech.join(", ")}. Highlights: ${e.highlights.join("; ")}.`).join("\n");
+    contextParts.push(`EXPERIENCE:\n${expList}`);
   }
 
   if (q.includes("project") || q.includes("ai assessment") || q.includes("recommendation") || q.includes("compression") || q.includes("password")) {
@@ -107,27 +106,64 @@ export const generateStreamingResponse = async (userMsg, history, onChunk, onCom
       // Backend not running, use client-side grounded streaming context engine
     }
 
-    // Fallback to grounded portfolio context engine
+    // Fallback to grounded portfolio context engine with specific-topic-first routing
     let fullText = "";
 
-    if (q.includes("skill") || q.includes("tech") || q.includes("stack") || q.includes("know")) {
-      fullText = `Adhi works primarily across Full-Stack SaaS Development and AI/ML Engineering:\n\n• **Frontend**: React.js, Tailwind CSS, HTML5/CSS3, Framer Motion\n• **Backend & APIs**: Node.js, Express.js, Koa.js, REST API Design, Server-Sent Events (SSE), JWT Auth & RBAC\n• **Databases**: PostgreSQL, MySQL, MongoDB Atlas, Sequelize ORM\n• **AI / ML**: Python, Scikit-learn, Pandas, TF-IDF Text Vectorization, Cosine Similarity recommendation engines\n\nWould you like to explore his technical skills matrix or projects?\n\n[View Skills] [View Projects]`;
-    } else if (q.includes("sashverse") || q.includes("workverse") || q.includes("saas")) {
-      fullText = `During his internship at **Sashverse Technologies** (Apr 2026 – Jun 2026 in Hyderabad), Adhi worked on **Workverse**—a production SaaS platform:\n\n1. **REST APIs & Services**: Engineered task assignment and user onboarding workflows.\n2. **Real-Time Stream**: Built a sub-15ms Server-Sent Events (SSE) event broadcasting stream.\n3. **Role-Based Security**: Implemented JWT authentication with RBAC for Admin, Mentor, and Student tiers.\n4. **Database & Transactions**: Designed referral reward engines backed by PostgreSQL and Sequelize ORM.\n\n[View Experience] [View Architecture]`;
-    } else if (q.includes("staxtech")) {
-      fullText = `During his Web Development Internship at **StaxTech** (May 2025 – Jun 2025, Remote), Adhi:\n\n• Built responsive e-commerce web applications including luxury watch store interfaces.\n• Developed dynamic shopping cart state management, price recalculations, and checkout flows.\n• Created digital agency landing pages with mobile-first UI/UX.\n\n[View Experience]`;
-    } else if (q.includes("project") || q.includes("built") || q.includes("show me")) {
-      fullText = `Adhi has engineered several production-focused applications and AI systems:\n\n1. **AI Assessment Maker**: Full-stack platform generating academic assignments and automated DOCX documents.\n2. **Movie Recommendation System**: Content-based engine using TF-IDF vectorization and cosine similarity.\n3. **Workverse SaaS Platform**: Real-time SSE event pipeline and JWT RBAC backend.\n4. **Library Management System**: PHP/MySQL relational database system with ACID transaction support.\n5. **Chandeshwara Enterprises**: Freelance client e-commerce platform built with TypeScript & MongoDB (https://chandeshwaraenterprises.com/).\n6. **Population Growth Prediction**: Mathematical prediction application in React & TypeScript forecasting population trends from historical datasets (https://github.com/VIGNESH79899/Population-Growth).\n\n[View Projects]`;
-    } else if (q.includes("education") || q.includes("university") || q.includes("degree") || q.includes("aurora")) {
-      fullText = `Adhi is currently pursuing his **B.Tech in Computer Science Engineering (AI & Machine Learning)** at **Aurora University, Hyderabad** (2024–2028):\n\n• **Class XII (MPC)**: Graduated with **86.1%**.\n• **Current Focus**: Machine Learning fundamentals, Full-Stack SaaS architecture, Operating Systems, and Linear Algebra.\n\n[View Education]`;
-    } else if (q.includes("architecture") || q.includes("pipeline")) {
-      fullText = `Adhi's 5-stage production architecture pipeline consists of:\n\n1. **React.js Client**: Student dashboard & SSE event listener\n2. **Node.js / Express API**: REST service layer & task routing\n3. **Real-Time SSE Engine**: Persistent event broadcasting stream\n4. **PostgreSQL & Sequelize**: Relational database & ORM schemas\n5. **JWT Authorization**: Stateless RBAC security middleware\n\n[View Architecture]`;
-    } else if (q.includes("certif") || q.includes("credential")) {
-      fullText = `Adhi holds several verified certifications and credentials:\n\n• **Power BI Workshop** (Office Master)\n• **Programming Fundamentals using Python** (Infosys Springboard)\n• **Data Analytics Virtual Job Simulation** (Deloitte via Forage)\n• **Elements of AI** (University of Helsinki & MinnaLearn)\n• **Introduction to AI** (Infosys Springboard)\n• **StaxTech Web Internship Certificate**\n\n[View Certifications]`;
-    } else if (q.includes("contact") || q.includes("email") || q.includes("phone") || q.includes("reach") || q.includes("hire")) {
-      fullText = `You can reach Adhi directly via:\n\n• **Email**: vigneshadhi773@gmail.com\n• **Phone**: +91 79899 49808\n• **GitHub**: github.com/VIGNESH79899\n• **LinkedIn**: linkedin.com/in/adhi-vignesh-342431289\n\nHe is actively seeking Full-Stack & AI/ML opportunities!\n\n[Contact Me]`;
-    } else {
-      fullText = `Adhi Vignesh is a Full-Stack Developer & AI/ML Engineer pursuing B.Tech CSE (AI & ML) at Aurora University (2024–2028). He has completed internships at **Sashverse Technologies** (Workverse SaaS) and **StaxTech**, building real-time SSE streams, REST APIs, and AI recommendation engines.\n\nFeel free to ask about his skills, internships, projects, or architecture!\n\n[View Projects] [View Experience]`;
+    // 1. Freelance E-Commerce (Chandeshwara Enterprises)
+    if (q.includes("chandeshwara") || q.includes("freelance") || q.includes("gongadi") || q.includes("store") || q.includes("ecommerce") || q.includes("client")) {
+      fullText = `**Chandeshwara Enterprises** (chandeshwaraenterprises.com):\n\n• Solo-built live handloom e-commerce store\n• Stack: React, Vite, Node.js, MongoDB Atlas & Razorpay checkout\n• Managed DNS, SEO indexing, and cloud hosting on Render\n\n[View Freelance] [Contact Adhi]`;
+    }
+    // 2. Sashverse & Workverse SaaS
+    else if (q.includes("sashverse") || q.includes("workverse") || q.includes("saas") || q.includes("architecture") || q.includes("pipeline") || q.includes("sse")) {
+      fullText = `**Sashverse Technologies** (Full-Stack Intern):\n\n• Engineered sub-15ms real-time SSE stream & REST APIs for Workverse SaaS\n• Implemented JWT authentication with role-based access control (RBAC)\n• Designed PostgreSQL database models using Sequelize ORM\n\n[View Experience] [View Projects]`;
+    } 
+    // 3. StaxTech Internship
+    else if (q.includes("staxtech")) {
+      fullText = `**StaxTech** (Web Development Intern):\n\n• Developed responsive e-commerce web applications\n• Built dynamic cart state management & checkout workflows\n\n[View Experience] [Download Resume]`;
+    }
+    // 4. Experience & Internships (general)
+    else if (q.includes("experience") || q.includes("intern") || q.includes("job") || q.includes("career") || q.includes("work experience")) {
+      fullText = `**Work & Production Experience**:\n\n• **Sashverse Technologies** (2026): Full-Stack SaaS Intern on Workverse (SSE streams, REST APIs, PostgreSQL)\n• **StaxTech** (2025): Web Development Intern (E-Commerce storefronts & UI/UX)\n• **Chandeshwara Enterprises**: Lead Developer for production e-commerce store\n\n[View Experience] [Download Resume]`;
+    }
+    // 5. Projects & GitHub
+    else if (q.includes("project") || q.includes("built") || q.includes("github") || q.includes("repo") || q.includes("app") || q.includes("assessment") || q.includes("movie") || q.includes("eco") || q.includes("vault")) {
+      fullText = `**Top Featured Projects**:\n\n1. **AI Assessment Maker**: Automated academic tests with DOCX export\n2. **Movie Recommendation**: Content-based engine via TF-IDF\n3. **Chandeshwara E-Commerce**: Live handloom store with Razorpay\n4. **Eco-Track**: Real-time carbon emission estimator\n\n[View Projects] [Download Resume]`;
+    } 
+    // 6. Technical Skills & Stack
+    else if (q.includes("skill") || q.includes("tech") || q.includes("stack") || q.includes("language") || q.includes("tool") || q.includes("framework") || q.includes("react") || q.includes("node") || q.includes("python") || q.includes("database") || q.includes("frontend") || q.includes("backend")) {
+      fullText = `**Core Engineering Stack**:\n\n• **Frontend**: React.js, TypeScript, Tailwind CSS\n• **Backend**: Node.js, Express, REST APIs, SSE Streams\n• **Data & AI**: PostgreSQL, MongoDB, Python, Scikit-learn\n\n[View Skills] [Download Resume]`;
+    } 
+    // 7. Academic Background & Aurora University
+    else if (q.includes("education") || q.includes("university") || q.includes("degree") || q.includes("aurora") || q.includes("college") || q.includes("btech") || q.includes("study") || q.includes("academic") || q.includes("gpa")) {
+      fullText = `**Education**:\n\n• **B.Tech CSE (AI & ML)** @ Aurora University (2024–2028)\n• **Class XII (MPC)**: 86.1%\n• Focus: Machine Learning, Distributed Systems & Full-Stack Architecture\n\n[View Education] [View Certifications]`;
+    } 
+    // 8. Verified Certifications
+    else if (q.includes("certif") || q.includes("credential") || q.includes("deloitte") || q.includes("infosys") || q.includes("power bi") || q.includes("helsinki")) {
+      fullText = `**Key Verified Credentials**:\n\n• **Full-Stack Developer**: Sashverse Technologies\n• **Elements of AI (2 ECTS)**: University of Helsinki\n• **Data Analytics Simulation**: Deloitte\n• **Python Fundamentals**: Infosys Springboard\n\n[View Certifications] [Download Resume]`;
+    } 
+    // 9. Resume & PDF
+    else if (q.includes("resume") || q.includes("cv") || q.includes("pdf") || q.includes("download")) {
+      fullText = `**Adhi's Official Resume**:\n\n• Updated PDF covering Full-Stack, AI/ML & Production Work\n• Tap below to download directly:\n\n[Download Resume] [Contact Adhi]`;
+    }
+    // 10. Contact / Hiring / Email / Phone
+    else if (q.includes("contact") || q.includes("email") || q.includes("phone") || q.includes("call") || q.includes("hire") || q.includes("reach") || q.includes("linkedin")) {
+      fullText = `**Get in Touch**:\n\n• **Email**: vigneshadhi773@gmail.com\n• **Phone**: +91 79899 49808\n• **LinkedIn**: linkedin.com/in/adhi-vignesh-342431289\n• **GitHub**: github.com/VIGNESH79899\n\n[Download Resume] [Contact Adhi]`;
+    } 
+    // 11. Location / Base
+    else if (q.includes("where") || q.includes("location") || q.includes("city") || q.includes("live") || q.includes("based") || q.includes("hyderabad")) {
+      fullText = `**Location**:\n\n• Adhi is based in **Hyderabad, Telangana, India**.\n• Open to remote, hybrid, and on-site engineering roles.\n\n[Contact Adhi] [Download Resume]`;
+    }
+    // 12. General Executive Summary / Who is Adhi / Greetings
+    else if (
+      q.includes("who") || q.includes("summary") || q.includes("tldr") || 
+      q.includes("overview") || q.includes("intro") || q.includes("hi") || 
+      q.includes("hello") || q.includes("hey") || q.includes("about")
+    ) {
+      fullText = `**Adhi Vignesh** | Full-Stack & Applied AI Engineer\n\n• **Core Stack**: React, TypeScript, Node.js, PostgreSQL & Python\n• **Highlights**: Sashverse (Workverse SaaS), Chandeshwara E-Commerce & AI tools\n• Open for SWE & AI/ML opportunities.\n\n[View Projects] [Download Resume] [Contact Adhi]`;
+    }
+    // 13. Helpful Fallback
+    else {
+      fullText = `I can help you explore Adhi's background! Try asking about:\n\n• **Skills**: React, Node.js, PostgreSQL, Python\n• **Projects**: SaaS platforms, AI tools & E-Commerce\n• **Experience**: Sashverse & StaxTech internships\n• **Resume**: Official PDF download\n\n[View Projects] [View Skills] [Download Resume] [Contact Adhi]`;
     }
 
     return simulateTokenStream(fullText, onChunk, onComplete);

@@ -1,148 +1,245 @@
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes, FaMoon, FaSun, FaDownload, FaSearch } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search, Sun, Moon, Download, Menu, X, ArrowUpRight } from "lucide-react";
+import { playClickSound } from "../utils/sound";
 
 const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      const sections = [
+        "hero",
+        "projects",
+        "freelance",
+        "experience",
+        // "skills",
+        "about",
+        "education",
+        "certifications",
+        "contact"
+      ];
+      const scrollPos = window.scrollY + 140;
+      for (const section of sections) {
+        const el = document.getElementById(section);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "Education", href: "#education" },
-    { name: "Certifications", href: "#certifications" },
-    { name: "Contact", href: "#contact" },
+    { name: "Projects", href: "#projects", id: "projects" },
+    { name: "Freelancing", href: "#freelance", id: "freelance" },
+    { name: "Experience", href: "#experience", id: "experience" },
+    // { name: "Skills", href: "#skills", id: "skills" },
+    { name: "About", href: "#about", id: "about" },
+    { name: "Education", href: "#education", id: "education" },
+    { name: "Certifications", href: "#certifications", id: "certifications" },
+    { name: "Contact", href: "#contact", id: "contact" },
   ];
 
+  const handleLinkClick = () => {
+    try { playClickSound(); } catch (e) {}
+    setMenuOpen(false);
+  };
+
+  const handleToggleDark = () => {
+    try { playClickSound(); } catch (e) {}
+    toggleDark();
+  };
+
+  const handleOpenSearch = () => {
+    try { playClickSound(); } catch (e) {}
+    onOpenCmdK();
+  };
+
   return (
-    <header className={`fixed w-full top-0 left-0 z-40 transition-all duration-200 ${
-      scrolled 
-        ? "bg-white/85 dark:bg-slate-950/85 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 shadow-sm" 
-        : "bg-transparent py-2"
-    }`}>
-      <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-3 px-3 sm:px-6 font-sans pointer-events-none">
+      <div 
+        className={`max-w-7xl mx-auto rounded-full transition-all duration-300 pointer-events-auto flex items-center justify-between gap-2 xl:gap-5 px-3 sm:px-5 xl:px-6 py-2.5 sm:py-3 border shadow-sm ${
+          scrolled
+            ? "bg-[#FFFDF9]/92 dark:bg-[#181914]/92 backdrop-blur-2xl border-[#D8D1C5] dark:border-[#383A2F] shadow-[0_10px_30px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_36px_rgba(0,0,0,0.5)]"
+            : "bg-[#FFFDF9]/85 dark:bg-[#181914]/85 backdrop-blur-xl border-[#D8D1C5]/80 dark:border-[#35372D]/80"
+        }`}
+      >
         
-        {/* Brand Logo */}
-        <a href="#hero" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold text-sm flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+        {/* Brand Logo & Telemetry (Left) */}
+        <a 
+          href="#hero" 
+          onClick={handleLinkClick}
+          className="flex items-center gap-2.5 group focus:outline-none select-none shrink-0"
+        >
+          <div className="relative w-8 h-8 rounded-full btn-venom-icon !w-8 !h-8 text-xs font-mono font-black flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0">
             AV
           </div>
-          <div className="flex flex-col">
-            <span className="text-base font-bold text-slate-900 dark:text-white tracking-tight group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+
+          <div className="flex flex-col text-left">
+            <span className="text-xs sm:text-sm font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight group-hover:text-[#777C62] dark:group-hover:text-[#ADB293] transition-colors leading-tight whitespace-nowrap">
               Adhi Vignesh
             </span>
-            <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">
-              Full-Stack & AI/ML
+            <span className="text-[10px] font-mono text-[#68675F] dark:text-[#A8A79B] tracking-wide leading-none mt-0.5 whitespace-nowrap hidden sm:block">
+              Full-Stack &amp; Applied AI
             </span>
           </div>
         </a>
 
-        {/* Desktop Nav Links */}
-        <nav className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
+        {/* Center Links Track - Floating Glass Capsule */}
+        <nav className="hidden lg:flex items-center bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 backdrop-blur-2xl px-1.5 xl:px-2 py-1.5 rounded-full border border-[#D8D1C5]/80 dark:border-white/12 shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,1),0_2px_8px_rgba(37,39,34,0.04)] dark:shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.2),0_4px_14px_rgba(0,0,0,0.4)] gap-0.5 xl:gap-1 shrink-0">
+          {navLinks.map((link) => {
+            const isActive = activeSection === link.id;
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={handleLinkClick}
+                className={`text-xs font-heading select-none whitespace-nowrap px-2.5 xl:px-3.5 py-1.5 rounded-full transition-all duration-200 ${
+                  isActive
+                    ? "pill-venom-active font-bold shadow-md"
+                    : "font-semibold text-[#68675F] dark:text-[#C0BFB3] hover:text-[#252722] dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10"
+                }`}
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </nav>
 
-        {/* Action Controls */}
-        <div className="hidden md:flex items-center gap-2.5">
+        {/* Action Controls (Right) */}
+        <div className="hidden lg:flex items-center gap-2.5 shrink-0 flex-nowrap">
           
-          {/* Cmd+K Quick Search Button */}
+          {/* Quick Search Button */}
           <button
-            onClick={onOpenCmdK}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 text-xs font-mono transition-colors border border-slate-200/60 dark:border-slate-700/60"
-            title="Open Command Palette"
+            onClick={handleOpenSearch}
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 hover:bg-[#F5F2EA] dark:hover:bg-[#1E2018] text-[#68675F] dark:text-[#C0BFB3] hover:text-[#252722] dark:hover:text-white text-xs font-heading font-medium transition-all border border-[#D8D1C5]/80 dark:border-white/12 shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,1),0_2px_8px_rgba(37,39,34,0.04)] dark:shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.2),0_4px_14px_rgba(0,0,0,0.4)] hover:scale-105 active:scale-95 cursor-pointer shrink-0"
+            title="Search Portfolio & Commands (⌘K)"
+            aria-label="Open command palette"
           >
-            <FaSearch className="text-[10px]" />
-            <span>Search</span>
-            <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700 text-[9px] text-slate-600 dark:text-slate-300 font-mono">
+            <Search className="w-3.5 h-3.5" />
+            <span className="text-xs hidden xl:inline">Search</span>
+            <kbd className="px-1.5 py-0.5 rounded-full bg-black/5 dark:bg-white/15 text-[10px] text-[#252722] dark:text-white font-mono font-bold border border-black/10 dark:border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.4)]">
               ⌘K
             </kbd>
           </button>
 
-          {/* Theme Toggle */}
+          {/* Theme Switcher Button */}
           <button
-            onClick={toggleDark}
-            aria-label="Toggle theme"
-            className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            onClick={handleToggleDark}
+            aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
+            className="w-9 h-9 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 hover:bg-[#F5F2EA] dark:hover:bg-[#1E2018] text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5]/80 dark:border-white/12 shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,1),0_2px_8px_rgba(37,39,34,0.04)] dark:shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.2),0_4px_14px_rgba(0,0,0,0.4)] hover:scale-110 active:scale-95 transition-all cursor-pointer flex items-center justify-center shrink-0"
+            title={dark ? "Switch to light theme" : "Switch to dark theme"}
           >
-            {dark ? <FaSun className="text-amber-400 text-sm" /> : <FaMoon className="text-slate-600 text-sm" />}
+            <motion.div
+              initial={false}
+              animate={{ rotate: dark ? 180 : 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              {dark ? <Sun className="w-4 h-4 text-[#C1A17F]" /> : <Moon className="w-4 h-4 text-[#777C62]" />}
+            </motion.div>
           </button>
 
-          {/* Resume PDF Download */}
+          {/* Resume Download CTA Button */}
           <a
             href="/Adhi_Vignesh_Resume.pdf"
             download="Adhi_Vignesh_Resume.pdf"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:hover:bg-slate-100 text-white dark:text-slate-900 text-xs font-semibold tracking-wide border border-slate-700/40 dark:border-slate-200 shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer"
+            onClick={() => { try { playClickSound(); } catch (e) {} }}
+            className="btn-primary text-xs !py-1.5 !px-4 shrink-0 inline-flex items-center gap-1.5 shadow-md"
           >
-            <FaDownload className="text-xs text-indigo-400 dark:text-indigo-600 shrink-0" /> Resume
+            <Download className="w-3.5 h-3.5 text-[#ADB293] dark:text-[#777C62] shrink-0" />
+            <span>Resume</span>
           </a>
         </div>
 
-        {/* Mobile Menu Toggle */}
-        <div className="flex md:hidden items-center gap-2">
+        {/* Mobile / Tablet Controls (< 1024px) */}
+        <div className="flex lg:hidden items-center gap-2 shrink-0">
           <button
-            onClick={onOpenCmdK}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300"
+            onClick={handleOpenSearch}
+            className="p-2 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 text-[#68675F] dark:text-[#C0BFB3] border border-[#D8D1C5]/80 dark:border-white/12 shadow-sm"
+            aria-label="Search"
           >
-            <FaSearch size={14} />
+            <Search className="w-3.5 h-3.5" />
           </button>
 
           <button
-            onClick={toggleDark}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300"
+            onClick={handleToggleDark}
+            className="p-2 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5]/80 dark:border-white/12 shadow-sm"
+            aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
           >
-            {dark ? <FaSun size={16} /> : <FaMoon size={16} />}
+            {dark ? <Sun className="w-3.5 h-3.5 text-[#C1A17F]" /> : <Moon className="w-3.5 h-3.5 text-[#777C62]" />}
           </button>
 
           <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200"
-            aria-label="Toggle menu"
+            onClick={() => {
+              try { playClickSound(); } catch (e) {}
+              setMenuOpen(!menuOpen);
+            }}
+            className="p-2 rounded-full btn-venom !p-2 transition-all"
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
           >
-            {menuOpen ? <FaTimes size={18} /> : <FaBars size={18} />}
+            {menuOpen ? <X className="w-3.5 h-3.5" /> : <Menu className="w-3.5 h-3.5" />}
           </button>
         </div>
 
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 px-6 py-4 flex flex-col gap-2 shadow-lg">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-900"
-            >
-              {link.name}
-            </a>
-          ))}
-          <a
-            href="/Adhi_Vignesh_Resume.pdf"
-            download="Adhi_Vignesh_Resume.pdf"
-            className="mt-2 text-center py-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-semibold tracking-wide border border-slate-800 dark:border-slate-200"
+      {/* Mobile Drawer */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.22, ease: "easeInOut" }}
+            className="lg:hidden mt-2 max-w-6xl mx-auto rounded-3xl bg-[#FFFDF9]/95 dark:bg-[#181914]/95 backdrop-blur-2xl border border-[#D8D1C5] dark:border-[#383A2F] p-4 flex flex-col gap-2 shadow-xl pointer-events-auto overflow-hidden"
           >
-            Download Resume PDF
-          </a>
-        </div>
-      )}
+            <div className="grid grid-cols-2 gap-1.5 pb-2">
+              {navLinks.map((link) => {
+                const isActive = activeSection === link.id;
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={handleLinkClick}
+                    className={`px-3 py-2 rounded-xl text-xs font-medium flex items-center justify-between transition-colors ${
+                      isActive 
+                        ? "pill-venom-active font-bold shadow-xs text-white" 
+                        : "pill-venom-inactive hover:bg-[#E3DDD1] dark:hover:bg-[#2C2E25]"
+                    }`}
+                  >
+                    <span>{link.name}</span>
+                  </a>
+                );
+              })}
+            </div>
+
+            {/* Mobile Resume CTA */}
+            <a
+              href="/Adhi_Vignesh_Resume.pdf"
+              download="Adhi_Vignesh_Resume.pdf"
+              onClick={handleLinkClick}
+              className="btn-primary w-full !py-2.5 !rounded-full text-xs font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all cursor-pointer"
+            >
+              <Download className="w-3.5 h-3.5 text-[#ADB293] dark:text-[#777C62]" />
+              <span>Download Official Resume (PDF)</span>
+              <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };

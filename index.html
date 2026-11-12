@@ -7,8 +7,9 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <meta name="description" content="Portfolio of Adhi Vignesh - Computer Science & AI/ML Undergraduate, Full-Stack Developer specializing in React, Node.js, Python, Machine Learning, and Cloud APIs." />
     <meta name="keywords" content="Adhi Vignesh, Full-Stack Developer, AI ML Engineer, React, Node.js, Python, Sashverse Technologies, Portfolio" />
@@ -19,18 +20,43 @@
     <meta property="og:title" content="Adhi Vignesh | Full-Stack Developer & AI/ML Engineer" />
     <meta property="og:description" content="Explore production SaaS apps, AI/ML models, interactive technical sandboxes, and software engineering projects by Adhi Vignesh." />
     <meta property="og:site_name" content="Adhi Vignesh Portfolio" />
+    <meta property="og:image" content="/apple-touch-icon.png" />
+    <meta property="og:image:alt" content="Adhi Vignesh - Full-Stack Developer & AI/ML Engineer" />
 
     <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Adhi Vignesh | Full-Stack Developer & AI/ML Engineer" />
-    <meta name="twitter:description" content="Explore production SaaS apps, AI/ML models, interactive technical sandboxes, and software engineering projects by Adhi Vignesh." />
+    <meta name="twitter:description" content="Explore production SaaS apps, AI/ML recommendation engines, and full-stack software systems by Adhi Vignesh." />
+    <meta name="twitter:image" content="/apple-touch-icon.png" />
 
-    <!-- Fonts -->
+    <!-- Mobile Theme Color -->
+    <meta name="theme-color" content="#F5F2EB" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1C1D19" media="(prefers-color-scheme: dark)" />
+
+    <!-- Fonts: Premium Editorial Typography (Manrope for Headings, Inter for Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Initial Theme Detection (Prevents Theme Flash, Default Light) -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-indigo-500/20 selection:text-indigo-900 dark:selection:text-indigo-200 font-sans">
+  <body class="bg-[#F5F2EB] text-[#252722] dark:bg-[#1C1D19] dark:text-[#F5F2EB] antialiased selection:bg-[#777C62]/20 selection:text-[#252722] dark:selection:bg-[#ADB293]/25 dark:selection:text-[#F5F2EB] font-sans">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>

@@ -131,11 +131,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 bg-slate-50 dark:bg-slate-950 border-t border-slate-200/60 dark:border-slate-800/60 relative overflow-hidden font-sans">
+    <section id="contact" className="py-24 px-6 bg-[var(--bg-page)] border-t border-[var(--border-color)] relative overflow-hidden font-sans">
       
       {/* Background Radial Glow */}
-      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[600px] h-[380px] bg-indigo-500/5 blur-[150px] pointer-events-none rounded-full" />
-      <div className="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[600px] h-[380px] bg-[#777C62]/5 dark:bg-[#ADB293]/5 blur-[150px] pointer-events-none rounded-full" />
+      <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10 space-y-10">
         
@@ -145,29 +145,29 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="pb-6 border-b border-slate-200/80 dark:border-slate-800/80 flex flex-col md:flex-row md:items-end justify-between gap-4"
+          className="pb-6 border-b border-[var(--border-color)] flex flex-col md:flex-row md:items-end justify-between gap-4"
         >
           <div>
-            <span className="tech-label px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 inline-block mb-3">
+            <span className="pro-badge-olive inline-block mb-3">
               GET IN TOUCH
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold font-display text-[var(--text-primary)] tracking-tight">
               Contact & Engineering Collaboration Hub
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">
+            <p className="text-xs sm:text-sm text-[var(--text-secondary)] mt-2 font-medium">
               Open for full-stack software engineering, AI/ML development roles, and high-impact technical projects
             </p>
           </div>
 
           {/* Live Availability Status Pill */}
-          <div className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-2xs flex items-center gap-2.5 shrink-0">
+          <div className="p-3 rounded-2xl bg-[var(--surface-primary)] border border-[var(--border-color)] shadow-xs flex items-center gap-2.5 shrink-0">
             <span className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent-primary)] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-[var(--accent-primary)]"></span>
             </span>
             <div>
-              <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider block leading-none">AVAILABILITY</span>
-              <span className="text-xs font-extrabold text-slate-900 dark:text-white leading-tight">Full-Stack & AI Roles (Q3/Q4)</span>
+              <span className="text-[10px] font-mono font-bold text-[var(--text-secondary)] uppercase tracking-wider block leading-none">AVAILABILITY</span>
+              <span className="text-xs font-bold text-[var(--text-primary)] leading-tight">Full-Stack & AI Roles (Q3/Q4)</span>
             </div>
           </div>
         </motion.div>
@@ -181,88 +181,90 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5 p-6 md:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-2xs flex flex-col justify-between space-y-6"
+            className="lg:col-span-5 p-6 md:p-8 rounded-3xl bg-[var(--surface-primary)] border border-[var(--border-color)] shadow-xs flex flex-col justify-between space-y-6"
           >
             <div>
-              <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-2">Let's connect</h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+              <h3 className="text-2xl font-bold font-display text-[var(--text-primary)] tracking-tight mb-2">Let's connect</h3>
+              <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-6 font-medium">
                 Actively seeking Full-Stack & AI/ML engineering opportunities. Reach out via email, phone, or message form.
               </p>
 
               <div className="space-y-3">
                 {/* Email Item */}
-                <div className="p-4 rounded-2xl bg-slate-50/80 dark:bg-slate-950/80 border border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="p-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-100 dark:border-indigo-900/60 text-indigo-600 dark:text-indigo-400">
+                <div className="p-3.5 sm:p-4 rounded-2xl bg-[var(--surface-secondary)] border border-[var(--border-color)] flex items-center justify-between gap-2.5">
+                  <div className="flex items-center gap-3 min-w-0 flex-1">
+                    <div className="p-2.5 sm:p-3 rounded-xl bg-[var(--surface-primary)] border border-[var(--border-color)] text-[var(--accent-primary)] shrink-0">
                       <FaEnvelope size={16} />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-mono">PRIMARY EMAIL</span>
-                      <span className="text-xs font-semibold text-slate-900 dark:text-white font-mono">vigneshadhi773@gmail.com</span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="text-[10px] font-bold text-[var(--text-secondary)] uppercase tracking-wider font-mono">PRIMARY EMAIL</span>
+                      <span className="text-[11px] sm:text-xs font-semibold text-[var(--text-primary)] font-mono truncate">vigneshadhi773@gmail.com</span>
                     </div>
                   </div>
                   <button
                     onClick={handleCopyEmail}
-                    className="p-2.5 rounded-xl bg-white dark:bg-slate-900 text-slate-500 hover:text-indigo-600 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer"
+                    className="p-2.5 rounded-full bg-[var(--surface-primary)] text-[var(--text-secondary)] hover:text-[var(--accent-primary)] border border-[var(--border-color)] shadow-[0_1px_2px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,0.8)] dark:shadow-none hover:border-[var(--accent-primary)] transition-all cursor-pointer shrink-0"
                     title="Copy Email"
                   >
-                    {copiedEmail ? <FaCheck className="text-emerald-500 text-xs" /> : <FaCopy className="text-xs" />}
+                    {copiedEmail ? <FaCheck className="text-[var(--accent-primary)] text-xs" /> : <FaCopy className="text-xs" />}
                   </button>
                 </div>
 
                 {/* Phone Item */}
-                <div className="p-4 rounded-2xl bg-slate-50/80 dark:bg-slate-950/80 border border-slate-200/60 dark:border-slate-800/60 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="p-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-100 dark:border-indigo-900/60 text-indigo-600 dark:text-indigo-400">
+                <div className="p-3.5 sm:p-4 rounded-2xl bg-[var(--surface-secondary)] border border-[var(--border-color)] flex items-center justify-between gap-2.5">
+                  <div className="flex items-center gap-3 min-w-0 flex-1">
+                    <div className="p-2.5 sm:p-3 rounded-xl bg-[var(--surface-primary)] border border-[var(--border-color)] text-[var(--accent-primary)] shrink-0">
                       <FaPhoneAlt size={16} />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-mono">PHONE / WHATSAPP</span>
-                      <span className="text-xs font-semibold text-slate-900 dark:text-white font-mono">+91 79899 49808</span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="text-[10px] font-bold text-[var(--text-secondary)] uppercase tracking-wider font-mono">PHONE / WHATSAPP</span>
+                      <span className="text-xs font-semibold text-[var(--text-primary)] font-mono truncate">+91 79899 49808</span>
                     </div>
                   </div>
                   <button
                     onClick={handleCopyPhone}
-                    className="p-2.5 rounded-xl bg-white dark:bg-slate-900 text-slate-500 hover:text-indigo-600 border border-slate-200 dark:border-slate-800 transition-colors cursor-pointer"
+                    className="p-2.5 rounded-full bg-[var(--surface-primary)] text-[var(--text-secondary)] hover:text-[var(--accent-primary)] border border-[var(--border-color)] shadow-[0_1px_2px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,0.8)] dark:shadow-none hover:border-[var(--accent-primary)] transition-all cursor-pointer shrink-0"
                     title="Copy Phone"
                   >
-                    {copiedPhone ? <FaCheck className="text-emerald-500 text-xs" /> : <FaCopy className="text-xs" />}
+                    {copiedPhone ? <FaCheck className="text-[var(--accent-primary)] text-xs" /> : <FaCopy className="text-xs" />}
                   </button>
                 </div>
 
                 {/* Location Item */}
-                <div className="p-4 rounded-2xl bg-slate-50/80 dark:bg-slate-950/80 border border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
-                  <div className="p-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 border border-indigo-100 dark:border-indigo-900/60 text-indigo-600 dark:text-indigo-400">
+                <div className="p-4 rounded-2xl bg-[var(--surface-secondary)] border border-[var(--border-color)] flex items-center gap-3">
+                  <div className="p-3 rounded-xl bg-[var(--surface-primary)] border border-[var(--border-color)] text-[var(--accent-primary)]">
                     <FaMapMarkerAlt size={16} />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-mono">LOCATION</span>
-                    <span className="text-xs font-semibold text-slate-900 dark:text-white">Hyderabad, Telangana, India</span>
+                    <span className="text-[10px] font-bold text-[var(--text-secondary)] uppercase tracking-wider font-mono">LOCATION</span>
+                    <span className="text-xs font-semibold text-[var(--text-primary)]">Hyderabad, Telangana, India</span>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Social Links & Resume Download */}
-            <div className="pt-6 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
-              <div className="flex gap-2">
+            <div className="pt-6 border-t border-[var(--border-color)] flex flex-wrap items-center justify-between gap-3">
+              <div className="flex gap-2.5">
                 <a
                   href="https://linkedin.com/in/adhi-vignesh-342431289"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-slate-700 transition-colors"
+                  className="btn-venom-icon group"
                   aria-label="LinkedIn"
+                  title="LinkedIn Profile"
                 >
-                  <FaLinkedin size={18} />
+                  <FaLinkedin size={18} className="group-hover:text-[#0A66C2] group-hover:drop-shadow-[0_0_8px_rgba(10,102,194,0.7)] transition-all" />
                 </a>
                 <a
                   href="https://github.com/VIGNESH79899"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 hover:text-indigo-600 dark:hover:bg-slate-700 transition-colors"
+                  className="btn-venom-icon group"
                   aria-label="GitHub"
+                  title="GitHub Profile"
                 >
-                  <FaGithub size={18} />
+                  <FaGithub size={18} className="group-hover:text-white group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)] transition-all" />
                 </a>
               </div>
 
@@ -270,7 +272,7 @@ const Contact = () => {
                 href="/Adhi_Vignesh_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-mono text-xs font-bold hover:bg-indigo-600 hover:text-white transition-all flex items-center gap-2 cursor-pointer shadow-xs"
+                className="btn-secondary text-xs flex items-center gap-2"
               >
                 <FaFileDownload /> Resume PDF
               </a>
@@ -284,12 +286,12 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-7 p-6 md:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-2xs flex flex-col gap-5"
+            className="lg:col-span-7 p-6 md:p-8 rounded-3xl bg-[var(--surface-primary)] border border-[var(--border-color)] shadow-xs flex flex-col gap-5"
           >
             {/* Inquiry Role Selector Pills */}
             <div>
-              <label className="block text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider mb-2">SELECT INQUIRY TYPE</label>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <label className="block text-[10px] font-mono font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2.5">SELECT INQUIRY TYPE</label>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5">
                 {roleOptions.map((roleObj) => {
                   const IconComp = roleObj.icon;
                   const isSelected = selectedRole === roleObj.id;
@@ -298,14 +300,14 @@ const Contact = () => {
                       key={roleObj.id}
                       type="button"
                       onClick={() => handleSelectRole(roleObj)}
-                      className={`p-2.5 rounded-xl text-xs font-mono font-semibold transition-all duration-200 flex flex-col items-center gap-1.5 cursor-pointer border ${
+                      className={`p-2.5 sm:p-3 rounded-2xl text-xs font-heading font-semibold transition-all duration-200 flex flex-col items-center gap-1.5 sm:gap-2 cursor-pointer select-none ${
                         isSelected
-                          ? "bg-indigo-600 text-white border-indigo-600 shadow-2xs font-bold"
-                          : "bg-slate-50 dark:bg-slate-950 text-slate-600 dark:text-slate-400 border-slate-200/80 dark:border-slate-800 hover:border-indigo-400"
+                          ? "pill-venom-active"
+                          : "pill-venom-inactive"
                       }`}
                     >
-                      <IconComp className="text-sm" />
-                      <span className="text-[11px] whitespace-nowrap">{roleObj.label}</span>
+                      <IconComp className={`text-base transition-colors ${isSelected ? "text-white" : "text-[var(--accent-primary)]"}`} />
+                      <span className="text-[11px] text-center leading-tight sm:whitespace-nowrap tracking-tight">{roleObj.label}</span>
                     </button>
                   );
                 })}
@@ -314,7 +316,7 @@ const Contact = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5 uppercase text-[10px] tracking-wider font-mono">YOUR NAME *</label>
+                <label className="block text-xs font-semibold text-[var(--text-secondary)] mb-1.5 uppercase text-[10px] tracking-wider font-mono">YOUR NAME *</label>
                 <input
                   type="text"
                   name="name"
@@ -322,12 +324,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-hidden focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all font-sans"
+                  className="w-full p-3.5 rounded-xl bg-[var(--surface-primary)] border border-[var(--border-color)] text-xs text-[var(--text-primary)] placeholder-[var(--text-secondary)]/50 shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)] focus:outline-hidden focus:border-[var(--accent-primary)] focus:ring-2 focus:ring-[var(--accent-primary)]/20 transition-all font-sans"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5 uppercase text-[10px] tracking-wider font-mono">YOUR EMAIL *</label>
+                <label className="block text-xs font-semibold text-[var(--text-secondary)] mb-1.5 uppercase text-[10px] tracking-wider font-mono">YOUR EMAIL *</label>
                 <input
                   type="email"
                   name="email"
@@ -335,13 +337,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-hidden focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all font-sans"
+                  className="w-full p-3.5 rounded-xl bg-[var(--surface-primary)] border border-[var(--border-color)] text-xs text-[var(--text-primary)] placeholder-[var(--text-secondary)]/50 shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)] focus:outline-hidden focus:border-[var(--accent-primary)] focus:ring-2 focus:ring-[var(--accent-primary)]/20 transition-all font-sans"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5 uppercase text-[10px] tracking-wider font-mono">SUBJECT *</label>
+              <label className="block text-xs font-semibold text-[var(--text-secondary)] mb-1.5 uppercase text-[10px] tracking-wider font-mono">SUBJECT *</label>
               <input
                 type="text"
                 name="subject"
@@ -349,12 +351,12 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-hidden focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all font-sans"
+                className="w-full p-3.5 rounded-xl bg-[var(--surface-primary)] border border-[var(--border-color)] text-xs text-[var(--text-primary)] placeholder-[var(--text-secondary)]/50 shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)] focus:outline-hidden focus:border-[var(--accent-primary)] focus:ring-2 focus:ring-[var(--accent-primary)]/20 transition-all font-sans"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5 uppercase text-[10px] tracking-wider font-mono">MESSAGE *</label>
+              <label className="block text-xs font-semibold text-[var(--text-secondary)] mb-1.5 uppercase text-[10px] tracking-wider font-mono">MESSAGE *</label>
               <textarea
                 name="message"
                 placeholder="Write your message here..."
@@ -362,22 +364,22 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows="4"
-                className="w-full p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-hidden focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all font-sans"
+                className="w-full p-3.5 rounded-xl bg-[var(--surface-primary)] border border-[var(--border-color)] text-xs text-[var(--text-primary)] placeholder-[var(--text-secondary)]/50 shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)] focus:outline-hidden focus:border-[var(--accent-primary)] focus:ring-2 focus:ring-[var(--accent-primary)]/20 transition-all font-sans"
               ></textarea>
             </div>
 
             <motion.button
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
+              whileHover={{ scale: 1.01, y: -2 }}
+              whileTap={{ scale: 0.97 }}
               type="submit"
               disabled={status === "loading"}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs shadow-sm transition-all disabled:opacity-50 mt-1 cursor-pointer"
+              className="btn-primary w-full !py-4 !px-8 text-sm !font-bold tracking-tight shadow-xl cursor-pointer"
             >
               {status === "loading" ? (
                 <span>Sending Message...</span>
               ) : (
                 <>
-                  <FaPaperPlane className="text-xs" /> Send Message
+                  <FaPaperPlane className="text-xs" /> <span>Send Message</span>
                 </>
               )}
             </motion.button>
@@ -386,12 +388,12 @@ const Contact = () => {
               <motion.div
                 initial={{ opacity: 0, y: 5 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="p-4 rounded-xl bg-emerald-50 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-200 text-xs font-medium border border-emerald-200 dark:border-emerald-800 space-y-1"
+                className="p-4 rounded-xl bg-[var(--surface-secondary)] text-[var(--text-primary)] text-xs font-medium border border-[var(--accent-primary)] space-y-1"
               >
-                <div className="flex items-center gap-2 font-bold text-emerald-700 dark:text-emerald-300">
-                  <FaCheckCircle className="text-emerald-500" /> Message Sent Successfully!
+                <div className="flex items-center gap-2 font-bold text-[var(--accent-primary)]">
+                  <FaCheckCircle className="text-[var(--accent-primary)]" /> Message Sent Successfully!
                 </div>
-                <p>{statusMsg}</p>
+                <p className="text-[var(--text-secondary)]">{statusMsg}</p>
               </motion.div>
             )}
 
@@ -399,15 +401,15 @@ const Contact = () => {
               <motion.div
                 initial={{ opacity: 0, y: 5 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="p-4 rounded-xl bg-rose-50 text-rose-800 dark:bg-rose-950/80 dark:text-rose-200 text-xs font-medium border border-rose-200 dark:border-rose-800 space-y-2"
+                className="p-4 rounded-xl bg-[var(--surface-secondary)] text-[var(--text-primary)] text-xs font-medium border border-rose-300 dark:border-rose-800 space-y-2"
               >
-                <div className="flex items-center gap-2 font-bold text-rose-700 dark:text-rose-300">
+                <div className="flex items-center gap-2 font-bold text-rose-600 dark:text-rose-400">
                   <FaExclamationTriangle className="text-rose-500" /> {statusMsg}
                 </div>
                 <button
                   type="button"
                   onClick={handleOpenMailClient}
-                  className="px-3 py-1.5 rounded-lg bg-rose-600 text-white font-mono text-xs font-bold flex items-center gap-1.5 cursor-pointer"
+                  className="btn-primary text-xs !py-1.5 !px-3 font-semibold flex items-center gap-1.5 cursor-pointer"
                 >
                   Draft in Mail Client <FaExternalLinkAlt className="text-[10px]" />
                 </button>

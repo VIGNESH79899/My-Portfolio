@@ -26,7 +26,7 @@ const ParticleCursorTrail = () => {
           x: e.clientX + (Math.random() - 0.5) * 8,
           y: e.clientY + (Math.random() - 0.5) * 8,
           size: Math.random() * 3.5 + 1.5,
-          color: `hsl(${220 + Math.random() * 50}, 85%, 65%)`,
+          color: Math.random() > 0.5 ? 'rgba(119, 124, 98, 0.7)' : 'rgba(140, 114, 88, 0.7)',
           vx: (Math.random() - 0.5) * 1.5,
           vy: (Math.random() - 0.5) * 1.5 - 0.5,
           life: 1.0,

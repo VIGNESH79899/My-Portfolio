@@ -276,31 +276,30 @@ const MusicPlayer = () => {
         )}
       </AnimatePresence>
 
-      {/* Floating Bottom Left Jukebox Controller Button */}
+      {/* Floating Bottom Left Audio Controller Pill */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 font-sans max-w-[calc(100vw-24px)]"
+        className="fixed bottom-5 left-5 z-40 font-sans max-w-[calc(100vw-24px)]"
       >
         <button
           ref={buttonRef}
           onClick={() => { try { playClickSound(); } catch (e) {} setIsOpen(!isOpen); }}
-          className="inline-flex items-center gap-2.5 sm:gap-3 px-3.5 sm:px-4 py-2.5 rounded-full bg-slate-900/95 hover:bg-slate-950 text-white border border-slate-700/80 shadow-2xl backdrop-blur-md transition-all group cursor-pointer"
+          className="btn-venom group inline-flex items-center gap-2.5 !py-2 !px-4 shadow-2xl cursor-pointer"
         >
-          <span className="p-2 rounded-full bg-emerald-500 text-slate-950 text-xs font-bold animate-pulse">
-            <FaMusic />
-          </span>
-
-          <div className="text-left hidden sm:block">
-            <span className="text-[10px] text-emerald-400 font-mono font-bold uppercase tracking-wider block">
-              Adhi's Favorite Songs Jukebox
-            </span>
-            <span className="text-xs font-bold text-slate-100 max-w-[140px] truncate block font-sans">
-              #{currentTrackIndex + 1} {currentTrack.title}
-            </span>
+          {/* Animated Equalizer Waves */}
+          <div className="flex items-end gap-0.5 h-3 px-0.5">
+            <span className="w-0.5 h-3 bg-emerald-400 dark:bg-emerald-300 rounded-full animate-[pulse_1s_ease-in-out_infinite] shadow-[0_0_6px_rgba(52,211,153,0.8)]" />
+            <span className="w-0.5 h-2 bg-emerald-400 dark:bg-emerald-300 rounded-full animate-[pulse_1.4s_ease-in-out_infinite_delay-150] shadow-[0_0_6px_rgba(52,211,153,0.8)]" />
+            <span className="w-0.5 h-2.5 bg-emerald-400 dark:bg-emerald-300 rounded-full animate-[pulse_0.8s_ease-in-out_infinite_delay-300] shadow-[0_0_6px_rgba(52,211,153,0.8)]" />
           </div>
 
-          <FaMusic className="text-xs text-slate-400 group-hover:text-emerald-400 transition-colors" />
+          <div className="text-left hidden sm:flex items-center gap-1.5 font-mono text-[11px]">
+            <span className="text-[#ADB293] font-bold">#{currentTrackIndex + 1}</span>
+            <span className="text-white font-semibold max-w-[130px] truncate font-sans text-xs">
+              {currentTrack.title}
+            </span>
+          </div>
         </button>
       </motion.div>
 
@@ -313,33 +312,33 @@ const MusicPlayer = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.25 }}
-            className="fixed bottom-16 sm:bottom-20 left-4 sm:left-6 z-50 w-[calc(100vw-32px)] sm:w-[410px] max-w-[410px] bg-slate-950 text-white rounded-3xl border border-slate-800 shadow-2xl p-4 sm:p-6 overflow-hidden backdrop-blur-xl font-sans max-h-[82vh] flex flex-col"
+            className="fixed bottom-16 sm:bottom-20 left-4 sm:left-6 z-50 w-[calc(100vw-32px)] sm:w-[410px] max-w-[410px] bg-[#1C1D19] text-[#F5F2EB] rounded-3xl border border-[#414239] shadow-2xl p-4 sm:p-6 overflow-hidden font-sans max-h-[82vh] flex flex-col"
           >
             {/* Header */}
-            <div className="flex items-center justify-between pb-3 mb-4 border-b border-slate-800">
-              <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs font-mono">
+            <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#414239]">
+              <div className="flex items-center gap-2 text-[#ADB293] font-bold text-xs font-mono">
                 <FaMusic className="text-base" /> Adhi's Favorite Playlist Jukebox
               </div>
 
               <button
                 onClick={() => { try { playClickSound(); } catch (e) {} setIsOpen(false); }}
-                className="p-1.5 rounded-full hover:bg-slate-800 text-slate-400 hover:text-white transition-colors cursor-pointer"
+                className="p-1.5 rounded-full hover:bg-[#252620] text-[#C0BFB3] hover:text-[#F5F2EB] transition-colors cursor-pointer"
               >
                 <FaTimes size={14} />
               </button>
             </div>
 
             {/* Current track */}
-            <div className="p-4 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 border border-slate-800 mb-4 shadow-lg">
+            <div className="p-4 rounded-2xl bg-[#252620] border border-[#414239] mb-4 shadow-md">
               <div className="flex items-start justify-between gap-3 mb-3">
                 <div className="min-w-0">
-                  <span className="text-[10px] text-emerald-400 font-mono font-bold uppercase tracking-wider block">
+                  <span className="text-[10px] text-[#ADB293] font-mono font-bold uppercase tracking-wider block">
                     OFFICIAL TRACK #{currentTrackIndex + 1} OF {playlist.length}
                   </span>
-                  <h4 className="text-sm font-extrabold text-white truncate">{currentTrack.title}</h4>
-                  <p className="text-xs text-slate-400 truncate">{currentTrack.artist}</p>
+                  <h4 className="text-sm font-bold font-display text-[#F5F2EB] truncate">{currentTrack.title}</h4>
+                  <p className="text-xs text-[#C0BFB3] truncate">{currentTrack.artist}</p>
                 </div>
-                <span className="text-[10px] font-mono text-slate-400 shrink-0">{currentTrack.duration}</span>
+                <span className="text-[10px] font-mono text-[#C0BFB3] shrink-0">{currentTrack.duration}</span>
               </div>
 
               {/* Spotify Official Stream Player */}
@@ -361,7 +360,7 @@ const MusicPlayer = () => {
                   controls
                   preload="metadata"
                   onError={() => setIsLocalTrackAvailable(false)}
-                  className="mb-3 h-10 w-full accent-emerald-500"
+                  className="mb-3 h-10 w-full accent-[#777C62]"
                 >
                   <source src={getLocalAudioUrl(currentTrack)} type="audio/mpeg" />
                   Your browser does not support audio playback.
@@ -371,28 +370,28 @@ const MusicPlayer = () => {
                   href={getSpotifyUrl(currentTrack)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mb-3 flex items-center justify-between rounded-xl border border-slate-700 bg-slate-900 px-3 py-3 text-xs text-slate-300 hover:border-emerald-500 hover:text-white transition-colors"
+                  className="mb-3 flex items-center justify-between rounded-xl border border-[#414239] bg-[#1C1D19] px-3 py-3 text-xs text-[#C0BFB3] hover:border-[#ADB293] hover:text-[#F5F2EB] transition-colors"
                 >
                   Listen to the official track on Spotify
-                  <FaExternalLinkAlt className="text-emerald-400" />
+                  <FaExternalLinkAlt className="text-[#ADB293]" />
                 </a>
               )}
 
               <div className="flex items-center justify-between">
                 <button
                   onClick={handlePrev}
-                  className="p-2 rounded-full hover:bg-slate-800 text-slate-300 hover:text-white transition-all cursor-pointer"
+                  className="p-2 rounded-full hover:bg-[#303129] text-[#C0BFB3] hover:text-[#F5F2EB] transition-all cursor-pointer"
                   title="Previous track"
                 >
                   <FaStepBackward size={14} />
                 </button>
-                <span className="text-[10px] font-mono text-slate-400 font-semibold">
+                <span className="text-[10px] font-mono text-[#C0BFB3] font-semibold">
                   Official Spotify Stream
                 </span>
                 <div className="flex items-center gap-2">
                   <button
                     onClick={handleNext}
-                    className="p-2 rounded-full hover:bg-slate-800 text-slate-300 hover:text-white transition-all cursor-pointer"
+                    className="p-2 rounded-full hover:bg-[#303129] text-[#C0BFB3] hover:text-[#F5F2EB] transition-all cursor-pointer"
                     title="Next track"
                   >
                     <FaStepForward size={14} />
@@ -401,7 +400,7 @@ const MusicPlayer = () => {
                     href={getSpotifyUrl(currentTrack)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-400 transition-all text-xs"
+                    className="p-2 rounded-xl bg-[#303129] hover:bg-[#36372E] text-[#ADB293] transition-all text-xs"
                     title="Open on Spotify"
                   >
                     <FaExternalLinkAlt />
@@ -411,20 +410,20 @@ const MusicPlayer = () => {
 
             </div>
 
-            <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 mb-3 text-[10px] font-mono text-slate-400 flex items-center justify-between">
+            <div className="p-3 rounded-xl bg-[#252620] border border-[#414239] mb-3 text-[10px] font-mono text-[#C0BFB3] flex items-center justify-between">
               <span>{isLocalTrackAvailable ? 'Full local audio ready.' : 'Spotify preview active.'}</span>
-              <span className="text-emerald-400 font-bold">15 tracks</span>
+              <span className="text-[#ADB293] font-bold">15 tracks</span>
             </div>
 
             {/* Playlist Search Filter */}
             <div className="relative mb-3">
-              <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-xs" />
+              <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#68675F] text-xs" />
               <input
                 type="text"
                 placeholder="Search Adhi's 15 favorite songs..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 focus:outline-hidden focus:border-emerald-500 font-mono"
+                className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-[#252620] border border-[#414239] text-xs text-[#F5F2EB] placeholder-[#68675F] focus:outline-hidden focus:border-[#ADB293] font-mono"
               />
             </div>
 
@@ -440,24 +439,24 @@ const MusicPlayer = () => {
                     onClick={() => selectTrack(playlist.findIndex((p) => p.id === song.id))}
                     className={`p-2.5 rounded-xl flex items-center justify-between cursor-pointer transition-all ${
                       isSelected
-                        ? "bg-emerald-950/80 border border-emerald-800 text-white font-bold"
-                        : "hover:bg-slate-900/80 text-slate-300"
+                        ? "bg-[#303129] border border-[#777C62] text-[#F5F2EB] font-bold"
+                        : "hover:bg-[#252620] text-[#C0BFB3]"
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-[11px] font-mono font-bold text-slate-400 w-6 text-right shrink-0">
+                      <span className="text-[11px] font-mono font-bold text-[#68675F] w-6 text-right shrink-0">
                         #{trackNumber}
                       </span>
-                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-slate-800 bg-slate-950 text-emerald-400">
+                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-[#414239] bg-[#1C1D19] text-[#ADB293]">
                         <FaMusic className="text-xs" aria-hidden="true" />
                       </span>
                       <div className="min-w-0">
-                        <h5 className="text-xs font-bold text-slate-200 line-clamp-1">{song.title}</h5>
-                        <p className="text-[10px] text-slate-400 line-clamp-1">{song.artist}</p>
+                        <h5 className="text-xs font-bold text-[#F5F2EB] line-clamp-1">{song.title}</h5>
+                        <p className="text-[10px] text-[#C0BFB3] line-clamp-1">{song.artist}</p>
                       </div>
                     </div>
 
-                    <span className="text-[10px] font-mono text-slate-500 shrink-0 ml-2">{song.duration}</span>
+                    <span className="text-[10px] font-mono text-[#68675F] shrink-0 ml-2">{song.duration}</span>
                   </div>
                 );
               })}

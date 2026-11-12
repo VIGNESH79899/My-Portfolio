@@ -77,13 +77,13 @@ const ThreeMeshCanvas = () => {
 
           // Draw Glowing Nodes at intersections near mouse
           if (distToMouse < 220) {
-            ctx.fillStyle = `rgba(129, 140, 248, ${0.4 - distToMouse / 550})`;
+            ctx.fillStyle = `rgba(119, 124, 98, ${0.4 - distToMouse / 550})`;
             ctx.beginPath();
             ctx.arc(projX, projY, 2, 0, Math.PI * 2);
             ctx.fill();
           }
         }
-        ctx.strokeStyle = `rgba(99, 102, 241, ${0.07 + (r / rows) * 0.12})`;
+        ctx.strokeStyle = `rgba(119, 124, 98, ${0.07 + (r / rows) * 0.12})`;
         ctx.stroke();
       }
 
@@ -109,7 +109,7 @@ const ThreeMeshCanvas = () => {
             ctx.lineTo(projX, projY);
           }
         }
-        ctx.strokeStyle = `rgba(147, 51, 234, 0.06)`;
+        ctx.strokeStyle = `rgba(140, 114, 88, 0.06)`;
         ctx.stroke();
       }
 

@@ -21,7 +21,7 @@ const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 p-3 rounded-xl bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-800 shadow-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:scale-105 z-50 cursor-pointer"
+      className="pill-venom-inactive !w-10 !h-10 rounded-full flex items-center justify-center cursor-pointer shadow-md active:scale-95 transition-all z-40 !fixed bottom-20 right-4 sm:bottom-24 sm:right-6"
       aria-label="Back to top"
     >
       <FaArrowUp size={14} />

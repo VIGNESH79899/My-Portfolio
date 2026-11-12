@@ -149,10 +149,10 @@ const techNodes = [
 ];
 
 const categoryColors = {
-  "Frontend": { badge: "bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800", node: "from-indigo-600 to-cyan-500" },
-  "Backend": { badge: "bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800", node: "from-emerald-600 to-teal-500" },
-  "AI / ML": { badge: "bg-purple-50 dark:bg-purple-950/80 text-purple-700 dark:text-purple-300 border-purple-200 dark:border-purple-800", node: "from-purple-600 to-violet-500" },
-  "Databases & Systems": { badge: "bg-amber-50 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800", node: "from-amber-600 to-blue-500" }
+  "Frontend": { badge: "bg-[#777C62]/10 text-[#777C62] dark:text-[#ADB293] border-[#777C62]/30", node: "from-[#777C62] to-[#8C7258]" },
+  "Backend": { badge: "bg-[#8C7258]/10 text-[#8C7258] dark:text-[#C1A17F] border-[#8C7258]/30", node: "from-[#8C7258] to-[#ADB293]" },
+  "AI / ML": { badge: "bg-[#777C62]/15 text-[#777C62] dark:text-[#ADB293] border-[#777C62]/40", node: "from-[#777C62] to-[#545943]" },
+  "Databases & Systems": { badge: "bg-[#8C7258]/15 text-[#8C7258] dark:text-[#C1A17F] border-[#8C7258]/40", node: "from-[#8C7258] to-[#777C62]" }
 };
 
 const TechRadar3D = () => {
@@ -191,22 +191,22 @@ const TechRadar3D = () => {
   const activeNode = techNodes.find(n => n.id === hoveredNodeId) || selectedNode;
 
   return (
-    <div className="my-14 rounded-3xl bg-white/90 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800/80 shadow-xs overflow-hidden relative font-sans">
+    <div className="my-14 rounded-3xl bg-[var(--surface-primary)] border border-[var(--border-color)] shadow-xs overflow-hidden relative font-sans">
       
       {/* Background Radial Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-indigo-500/5 blur-[160px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#777C62]/5 blur-[160px] pointer-events-none rounded-full" />
       <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
       {/* Header Bar */}
-      <div className="p-6 md:p-8 border-b border-slate-200/80 dark:border-slate-800/80 flex flex-col lg:flex-row lg:items-center justify-between gap-4 relative z-10">
+      <div className="p-6 md:p-8 border-b border-[var(--border-color)] flex flex-col lg:flex-row lg:items-center justify-between gap-4 relative z-10">
         <div>
-          <span className="tech-label px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 inline-block mb-2">
+          <span className="tech-label px-3 py-1 rounded-full bg-[#777C62]/10 text-[#777C62] dark:text-[#ADB293] border border-[#777C62]/30 inline-block mb-2 font-mono text-[10px] uppercase tracking-wider font-bold">
             3D TECH RADAR & ORBIT
           </span>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
-            <FaAtom className="text-indigo-600 dark:text-indigo-400 animate-spin-slow text-xl" /> Interactive 3D Tech Stack Orbit
+          <h3 className="text-2xl sm:text-3xl font-display font-bold text-[var(--text-primary)] tracking-tight flex items-center gap-2.5">
+            <FaAtom className="text-[#777C62] dark:text-[#ADB293] animate-spin-slow text-xl" /> Interactive 3D Tech Stack Orbit
           </h3>
-          <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 font-medium">
+          <p className="text-xs text-[var(--text-secondary)] mt-1 font-medium">
             Explore Adhi's core engineering skills, framework proficiencies, and verified portfolio usages
           </p>
         </div>
@@ -215,13 +215,13 @@ const TechRadar3D = () => {
         <div className="flex flex-wrap items-center gap-2 text-xs font-mono">
           
           {/* View Mode Switcher */}
-          <div className="p-1 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 flex items-center gap-1">
+          <div className="p-1 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-color)] flex items-center gap-1">
             <button
               onClick={() => { try { playClickSound(); } catch (e) {} setViewMode("orbit"); }}
               className={`px-3 py-1 rounded-lg transition-all flex items-center gap-1.5 cursor-pointer ${
                 viewMode === "orbit"
-                  ? "bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 font-bold shadow-xs"
-                  : "text-slate-500 hover:text-slate-900 dark:hover:text-white"
+                  ? "bg-[var(--surface-primary)] text-[var(--accent-primary)] font-bold shadow-xs"
+                  : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               }`}
             >
               <FaGlobe className="text-[10px]" /> 3D Orbit
@@ -230,8 +230,8 @@ const TechRadar3D = () => {
               onClick={() => { try { playClickSound(); } catch (e) {} setViewMode("grid"); }}
               className={`px-3 py-1 rounded-lg transition-all flex items-center gap-1.5 cursor-pointer ${
                 viewMode === "grid"
-                  ? "bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 font-bold shadow-xs"
-                  : "text-slate-500 hover:text-slate-900 dark:hover:text-white"
+                  ? "bg-[var(--surface-primary)] text-[var(--accent-primary)] font-bold shadow-xs"
+                  : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
               }`}
             >
               <FaThLarge className="text-[10px]" /> Tech Matrix
@@ -242,17 +242,17 @@ const TechRadar3D = () => {
             <>
               <button
                 onClick={() => { try { playClickSound(); } catch (e) {} setIsPlaying(!isPlaying); }}
-                className="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700/80 hover:bg-indigo-50 dark:hover:bg-slate-700 flex items-center gap-1.5 transition-colors cursor-pointer"
+                className="px-3.5 py-1.5 rounded-full bg-[var(--surface-primary)] text-[var(--text-primary)] border border-[var(--border-color)] hover:border-[var(--accent-primary)] flex items-center gap-1.5 transition-all cursor-pointer shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:-translate-y-0.5 text-xs font-heading font-medium"
               >
                 {isPlaying ? <><FaPause className="text-[10px]" /> Pause</> : <><FaPlay className="text-[10px]" /> Orbit</>}
               </button>
 
               <button
                 onClick={() => { try { playClickSound(); } catch (e) {} setShowPercentages(!showPercentages); }}
-                className={`px-3 py-1.5 rounded-xl border flex items-center gap-1.5 transition-all cursor-pointer ${
+                className={`px-3.5 py-1.5 rounded-full flex items-center gap-1.5 transition-all cursor-pointer text-xs font-heading select-none ${
                   showPercentages 
-                    ? "bg-indigo-600 text-white border-indigo-600 shadow-2xs font-semibold" 
-                    : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200/80 dark:border-slate-700/80 hover:bg-indigo-50 dark:hover:bg-slate-700"
+                    ? "pill-venom-active shadow-sm" 
+                    : "pill-venom-inactive font-medium"
                 }`}
               >
                 <FaSlidersH className="text-[10px]" /> % Metrics
@@ -264,16 +264,16 @@ const TechRadar3D = () => {
       </div>
 
       {/* Category Filter Pills */}
-      <div className="px-6 md:px-8 py-3 bg-slate-50/80 dark:bg-slate-950/80 border-b border-slate-200/60 dark:border-slate-800/60 flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs font-medium relative z-10">
-        <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider mr-2 shrink-0">FILTER:</span>
+      <div className="px-6 md:px-8 py-3 bg-[var(--surface-secondary)]/50 border-b border-[var(--border-color)] flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs font-medium relative z-10">
+        <span className="text-[10px] font-mono font-bold text-[var(--text-secondary)] uppercase tracking-wider mr-2 shrink-0">FILTER:</span>
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => { try { playClickSound(); } catch (e) {} setActiveCategory(cat); }}
-            className={`px-3 py-1 rounded-full text-xs transition-all whitespace-nowrap cursor-pointer ${
+            className={`px-3.5 py-1 rounded-full text-xs font-heading transition-all whitespace-nowrap cursor-pointer select-none ${
               activeCategory === cat
-                ? "bg-indigo-600 text-white font-semibold shadow-2xs"
-                : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-indigo-50 dark:hover:bg-slate-800"
+                ? "pill-venom-active shadow-sm"
+                : "pill-venom-inactive font-medium"
             }`}
           >
             {cat}
@@ -283,7 +283,7 @@ const TechRadar3D = () => {
 
       {/* View Mode 1: Immersive 3D Solar Orbit Stage */}
       {viewMode === "orbit" ? (
-        <div className="p-6 md:p-10 min-h-[520px] flex items-center justify-center relative overflow-hidden bg-slate-50/30 dark:bg-slate-950/30">
+        <div className="p-6 md:p-10 min-h-[520px] flex items-center justify-center relative overflow-hidden bg-[var(--bg-page)]/40">
           
           {/* Tilted 3D Solar Orbit Container (Full Stage Dimensions: max-w-[720px] h-[480px]) */}
           <div className="relative w-full max-w-[720px] h-[480px] flex items-center justify-center" style={{ perspective: "1200px" }}>
@@ -291,17 +291,17 @@ const TechRadar3D = () => {
             {/* Central Core Hub */}
             <motion.div 
               whileHover={{ scale: 1.08 }}
-              className="absolute z-20 w-32 h-32 rounded-full bg-gradient-to-tr from-indigo-600 via-purple-600 to-indigo-700 text-white shadow-2xl shadow-indigo-500/30 flex flex-col items-center justify-center p-2 text-center border-2 border-indigo-200/60 dark:border-indigo-400/40 cursor-pointer"
+              className="absolute z-20 w-32 h-32 rounded-full bg-gradient-to-tr from-[#252722] via-[#303129] to-[#777C62] text-[#F5F2EB] shadow-2xl shadow-[#777C62]/25 flex flex-col items-center justify-center p-2 text-center border-2 border-[#D8D1C5]/30 dark:border-[#414239]/60 cursor-pointer"
             >
-              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-indigo-200">CORE HUB</span>
-              <span className="text-sm font-extrabold leading-tight">Full-Stack</span>
-              <span className="text-[11px] text-purple-200 font-mono font-semibold">& AI / ML</span>
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#ADB293]">CORE HUB</span>
+              <span className="text-sm font-display font-bold leading-tight">Full-Stack</span>
+              <span className="text-[11px] text-[#C0BFB3] font-mono font-semibold">& AI / ML</span>
             </motion.div>
 
             {/* 3 Enlarged Concentric Tilted Orbital Rings */}
-            <div className="absolute w-[300px] h-[300px] rounded-full border border-dashed border-indigo-500/35 dark:border-indigo-400/30 pointer-events-none" style={{ transform: "rotateX(65deg)" }} />
-            <div className="absolute w-[480px] h-[480px] rounded-full border border-indigo-500/25 dark:border-indigo-400/20 pointer-events-none" style={{ transform: "rotateX(65deg)" }} />
-            <div className="absolute w-[660px] h-[660px] rounded-full border border-dotted border-indigo-500/20 dark:border-indigo-400/15 pointer-events-none" style={{ transform: "rotateX(65deg)" }} />
+            <div className="absolute w-[300px] h-[300px] rounded-full border border-dashed border-[#777C62]/35 dark:border-[#ADB293]/30 pointer-events-none" style={{ transform: "rotateX(65deg)" }} />
+            <div className="absolute w-[480px] h-[480px] rounded-full border border-[#777C62]/25 dark:border-[#ADB293]/20 pointer-events-none" style={{ transform: "rotateX(65deg)" }} />
+            <div className="absolute w-[660px] h-[660px] rounded-full border border-dotted border-[#777C62]/20 dark:border-[#ADB293]/15 pointer-events-none" style={{ transform: "rotateX(65deg)" }} />
 
             {/* Orbiting Tech Nodes */}
             {filteredNodes.map((node) => {
@@ -332,10 +332,10 @@ const TechRadar3D = () => {
                         y1="50%" 
                         x2={`calc(50% + ${x}px)`} 
                         y2={`calc(50% + ${y}px)`} 
-                        stroke="#6366f1" 
+                        stroke="#777C62" 
                         strokeWidth="2" 
                         strokeDasharray="5 4"
-                        className="animate-pulse"
+                        className="animate-pulse opacity-75"
                       />
                     </svg>
                   )}
@@ -355,11 +355,11 @@ const TechRadar3D = () => {
                     <div 
                       className={`flex items-center gap-2 p-1.5 pr-3.5 rounded-full text-xs font-mono font-semibold transition-all duration-200 shadow-md ${
                         isSelected || isHovered
-                          ? "bg-slate-900 text-white border-2 border-indigo-500 scale-110 shadow-indigo-500/40 shadow-xl"
-                          : "bg-white/95 dark:bg-slate-900/95 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-800 hover:border-indigo-500 backdrop-blur-md"
+                          ? "bg-[var(--btn-primary-bg)] text-[var(--btn-primary-text)] border-2 border-[var(--accent-primary)] scale-110 shadow-lg"
+                          : "bg-[var(--surface-primary)]/95 text-[var(--text-primary)] border border-[var(--border-color)] hover:border-[var(--accent-primary)] backdrop-blur-md"
                       }`}
                     >
-                      <div className="w-7 h-7 rounded-full bg-slate-950 flex items-center justify-center shrink-0 border border-slate-800 shadow-inner">
+                      <div className="w-7 h-7 rounded-full bg-[var(--surface-secondary)] flex items-center justify-center shrink-0 border border-[var(--border-color)] shadow-inner">
                         <IconComp className={`text-sm ${node.iconColor}`} />
                       </div>
                       <span>{showPercentages ? `${node.name} (${node.level}%)` : node.name}</span>
@@ -372,33 +372,33 @@ const TechRadar3D = () => {
           </div>
 
           {/* Floating Glassmorphic HUD Inspector Overlay (Absolute Top-Right) */}
-          <div className="absolute top-4 right-4 z-30 w-72 sm:w-80 p-5 rounded-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-indigo-200/80 dark:border-slate-800/80 shadow-2xl space-y-4">
+          <div className="absolute top-4 right-4 z-30 w-72 sm:w-80 p-5 rounded-2xl bg-[var(--surface-primary)]/95 backdrop-blur-xl border border-[var(--border-color)] shadow-2xl space-y-4">
             
             <div className="flex items-center justify-between">
               <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold border uppercase tracking-wider ${categoryColors[activeNode.category]?.badge}`}>
                 {activeNode.category}
               </span>
-              <span className="text-[10px] font-mono text-slate-400 flex items-center gap-1">
+              <span className="text-[10px] font-mono text-[var(--text-secondary)] flex items-center gap-1">
                 <FaCheckCircle className="text-emerald-500 text-[9px]" /> Verified Telemetry
               </span>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-lg shadow-md shrink-0">
+              <div className="p-2.5 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-color)] text-lg shadow-sm shrink-0">
                 {React.createElement(activeNode.icon, { className: activeNode.iconColor })}
               </div>
               <div>
-                <h4 className="text-lg font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                <h4 className="text-lg font-display font-bold text-[var(--text-primary)] tracking-tight leading-tight">
                   {activeNode.name}
                 </h4>
-                <span className="text-[11px] font-mono text-indigo-600 dark:text-indigo-400 font-semibold">
+                <span className="text-[11px] font-mono text-[var(--accent-primary)] font-semibold">
                   {activeNode.level}% Competency Score
                 </span>
               </div>
             </div>
 
             {/* Level Fill */}
-            <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+            <div className="w-full h-2 rounded-full bg-[var(--surface-secondary)] overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: `${activeNode.level}%` }}
@@ -409,11 +409,11 @@ const TechRadar3D = () => {
 
             {/* Verified Usages */}
             <div>
-              <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-wider block mb-1.5">VERIFIED PORTFOLIO USAGE</span>
+              <span className="text-[9px] font-mono font-bold text-[var(--text-secondary)] uppercase tracking-wider block mb-1.5">VERIFIED PORTFOLIO USAGE</span>
               <div className="space-y-1 text-xs">
                 {activeNode.usages.slice(0, 2).map((usage, idx) => (
-                  <div key={idx} className="p-1.5 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200/50 dark:border-slate-800/50 text-[11px] text-slate-700 dark:text-slate-300 font-medium flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
+                  <div key={idx} className="p-1.5 rounded-lg bg-[var(--surface-secondary)]/50 border border-[var(--border-color)] text-[11px] text-[var(--text-secondary)] font-medium flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-primary)] shrink-0" />
                     <span>{usage}</span>
                   </div>
                 ))}
@@ -423,7 +423,7 @@ const TechRadar3D = () => {
             {/* Concepts */}
             <div className="flex flex-wrap gap-1 pt-1">
               {activeNode.concepts.map((concept, idx) => (
-                <span key={idx} className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-mono">
+                <span key={idx} className="px-2 py-0.5 rounded bg-[var(--surface-secondary)] text-[var(--text-secondary)] text-[10px] font-mono">
                   {concept}
                 </span>
               ))}
@@ -435,7 +435,7 @@ const TechRadar3D = () => {
       ) : (
         
         /* View Mode 2: High-Density Tech Matrix Grid */
-        <div className="p-6 md:p-8 bg-slate-50/40 dark:bg-slate-950/40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="p-6 md:p-8 bg-[var(--bg-page)]/40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {techNodes.map((node) => {
             const IconComp = node.icon;
             const colors = categoryColors[node.category] || categoryColors["Frontend"];
@@ -444,25 +444,25 @@ const TechRadar3D = () => {
                 key={node.id}
                 whileHover={{ y: -3 }}
                 onClick={() => { try { playClickSound(); } catch (e) {} setSelectedNode(node); }}
-                className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-2xs space-y-3 cursor-pointer hover:border-indigo-500/50 transition-all"
+                className="p-5 rounded-2xl bg-[var(--surface-primary)] border border-[var(--border-color)] shadow-xs space-y-3 cursor-pointer hover:border-[var(--accent-primary)] transition-all"
               >
                 <div className="flex items-center justify-between">
-                  <div className="p-2 rounded-xl bg-slate-950 border border-slate-800 text-base">
+                  <div className="p-2 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-color)] text-base">
                     <IconComp className={node.iconColor} />
                   </div>
-                  <span className="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400">{node.level}%</span>
+                  <span className="text-xs font-mono font-bold text-[var(--accent-primary)]">{node.level}%</span>
                 </div>
 
                 <div>
-                  <h4 className="text-base font-bold text-slate-900 dark:text-white tracking-tight">{node.name}</h4>
-                  <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">{node.category}</span>
+                  <h4 className="text-base font-display font-bold text-[var(--text-primary)] tracking-tight">{node.name}</h4>
+                  <span className="text-[10px] font-mono text-[var(--text-secondary)] uppercase tracking-wider">{node.category}</span>
                 </div>
 
-                <div className="w-full h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                <div className="w-full h-1.5 rounded-full bg-[var(--surface-secondary)] overflow-hidden">
                   <div className={`h-full rounded-full bg-gradient-to-r ${colors.node}`} style={{ width: `${node.level}%` }} />
                 </div>
 
-                <div className="pt-2 border-t border-slate-100 dark:border-slate-800/80 text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+                <div className="pt-2 border-t border-[var(--border-color)] text-[11px] text-[var(--text-secondary)] font-medium">
                   {node.usages[0]}
                 </div>
               </motion.div>

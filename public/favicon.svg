@@ -1,21 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#020617"/>
+    <!-- Matte Obsidian-Olive Lacquer Background (Matches Portfolio UI Identity) -->
+    <radialGradient id="obsidianBg" cx="50%" cy="12%" r="92%" fx="50%" fy="8%">
+      <stop offset="0%" stop-color="#2D3028"/>
+      <stop offset="52%" stop-color="#171813"/>
+      <stop offset="100%" stop-color="#080907"/>
+    </radialGradient>
+
+    <!-- Subtle Top Specular Glass Rim -->
+    <linearGradient id="rimStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F2EB" stop-opacity="0.48"/>
+      <stop offset="50%" stop-color="#ADB293" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#777C62" stop-opacity="0.18"/>
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#818cf8"/>
-      <stop offset="50%" stop-color="#c084fc"/>
-      <stop offset="100%" stop-color="#34d399"/>
+
+    <!-- Curved 3D Lacquer Sheen -->
+    <linearGradient id="topSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
+
+    <!-- Crisp Warm Porcelain Ivory Monogram Fill -->
+    <linearGradient id="ivoryMark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#E7E1D6"/>
+    </linearGradient>
+
+    <!-- Sage-Emerald Live Accent -->
+    <radialGradient id="liveDot" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="55%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </radialGradient>
   </defs>
-  <!-- Rounded Obsidian Card -->
-  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
-  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="8"/>
-  <!-- AV Initials -->
-  <text x="256" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="240" fill="url(#textGrad)" text-anchor="middle" letter-spacing="-8">AV</text>
-  <!-- Emerald Online Dot -->
-  <circle cx="410" cy="410" r="32" fill="#10b981" />
-  <circle cx="410" cy="410" r="44" fill="none" stroke="#10b981" stroke-width="6" opacity="0.6"/>
+
+  <!-- Rounded Obsidian Squircle -->
+  <rect x="8" y="8" width="496" height="496" rx="132" fill="url(#obsidianBg)"/>
+
+  <!-- Subtle Curved Glass Highlight -->
+  <path d="M 140 16 H 372 C 436 16 488 64 494 128 C 430 168 346 186 256 186 C 166 186 82 168 18 128 C 24 64 76 16 140 16 Z" fill="url(#topSheen)"/>
+
+  <!-- Crisp Outer Rim Highlight -->
+  <rect x="13" y="13" width="486" height="486" rx="127" fill="none" stroke="url(#rimStroke)" stroke-width="10"/>
+
+  <!-- Geometric AV Monogram (Symmetric 62px Diagonal Channel, Crisp at 16px & 512px) -->
+  <g fill="url(#ivoryMark)">
+    <!-- Letter A -->
+    <path fill-rule="evenodd" d="M 148 148 H 192 L 258 364 H 212 L 198 318 H 142 L 128 364 H 82 Z M 170 202 L 152 280 H 188 Z"/>
+    <!-- Letter V -->
+    <path d="M 254 148 H 300 L 342 302 L 384 148 H 430 L 364 364 H 320 Z"/>
+  </g>
+
+  <!-- Signature Sage Underline & Live Status Accent -->
+  <rect x="96" y="400" width="248" height="16" rx="8" fill="#ADB293" opacity="0.9"/>
+  <circle cx="404" cy="408" r="24" fill="url(#liveDot)"/>
 </svg>

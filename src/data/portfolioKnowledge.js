@@ -31,6 +31,21 @@ export const PORTFOLIO_KNOWLEDGE = {
 
   experience: [
     {
+      company: "Chandeshwara Enterprises",
+      role: "Lead Full-Stack Developer & Webmaster (Freelance)",
+      period: "Jul 2025 – Present",
+      location: "Hyderabad, India",
+      type: "Freelance Client Engagement",
+      platform: "chandeshwaraenterprises.com",
+      tech: ["React.js", "Vite", "Tailwind CSS", "Node.js", "Render API", "MongoDB Atlas", "Razorpay Checkout", "Google Search Console"],
+      highlights: [
+        "Architected, built, and deployed the production e-commerce platform for Chandeshwara Enterprises (chandeshwaraenterprises.com)",
+        "Specializes in authentic traditional Telangana Gongadi blankets, Deccani wool, and pit-loom handlooms",
+        "Integrated multi-mode Razorpay payment gateway for secure UPI, cards, and Net Banking checkouts",
+        "Manages continuous digital presence, cloud deployment on Render, SEO indexing, and production uptime"
+      ]
+    },
+    {
       company: "Sashverse Technologies",
       role: "Full Stack Developer Intern",
       period: "Apr 2026 – Jun 2026",
@@ -111,10 +126,10 @@ export const PORTFOLIO_KNOWLEDGE = {
     },
     {
       id: "chandeshwara-enterprises",
-      title: "Chandeshwara Enterprises",
+      title: "Chandeshwara Enterprises E-Commerce",
       category: "Full-Stack & Freelance Client Work",
-      tech: ["TypeScript", "MongoDB", "Node.js", "E-Commerce"],
-      summary: "Production e-commerce platform developed for a freelance client, built with TypeScript and MongoDB.",
+      tech: ["React.js", "Vite", "Tailwind CSS", "Node.js", "MongoDB Atlas", "Razorpay Checkout", "Render API", "Google Search Console"],
+      summary: "Production e-commerce web platform developed, deployed, and actively managed end-to-end for Chandeshwara Enterprises, bringing authentic Telangana Gongadi handlooms online with secure Razorpay checkout.",
       liveUrl: "https://chandeshwaraenterprises.com/"
     },
     {

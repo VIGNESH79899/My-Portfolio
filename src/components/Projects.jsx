@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   FaBrain, FaFilm, FaChartLine, FaBook, FaLeaf, FaIdCard, FaRocket, FaStore, FaUsers,
-  FaSearch, FaExternalLinkAlt, FaTimes, FaStar, FaCubes, FaFilter,
+  FaSearch, FaExternalLinkAlt, FaGithub, FaTimes, FaStar, FaCubes, FaFilter,
   FaChevronRight, FaTerminal, FaCheckCircle
 } from "react-icons/fa";
 import ProjectPlayground from "./ProjectPlayground";
@@ -17,7 +17,7 @@ const projectList = [
     summary: "End-to-end AI-powered platform for generating structured academic assignments, reports, case studies, automated DOCX generation, and email workflows.",
     description: "Built an end-to-end AI platform for generating structured academic content including assignments, reports, case studies, lab records, and research documents. Developed a full-stack architecture with React frontend, Node/Express backend, MongoDB Atlas, cloud storage, and automated document delivery.",
     engineeringFocus: "AI prompt engineering pipelines, document generation streams, and automated delivery.",
-    icon: <FaBrain className="text-indigo-600 dark:text-indigo-400" />,
+    icon: <FaBrain className="text-[#777C62] dark:text-[#ADB293]" />,
     demo: "https://assessmentmaker.vercel.app/",
     github: "https://github.com/VIGNESH79899",
     featured: true
@@ -30,7 +30,7 @@ const projectList = [
     summary: "Content-based recommendation engine leveraging TF-IDF text vectorization and cosine similarity.",
     description: "Built a content-based recommendation engine using TF-IDF vectorization and cosine similarity. Implemented data cleaning, feature extraction, text vectorization, and top-N recommendation generation.",
     engineeringFocus: "NLP text vectorization, feature extraction matrix, and high-performance similarity scoring.",
-    icon: <FaFilm className="text-purple-600 dark:text-purple-400" />,
+    icon: <FaFilm className="text-[#8C7258] dark:text-[#C1A17F]" />,
     demo: "https://github.com/VIGNESH79899/MOVIE_REC",
     github: "https://github.com/VIGNESH79899/MOVIE_REC",
     featured: true
@@ -43,7 +43,7 @@ const projectList = [
     summary: "Data processing application to clean, aggregate, analyze, and visualize raw sales data for business insights.",
     description: "Developed a Python-based data processing application to clean, aggregate, analyze, and visualize raw sales data for decision-support insights and business performance analysis.",
     engineeringFocus: "Data ETL pipelines, Pandas transformations, and business metric aggregations.",
-    icon: <FaChartLine className="text-blue-600 dark:text-blue-400" />,
+    icon: <FaChartLine className="text-[#777C62] dark:text-[#ADB293]" />,
     demo: "#",
     featured: false
   },
@@ -55,7 +55,7 @@ const projectList = [
     summary: "Database-driven system supporting book indexing, user management, issue/return workflows, and fine tracking.",
     description: "Developed a database-driven system supporting books, users, issue/return workflows, transactions, and fine tracking using CRUD operations, relational schema design, normalization, and SQL queries.",
     engineeringFocus: "Normalized relational schema, ACID transaction integrity, and index optimization.",
-    icon: <FaBook className="text-amber-600 dark:text-amber-400" />,
+    icon: <FaBook className="text-[#8C7258] dark:text-[#C1A17F]" />,
     demo: "https://github.com/VIGNESH79899/Library_management",
     github: "https://github.com/VIGNESH79899/Library_management",
     featured: true
@@ -68,7 +68,7 @@ const projectList = [
     summary: "Smart eco-tracking application designed to estimate daily and weekly CO₂ emissions using simple data analysis logic.",
     description: "Eco-Track is a smart eco-tracking application designed to estimate daily and weekly CO₂ emissions. The project aims to create awareness about environmental impact using simple data analysis logic.",
     engineeringFocus: "TypeScript type safety, CO₂ emission estimation logic, and environmental impact data analysis.",
-    icon: <FaLeaf className="text-emerald-600 dark:text-emerald-400" />,
+    icon: <FaLeaf className="text-[#777C62] dark:text-[#ADB293]" />,
     demo: "https://eco-track-ochre.vercel.app/",
     github: "https://github.com/VIGNESH79899",
     featured: false
@@ -81,7 +81,7 @@ const projectList = [
     summary: "Interactive digital portfolio showcasing projects, experience, and achievements.",
     description: "Designed and built an interactive portfolio showcasing technical projects and achievements with dark mode support, smooth scroll navigation, and micro-animations.",
     engineeringFocus: "Framer Motion layout transitions, dark theme persistence, and accessible micro-interactions.",
-    icon: <FaIdCard className="text-teal-600 dark:text-teal-400" />,
+    icon: <FaIdCard className="text-[#8C7258] dark:text-[#C1A17F]" />,
     demo: "#",
     github: "https://github.com/VIGNESH79899",
     featured: false
@@ -94,23 +94,10 @@ const projectList = [
     summary: "Modern digital agency platform for creative digital solutions and software services.",
     description: "Developed a modern digital agency web platform under active development to showcase creative branding, custom software, and digital solutions for clients.",
     engineeringFocus: "Modular component architecture, client landing pages, and responsive branding layouts.",
-    icon: <FaRocket className="text-rose-600 dark:text-rose-400" />,
+    icon: <FaRocket className="text-[#777C62] dark:text-[#ADB293]" />,
     demo: "https://github.com/VIGNESH79899/PixelBoost",
     github: "https://github.com/VIGNESH79899/PixelBoost",
     featured: false
-  },
-  {
-    id: "chandeshwara-enterprises",
-    category: "fullstack",
-    title: "Chandeshwara Enterprises",
-    tech: ["TypeScript", "MongoDB", "E-Commerce", "Freelance Client Work"],
-    summary: "Production e-commerce platform developed for a freelance client, built with TypeScript and MongoDB.",
-    description: "Engineered and deployed a production e-commerce platform for Chandeshwara Enterprises as a freelance software developer. Implemented scalable product catalog management, order processing workflows, responsive storefront UI, and MongoDB database integration.",
-    engineeringFocus: "Freelance production client delivery, TypeScript type safety, catalog indexing, and MongoDB schema design.",
-    icon: <FaStore className="text-violet-600 dark:text-violet-400" />,
-    demo: "https://chandeshwaraenterprises.com/",
-    github: "https://github.com/VIGNESH79899",
-    featured: true
   },
   {
     id: "population-growth",
@@ -120,7 +107,7 @@ const projectList = [
     summary: "Mathematical prediction application that forecasts population growth based on historical datasets.",
     description: "Built a mathematical prediction application that forecasts population growth based on historical datasets. Features an interactive frontend built with React, TypeScript, and Tailwind CSS for data visualization and trend analysis.",
     engineeringFocus: "Mathematical population projection algorithms, data visualization charts, and TypeScript type-safe modeling.",
-    icon: <FaUsers className="text-cyan-600 dark:text-cyan-400" />,
+    icon: <FaUsers className="text-[#777C62] dark:text-[#ADB293]" />,
     demo: "https://github.com/VIGNESH79899/Population-Growth",
     github: "https://github.com/VIGNESH79899/Population-Growth",
     featured: false
@@ -130,9 +117,13 @@ const projectList = [
 const categoryTabs = [
   { id: "all", name: "All Projects" },
   { id: "aiml", name: "AI / ML & Data" },
-  { id: "fullstack", name: "Full-Stack & Web" },
-  { id: "systems", name: "Systems & C" }
+  { id: "fullstack", name: "Full-Stack & Web" }
 ];
+
+const categoryLabels = {
+  aiml: "AI / ML & Data",
+  fullstack: "Full-Stack & Web"
+};
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -176,9 +167,9 @@ const Projects = () => {
     } catch (err) {}
   };
 
-  const handleSelectCategory = (catId) => {
+  const handleSelectCategory = (id) => {
     try { playClickSound(); } catch (e) {}
-    setActiveCategory(catId);
+    setActiveCategory(id);
   };
 
   const handleOpenModal = (project) => {
@@ -186,21 +177,36 @@ const Projects = () => {
     setActiveProjectModal(project);
   };
 
+  const categoryCounts = {
+    all: projectList.length,
+    aiml: projectList.filter((p) => p.category === "aiml").length,
+    fullstack: projectList.filter((p) => p.category === "fullstack").length,
+  };
+
+  useEffect(() => {
+    if (!activeProjectModal) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setActiveProjectModal(null);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activeProjectModal]);
+
   const filteredProjects = projectList.filter((project) => {
     const matchesCategory = activeCategory === "all" || project.category === activeCategory;
-    const q = searchQuery.toLowerCase().trim();
-    const matchesSearch = !q || 
-      project.title.toLowerCase().includes(q) ||
-      project.summary.toLowerCase().includes(q) ||
-      project.tech.some((t) => t.toLowerCase().includes(q));
+    const query = searchQuery.toLowerCase();
+    const matchesSearch = 
+      project.title.toLowerCase().includes(query) ||
+      project.summary.toLowerCase().includes(query) ||
+      project.tech.some(t => t.toLowerCase().includes(query));
     return matchesCategory && matchesSearch;
   });
 
   return (
-    <section id="projects" className="py-24 px-6 bg-slate-50 dark:bg-slate-950 relative overflow-hidden font-sans border-t border-slate-200/60 dark:border-slate-800/60">
+    <section id="projects" className="py-24 px-6 bg-[#F5F2EB] dark:bg-[#1C1D19] relative overflow-hidden font-sans border-t border-[#D8D1C5] dark:border-[#414239]">
       
       {/* Background Soft Ambient Glow */}
-      <div className="absolute top-1/3 left-1/4 w-[500px] h-[350px] bg-indigo-500/5 blur-[140px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/3 left-1/4 w-[500px] h-[350px] bg-[#777C62]/5 dark:bg-[#ADB293]/5 blur-[140px] pointer-events-none rounded-full" />
 
       <div className="max-w-6xl mx-auto relative z-10 space-y-10">
         
@@ -210,26 +216,27 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="pb-6 border-b border-slate-200/80 dark:border-slate-800/80 flex flex-col sm:flex-row sm:items-end justify-between gap-4"
+          className="pb-6 border-b border-[#D8D1C5] dark:border-[#414239] flex flex-col sm:flex-row sm:items-end justify-between gap-4"
         >
           <div>
-            <span className="tech-label px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 inline-block mb-3">
+            <span className="pro-badge-olive mb-3 inline-block">
               TECHNICAL PORTFOLIO
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight">
               Featured Software Projects
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">
-              Interactive systems, AI recommendation engines, full-stack applications, and client solutions
+            <p className="text-xs sm:text-sm text-[#68675F] dark:text-[#C0BFB3] mt-2 font-normal">
+              AI recommendation engines, full-stack platforms, and deployed client applications
             </p>
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-mono font-semibold text-slate-500 dark:text-slate-400 self-start sm:self-auto bg-white dark:bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-200/80 dark:border-slate-800">
+          <div className="flex items-center gap-2 text-xs font-mono font-semibold text-[#68675F] dark:text-[#C0BFB3] self-start sm:self-auto bg-[#FFFDF9] dark:bg-[#252620] px-3.5 py-2 rounded-full border border-[#D8D1C5] dark:border-[#414239] shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span>FULL-STACK</span>
-            <span className="text-indigo-500 font-bold">·</span>
+            <span className="text-[#777C62] dark:text-[#ADB293] font-bold">·</span>
             <span>AI / ML</span>
-            <span className="text-indigo-500 font-bold">·</span>
-            <span>SYSTEMS</span>
+            <span className="text-[#777C62] dark:text-[#ADB293] font-bold">·</span>
+            <span>{projectList.length} BUILDS</span>
           </div>
         </motion.div>
 
@@ -247,13 +254,22 @@ const Projects = () => {
                 <button
                   key={tab.id}
                   onClick={() => handleSelectCategory(tab.id)}
-                  className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 cursor-pointer focus:outline-hidden ${
+                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-heading font-semibold transition-all duration-200 cursor-pointer focus:outline-none select-none ${
                     isActive
-                      ? "bg-indigo-600 text-white shadow-2xs ring-2 ring-indigo-500/20 scale-105"
-                      : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-700"
+                      ? "pill-venom-active shadow-md"
+                      : "pill-venom-inactive hover:-translate-y-0.5"
                   }`}
                 >
-                  {tab.name}
+                  <span>{tab.name}</span>
+                  <span
+                    className={`px-1.5 py-0.5 rounded-full text-[10px] font-mono leading-none ${
+                      isActive
+                        ? "bg-white/20 text-current"
+                        : "bg-[#E7E1D6] dark:bg-[#303129] text-[#68675F] dark:text-[#C0BFB3]"
+                    }`}
+                  >
+                    {categoryCounts[tab.id] ?? 0}
+                  </span>
                 </button>
               );
             })}
@@ -261,14 +277,24 @@ const Projects = () => {
 
           {/* Command Search Bar */}
           <div className="relative w-full sm:w-72">
-            <FaSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs pointer-events-none" />
+            <FaSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#68675F] dark:text-[#C0BFB3] text-xs pointer-events-none" />
             <input
               type="text"
-              placeholder="⌕ Search projects, technologies..."
+              placeholder="Search projects, technologies..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+              className="w-full pl-9 pr-9 py-2 rounded-full bg-[#FFFDF9] dark:bg-[#252620] border border-[#D8D1C5] dark:border-[#414239] text-xs text-[#252722] dark:text-[#F5F2EB] placeholder-[#68675F]/60 dark:placeholder-[#C0BFB3]/60 focus:outline-none focus:border-[#777C62] focus:ring-2 focus:ring-[#777C62]/20 transition-all font-sans shadow-2xs"
             />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery("")}
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 rounded-full text-[#68675F] dark:text-[#C0BFB3] hover:text-[#252722] dark:hover:text-[#F5F2EB] hover:bg-[#E7E1D6]/70 dark:hover:bg-[#303129] transition-colors cursor-pointer"
+                aria-label="Clear project search"
+              >
+                <FaTimes size={10} />
+              </button>
+            )}
           </div>
 
         </div>
@@ -281,12 +307,18 @@ const Projects = () => {
                 const cardTilt = tilt[project.id] || { rx: 0, ry: 0 };
                 const cardSpotlight = spotlightPos[project.id] || { x: 0, y: 0 };
                 const isHovered = hoveredCardId === project.id;
+                const hasLiveDemo = Boolean(
+                  project.demo && project.demo !== "#" && !project.demo.includes("github.com")
+                );
+                const hasExternalDemo = Boolean(project.demo && project.demo !== "#");
+                const showSeparateGithub = Boolean(project.github && project.github !== project.demo);
 
                 return (
                   <motion.div
                     key={project.id}
                     layout
                     ref={(el) => (cardRefs.current[index] = el)}
+                    onClick={() => handleOpenModal(project)}
                     onMouseMove={(e) => handleMouseMove(e, index, project.id)}
                     onMouseEnter={() => { if (!isTouchDevice && !prefersReducedMotion) setHoveredCardId(project.id); }}
                     onMouseLeave={() => { setHoveredCardId(null); setTilt((prev) => ({ ...prev, [project.id]: { rx: 0, ry: 0 } })); }}
@@ -296,54 +328,93 @@ const Projects = () => {
                     transition={{ duration: 0.35, delay: prefersReducedMotion ? 0 : index * 0.05, ease: [0.22, 1, 0.36, 1] }}
                     style={{
                       transform: !isTouchDevice && !prefersReducedMotion && isHovered
-                        ? `perspective(1000px) rotateX(${cardTilt.rx}deg) rotateY(${cardTilt.ry}deg) translateY(-4px)`
+                        ? `perspective(1000px) rotateX(${cardTilt.rx}deg) rotateY(${cardTilt.ry}deg) translateY(-3px)`
                         : 'none',
                       transition: 'transform 250ms cubic-bezier(0.22, 1, 0.36, 1), border-color 200ms ease, box-shadow 200ms ease'
                     }}
-                    className="relative overflow-hidden p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 transition-all duration-300 flex flex-col justify-between group shadow-2xs hover:border-indigo-400/50 hover:shadow-md"
+                    className={`relative overflow-hidden p-6 rounded-2xl bg-[#FFFDF9] dark:bg-[#252620] border transition-all duration-300 flex flex-col justify-between group cursor-pointer ${
+                      project.featured
+                        ? "border-[#777C62]/45 dark:border-[#ADB293]/40 shadow-sm hover:border-[#777C62] dark:hover:border-[#ADB293] hover:shadow-lg"
+                        : "border-[#D8D1C5] dark:border-[#414239] shadow-2xs hover:border-[#777C62]/50 hover:shadow-md"
+                    }`}
                   >
-                    {/* Spotlight Ambient Cursor Shader Glow */}
+                    {/* Top Hairline Accent Strip */}
+                    <div
+                      className={`absolute inset-x-0 top-0 h-[3px] transition-opacity duration-300 ${
+                        project.featured
+                          ? "bg-gradient-to-r from-[#777C62] via-[#ADB293] to-[#777C62] opacity-90"
+                          : "bg-gradient-to-r from-[#777C62]/60 via-[#ADB293]/60 to-[#777C62]/60 opacity-0 group-hover:opacity-100"
+                      }`}
+                    />
+
+                    {/* Spotlight Cursor Shader */}
                     {!isTouchDevice && !prefersReducedMotion && isHovered && (
                       <div
                         className="pointer-events-none absolute inset-0 rounded-2xl transition-opacity duration-300"
                         style={{
-                          background: `radial-gradient(240px circle at ${cardSpotlight.x}px ${cardSpotlight.y}px, rgba(91, 75, 255, 0.06), transparent 80%)`
+                          background: `radial-gradient(240px circle at ${cardSpotlight.x}px ${cardSpotlight.y}px, rgba(119, 124, 98, 0.07), transparent 80%)`
                         }}
                       />
                     )}
 
                     <div className="relative z-10">
                       
-                      {/* Card Header & Badge */}
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/60 text-lg group-hover:scale-110 transition-transform duration-200">
-                          {project.icon}
-                        </div>
-                        {project.featured && (
-                          <span className="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 flex items-center gap-1 uppercase tracking-wider">
-                            FEATURED
+                      {/* Card Header & Status Pill */}
+                      <div className="flex items-start justify-between gap-2 mb-4">
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          <div className="w-10 h-10 rounded-xl bg-[#E7E1D6]/75 dark:bg-[#303129] border border-[#D8D1C5] dark:border-[#414239] text-lg flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-200 shadow-2xs">
+                            {project.icon}
+                          </div>
+                          <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-[#68675F] dark:text-[#C0BFB3] truncate">
+                            {categoryLabels[project.category] || "Engineering"}
                           </span>
-                        )}
+                        </div>
+
+                        {project.featured ? (
+                          <span className="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-[#1C1D19] dark:bg-[#F5F2EB] text-[#F5F2EB] dark:text-[#1C1D19] shadow-xs flex items-center gap-1.5 uppercase tracking-wider">
+                            {hasLiveDemo ? (
+                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 dark:bg-emerald-600 animate-pulse" />
+                            ) : (
+                              <FaStar className="text-[9px] text-[#ADB293] dark:text-[#777C62]" />
+                            )}
+                            <span>Featured</span>
+                          </span>
+                        ) : hasLiveDemo ? (
+                          <span className="shrink-0 px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-[#777C62]/12 dark:bg-[#ADB293]/15 text-[#5E634D] dark:text-[#C6CCAA] border border-[#777C62]/25 dark:border-[#ADB293]/30 flex items-center gap-1.5 uppercase tracking-wider">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                            <span>Live</span>
+                          </span>
+                        ) : null}
                       </div>
 
                       {/* Title & Summary */}
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-white tracking-tight mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      <h3 className="text-lg font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight mb-2 group-hover:text-[#777C62] dark:group-hover:text-[#ADB293] transition-colors">
                         {project.title}
                       </h3>
 
-                      <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-5 font-normal">
+                      <p className="text-xs text-[#68675F] dark:text-[#C0BFB3] leading-relaxed mb-4 font-normal">
                         {project.summary}
                       </p>
 
+                      {/* Architectural Focus Micro-Callout */}
+                      {project.engineeringFocus && (
+                        <div className="mb-4 px-3 py-2 rounded-xl bg-[#F5F2EB]/80 dark:bg-[#1C1D19]/70 border border-[#D8D1C5]/80 dark:border-[#414239] flex items-start gap-2">
+                          <FaTerminal className="text-[10px] text-[#777C62] dark:text-[#ADB293] mt-0.5 shrink-0" />
+                          <p className="text-[11px] text-[#5B5D51] dark:text-[#C0BFB3] leading-snug line-clamp-2 font-medium">
+                            {project.engineeringFocus}
+                          </p>
+                        </div>
+                      )}
+
                       {/* Staggered Technology Pills */}
-                      <div className="flex flex-wrap gap-1.5 mb-6">
+                      <div className="flex flex-wrap gap-1.5 mb-5">
                         {project.tech.map((t, tIdx) => (
                           <motion.span
                             key={tIdx}
                             initial={prefersReducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 3 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.2, delay: prefersReducedMotion ? 0 : tIdx * 0.03 }}
-                            className="px-2.5 py-1 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60"
+                            className="px-2.5 py-1 rounded-lg text-[11px] font-medium bg-[#E7E1D6]/65 dark:bg-[#303129] text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5] dark:border-[#414239]"
                           >
                             {t}
                           </motion.span>
@@ -352,36 +423,64 @@ const Projects = () => {
                     </div>
 
                     {/* Action Bar */}
-                    <div className="relative z-10 pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+                    <div className="relative z-10 pt-4 border-t border-[#D8D1C5]/70 dark:border-[#414239] flex items-center justify-between gap-2">
                       <button
-                        onClick={() => handleOpenModal(project)}
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition-transform cursor-pointer"
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleOpenModal(project);
+                        }}
+                        className="btn-primary !px-3.5 !py-1.5 !text-[11px] !rounded-full inline-flex items-center gap-1.5 cursor-pointer"
                       >
-                        <span>View Specs & Architecture</span>
+                        <span>View Specs</span>
                         <FaChevronRight className="text-[9px]" />
                       </button>
-                      
-                      {project.demo && project.demo !== "#" && (
-                        <a
-                          href={project.demo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
-                          aria-label="Demo Link"
-                        >
-                          <FaExternalLinkAlt size={12} />
-                        </a>
-                      )}
+
+                      <div className="flex items-center gap-1.5">
+                        {showSeparateGithub && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="pill-venom-inactive !w-8 !h-8 !p-0 rounded-full inline-flex items-center justify-center hover:-translate-y-0.5 transition-transform"
+                            aria-label={`Open ${project.title} GitHub repository`}
+                            title="GitHub Repository"
+                          >
+                            <FaGithub size={13} />
+                          </a>
+                        )}
+
+                        {hasExternalDemo && (
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="pill-venom-inactive !px-3 !py-1.5 !text-[11px] rounded-full inline-flex items-center gap-1.5 font-semibold hover:-translate-y-0.5 transition-transform"
+                            aria-label={`Open ${project.title} ${hasLiveDemo ? "live demo" : "GitHub repository"}`}
+                          >
+                            {hasLiveDemo ? (
+                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                            ) : (
+                              <FaGithub size={11} />
+                            )}
+                            <span>{hasLiveDemo ? "Live" : "Repo"}</span>
+                            <FaExternalLinkAlt size={9} />
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </motion.div>
                 );
               })
             ) : (
-              <div className="col-span-full py-16 text-center bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800">
-                <p className="text-sm font-semibold text-slate-500">No projects found matching "{searchQuery}"</p>
+              <div className="col-span-full py-16 text-center bg-[#FFFDF9] dark:bg-[#252620] rounded-2xl border border-dashed border-[#D8D1C5] dark:border-[#414239] space-y-3">
+                <p className="text-sm font-semibold text-[#68675F] dark:text-[#C0BFB3]">No projects found matching &ldquo;{searchQuery}&rdquo;</p>
                 <button
+                  type="button"
                   onClick={() => { setSearchQuery(""); setActiveCategory("all"); }}
-                  className="mt-3 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
+                  className="btn-secondary !text-xs !px-4 !py-2 !rounded-full cursor-pointer"
                 >
                   Clear search filters
                 </button>
@@ -397,7 +496,7 @@ const Projects = () => {
         {activeProjectModal && (
           <div 
             onClick={() => setActiveProjectModal(null)}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/80 backdrop-blur-sm cursor-pointer"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-sm cursor-pointer"
           >
             <motion.div
               onClick={(e) => e.stopPropagation()}
@@ -405,27 +504,33 @@ const Projects = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.95, y: 10 }}
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-              className="relative max-w-2xl w-full bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-2xl space-y-6 overflow-hidden"
+              className="relative max-w-2xl w-full max-h-[90vh] overflow-y-auto bg-[#FFFDF9] dark:bg-[#252620] rounded-3xl border border-[#D8D1C5] dark:border-[#414239] p-5 sm:p-6 md:p-8 shadow-2xl space-y-6 font-sans"
             >
               {/* Close Button */}
               <button
+                type="button"
                 onClick={() => setActiveProjectModal(null)}
-                className="absolute top-5 right-5 z-10 p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                className="pill-venom-inactive absolute top-5 right-5 z-10 !w-9 !h-9 !p-0 rounded-full inline-flex items-center justify-center cursor-pointer"
                 aria-label="Close modal"
               >
-                <FaTimes size={14} />
+                <FaTimes size={13} />
               </button>
 
               {/* Modal Header */}
-              <div className="flex items-center gap-3.5 pr-8">
-                <div className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xl shrink-0">
+              <div className="flex items-center gap-3.5 pr-10">
+                <div className="p-3 rounded-xl bg-[#E7E1D6]/60 dark:bg-[#303129] border border-[#D8D1C5] dark:border-[#414239] text-xl shrink-0">
                   {activeProjectModal.icon}
                 </div>
-                <div>
-                  <span className="text-[10px] font-mono font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">
-                    PROJECT INSPECTOR
-                  </span>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-center gap-2 mb-0.5">
+                    <span className="text-[10px] font-mono font-bold text-[#777C62] dark:text-[#ADB293] uppercase tracking-wider">
+                      PROJECT INSPECTOR
+                    </span>
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-[#E7E1D6]/70 dark:bg-[#303129] text-[#5B5D51] dark:text-[#C0BFB3] border border-[#D8D1C5] dark:border-[#414239]">
+                      {categoryLabels[activeProjectModal.category] || "Engineering"}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight">
                     {activeProjectModal.title}
                   </h3>
                 </div>
@@ -433,21 +538,21 @@ const Projects = () => {
 
               {/* Overview */}
               <div className="space-y-1.5">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#68675F] dark:text-[#C0BFB3] block font-mono">
                   SYSTEM OVERVIEW:
                 </span>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm text-[#68675F] dark:text-[#C0BFB3] leading-relaxed font-normal">
                   {activeProjectModal.description}
                 </p>
               </div>
 
               {/* Engineering Focus */}
               {activeProjectModal.engineeringFocus && (
-                <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/60 dark:border-slate-800/60 space-y-1">
-                  <span className="text-[10px] font-mono font-bold uppercase text-indigo-600 dark:text-indigo-400 block">
+                <div className="p-3.5 rounded-xl bg-[#E7E1D6]/50 dark:bg-[#303129]/60 border border-[#D8D1C5] dark:border-[#414239] space-y-1">
+                  <span className="text-[10px] font-mono font-bold uppercase text-[#777C62] dark:text-[#ADB293] block">
                     ENGINEERING FOCUS:
                   </span>
-                  <p className="text-xs text-slate-700 dark:text-slate-300">
+                  <p className="text-xs text-[#252722] dark:text-[#F5F2EB]">
                     {activeProjectModal.engineeringFocus}
                   </p>
                 </div>
@@ -455,12 +560,12 @@ const Projects = () => {
 
               {/* Technologies */}
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#68675F] dark:text-[#C0BFB3] block mb-2 font-mono">
                   VERIFIED TECHNOLOGY STACK:
                 </span>
                 <div className="flex flex-wrap gap-1.5">
                   {activeProjectModal.tech.map((t, i) => (
-                    <span key={i} className="px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80">
+                    <span key={i} className="px-2.5 py-1 rounded-md text-xs font-semibold bg-[#E7E1D6]/60 dark:bg-[#303129] text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5] dark:border-[#414239]">
                       {t}
                     </span>
                   ))}
@@ -468,26 +573,43 @@ const Projects = () => {
               </div>
 
               {/* Modal Footer */}
-              <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
-                <span className="text-[11px] font-mono text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-4 border-t border-[#D8D1C5]/70 dark:border-[#414239]">
+                <span className="text-[11px] font-mono text-[#777C62] dark:text-[#ADB293] flex items-center gap-1.5">
                   <FaCheckCircle className="text-xs" /> Verified Production Spec
                 </span>
 
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  {activeProjectModal.github && activeProjectModal.github !== activeProjectModal.demo && (
+                    <a
+                      href={activeProjectModal.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-secondary text-xs"
+                    >
+                      <FaGithub size={12} />
+                      <span>GitHub</span>
+                    </a>
+                  )}
                   {activeProjectModal.demo && activeProjectModal.demo !== "#" && (
                     <a
                       href={activeProjectModal.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold transition-colors cursor-pointer"
+                      className="btn-primary text-xs"
                     >
-                      <span>Open Live Project</span>
+                      {activeProjectModal.demo.includes("github.com") ? (
+                        <FaGithub size={12} />
+                      ) : (
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      )}
+                      <span>{activeProjectModal.demo.includes("github.com") ? "Open Repository" : "Open Live Project"}</span>
                       <FaExternalLinkAlt size={10} />
                     </a>
                   )}
                   <button
+                    type="button"
                     onClick={() => setActiveProjectModal(null)}
-                    className="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                    className="btn-secondary text-xs"
                   >
                     Close Spec Sheet
                   </button>

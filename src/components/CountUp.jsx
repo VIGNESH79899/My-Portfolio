@@ -1,43 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useInView } from 'framer-motion';
-import { useRef } from 'react';
 
-const CountUp = ({ to, duration = 1.5, suffix = "" }) => {
+const CountUp = ({ to, end, value, duration = 1.2, suffix = "" }) => {
+  const rawTarget = to ?? end ?? value;
+  const target = typeof rawTarget === 'number' ? rawTarget : parseFloat(rawTarget);
+  const isValidNumber = !isNaN(target);
+  const finalValue = isValidNumber ? target : 0;
+  const isInteger = Number.isInteger(finalValue);
+
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const [count, setCount] = useState(finalValue);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || !isValidNumber || finalValue === 0) {
+      setCount(finalValue);
+      return;
+    }
 
-    let start = 0;
-    const numericTo = parseFloat(to);
-    if (isNaN(numericTo)) return;
+    let startTime = null;
+    let animationFrameId;
 
-    const totalSteps = 40;
-    const stepTime = (duration * 1000) / totalSteps;
-    const increment = numericTo / totalSteps;
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
+      
+      // Smooth ease-out cubic
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const current = easeOut * finalValue;
 
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= numericTo) {
-        setCount(numericTo);
-        clearInterval(timer);
+      setCount(current);
+
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(animate);
       } else {
-        setCount(start);
+        setCount(finalValue);
       }
-    }, stepTime);
+    };
 
-    return () => clearInterval(timer);
-  }, [isInView, to, duration]);
+    animationFrameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [isInView, finalValue, duration, isValidNumber]);
 
-  const formatted = Number.isInteger(parseFloat(to))
-    ? Math.round(count)
-    : count.toFixed(1);
+  const displayValue = isInteger ? Math.round(count) : count.toFixed(1);
 
   return (
     <span ref={ref} className="font-mono font-extrabold">
-      {formatted}{suffix}
+      {displayValue}{suffix}
     </span>
   );
 };

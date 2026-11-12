@@ -1,0 +1,7720 @@
+{
+  "2024": {
+    "title": "84 contributions in 2024",
+    "total": 84,
+    "days": [
+      {
+        "date": "2024-01-01",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-02",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-03",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-04",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-05",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-06",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-07",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-08",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-09",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-10",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-11",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-12",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-13",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-14",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-15",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-16",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-17",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-18",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-19",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-20",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-21",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-22",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-23",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-24",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-25",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-26",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-27",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-28",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-29",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-30",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-01-31",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-01",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-02",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-03",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-04",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-05",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-06",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-07",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-08",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-09",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-10",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-11",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-12",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-13",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-14",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-15",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-16",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-17",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-18",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-19",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-20",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-21",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-22",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-23",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-24",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-25",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-26",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-27",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-28",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-02-29",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-01",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-02",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-03",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-04",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-05",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-06",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-07",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-08",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-09",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-10",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-11",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-12",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-13",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-14",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-15",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-16",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-17",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-18",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-19",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-20",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-21",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-22",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-23",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-24",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-25",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-26",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-27",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-28",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-29",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-30",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-03-31",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-01",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-02",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-03",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-04",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-05",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-06",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-07",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-08",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-09",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-10",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-11",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-12",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-13",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-14",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-15",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-16",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-17",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-18",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-19",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-20",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-21",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-22",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-23",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-24",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-25",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-26",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-27",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-28",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-29",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-04-30",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-01",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-02",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-03",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-04",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-05",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-06",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-07",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-08",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-09",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-10",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-11",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-12",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-13",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-14",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-15",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-16",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-17",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-18",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-19",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-20",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-21",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-22",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-23",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-24",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-25",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-26",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-27",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-28",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-29",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-30",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-05-31",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-01",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-02",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-03",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-04",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-05",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-06",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-07",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-08",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-09",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-10",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-11",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-12",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-13",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-14",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-15",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-16",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-17",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-18",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-19",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-20",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-21",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-22",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-23",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-24",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-25",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-26",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-27",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-28",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-29",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-06-30",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-01",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-02",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-03",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-04",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-05",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-06",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-07",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-08",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-09",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-10",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-11",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-12",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-13",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-14",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-15",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-16",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-17",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-18",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-19",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-20",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-21",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-22",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-23",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-24",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-25",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-26",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-27",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-28",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-29",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-30",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-07-31",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-01",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-02",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-03",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-04",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-05",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-06",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-07",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-08",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-09",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-10",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-11",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-12",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-13",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-14",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-15",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-16",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-17",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-18",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-19",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-20",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-21",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-22",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-23",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-24",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-25",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-26",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-27",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-28",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-29",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-30",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-08-31",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-01",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-02",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-03",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-04",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-05",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-06",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-07",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-08",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-09",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-10",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-11",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-12",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-13",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-14",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-15",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-16",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-17",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-18",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-19",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-20",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-21",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-22",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-23",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-24",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-25",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-26",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-27",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-28",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-29",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-09-30",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-01",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-02",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-03",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-04",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-05",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-06",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-07",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-08",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-09",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-10",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-11",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-12",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-13",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-14",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-15",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-16",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-17",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-18",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-19",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-20",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-21",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-22",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-23",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-24",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-25",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-26",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-27",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-28",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-29",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-30",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-10-31",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-01",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-02",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-03",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-04",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-05",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-06",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-07",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-08",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-09",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-10",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-11",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-12",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-13",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-14",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-15",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-16",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-17",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-18",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-19",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-20",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-21",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-11-22",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2024-11-23",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-11-24",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-25",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-11-26",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-11-27",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-11-28",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-11-29",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-11-30",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-12-01",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-02",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-03",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2024-12-04",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-12-05",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2024-12-06",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-12-07",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-12-08",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-12-09",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-12-10",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-11",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-12-12",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-12-13",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-14",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-12-15",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-12-16",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-17",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-12-18",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-12-19",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-12-20",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-21",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2024-12-22",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-12-23",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2024-12-24",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-12-25",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2024-12-26",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-27",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2024-12-28",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2024-12-29",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2024-12-30",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2024-12-31",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      }
+    ]
+  },
+  "2025": {
+    "title": "312 contributions in 2025",
+    "total": 312,
+    "days": [
+      {
+        "date": "2025-01-01",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-01-02",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-03",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-04",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-05",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-06",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-07",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-01-08",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-09",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-10",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-11",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-01-12",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-13",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-14",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-15",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-16",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-01-17",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-18",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-01-19",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-01-20",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-21",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-22",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-23",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-24",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-25",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-01-26",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-01-27",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-28",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-01-29",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-01-30",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-01-31",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-01",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-02",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-03",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-04",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-05",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-06",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-07",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-08",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-09",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-10",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-11",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-12",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-13",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-14",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-15",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-02-16",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-17",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-18",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-19",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-20",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-21",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-02-22",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-23",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-24",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-25",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-26",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-02-27",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-02-28",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-01",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-02",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-03",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-04",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-05",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-03-06",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-07",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-08",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-03-09",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-10",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-03-11",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-12",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-13",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-14",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-15",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-03-16",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-17",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-18",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-03-19",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-20",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-03-21",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-22",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-23",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-24",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-25",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-26",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-27",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-03-28",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-29",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-30",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-03-31",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-01",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-02",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-03",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-04-04",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-05",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-06",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-07",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-04-08",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-09",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-10",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-11",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-12",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-13",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-04-14",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-15",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-16",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-17",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-18",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-19",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-20",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-21",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-04-22",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-23",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-24",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-25",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-26",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-27",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-28",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-04-29",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-04-30",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-05-01",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-02",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-03",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-04",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-05",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-06",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-07",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-08",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-09",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-05-10",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-11",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-12",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-13",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-14",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-15",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-16",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-17",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-18",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-05-19",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-20",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-21",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-22",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-23",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-24",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-25",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-26",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-27",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-28",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-29",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-05-30",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-05-31",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-01",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-02",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-06-03",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-04",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-05",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-06",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-07",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-08",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-09",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-06-10",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-11",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-12",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-13",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-06-14",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-15",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-16",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-17",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-06-18",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-19",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-20",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-21",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-06-22",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-06-23",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-24",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-25",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-06-26",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-06-27",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-28",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-06-29",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-06-30",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-07-01",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-02",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-03",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-04",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-05",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-06",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-07-07",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-08",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-09",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-10",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-07-11",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-07-12",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-07-13",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-07-14",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-07-15",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-16",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-17",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-18",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-07-19",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-20",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-21",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-22",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-23",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-24",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-07-25",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-07-26",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-27",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-28",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-29",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-30",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-07-31",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-08-01",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-08-02",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-03",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-04",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-08-05",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-06",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-07",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-08",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-09",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-10",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-08-11",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-12",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-08-13",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-14",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-08-15",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-16",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-17",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-18",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-08-19",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-08-20",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-21",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-22",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-08-23",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-08-24",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-25",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-26",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-27",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-08-28",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-08-29",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-30",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-08-31",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-09-01",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-09-02",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-09-03",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-09-04",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-09-05",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-09-06",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-07",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-08",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-09-09",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-10",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-11",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-12",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-09-13",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-14",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-09-15",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-16",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-09-17",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-09-18",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-19",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-09-20",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-09-21",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-09-22",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-23",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-09-24",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-09-25",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-09-26",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-27",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-28",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-09-29",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-09-30",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-10-01",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-02",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-10-03",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-04",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-05",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-10-06",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-07",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-08",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-09",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-10-10",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-11",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-12",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-13",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-10-14",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-10-15",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-10-16",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-10-17",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-10-18",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-19",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-20",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-10-21",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-22",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-10-23",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-24",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-25",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-26",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-27",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-28",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-10-29",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-10-30",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-10-31",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-11-01",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-11-02",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-11-03",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-04",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-05",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-06",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-07",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-08",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-09",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-10",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-11",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-11-12",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-11-13",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-14",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-15",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-11-16",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-11-17",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-18",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-19",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-11-20",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-21",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-22",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-23",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-24",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-25",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-26",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-27",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-28",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-11-29",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-30",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-12-01",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-02",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-03",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2025-12-04",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-05",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-06",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-12-07",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-08",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-12-09",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-10",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-11",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-12-12",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-13",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-12-14",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-15",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-16",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-12-17",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-12-18",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-19",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-20",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-12-21",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-22",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-23",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-12-24",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-25",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-12-26",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-27",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-28",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-29",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-12-30",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-12-31",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      }
+    ]
+  },
+  "2026": {
+    "title": "595 contributions in the last year",
+    "total": 595,
+    "days": [
+      {
+        "date": "2025-10-19",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-20",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-21",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-22",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-23",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-24",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-25",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-26",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-27",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-10-28",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-29",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-30",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-10-31",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-01",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-02",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-03",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-04",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-05",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-06",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-07",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-08",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-09",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-10",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-11-11",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-12",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-13",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-11-14",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-15",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-16",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-11-17",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-18",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-19",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-20",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-21",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-22",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-23",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-24",
+        "dayOfWeek": 1,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-25",
+        "dayOfWeek": 2,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-26",
+        "dayOfWeek": 3,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-27",
+        "dayOfWeek": 4,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-28",
+        "dayOfWeek": 5,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-29",
+        "dayOfWeek": 6,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-30",
+        "dayOfWeek": 0,
+        "month": "Nov",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-01",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-02",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-03",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-04",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-05",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-12-06",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-07",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-08",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-09",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-10",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-11",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-12",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-13",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-14",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-15",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-16",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-17",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-18",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-19",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-20",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-21",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-22",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-23",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-24",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-25",
+        "dayOfWeek": 4,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-12-26",
+        "dayOfWeek": 5,
+        "month": "Dec",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-12-27",
+        "dayOfWeek": 6,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-28",
+        "dayOfWeek": 0,
+        "month": "Dec",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-29",
+        "dayOfWeek": 1,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2025-12-30",
+        "dayOfWeek": 2,
+        "month": "Dec",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2025-12-31",
+        "dayOfWeek": 3,
+        "month": "Dec",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-01-01",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-01-02",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-03",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-04",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-05",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-06",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-07",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-08",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-09",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-10",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-11",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-01-12",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-13",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-01-14",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-01-15",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-01-16",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-17",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-01-18",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-19",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-01-20",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-01-21",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-01-22",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-23",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-24",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-25",
+        "dayOfWeek": 0,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-26",
+        "dayOfWeek": 1,
+        "month": "Jan",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-01-27",
+        "dayOfWeek": 2,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-28",
+        "dayOfWeek": 3,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-29",
+        "dayOfWeek": 4,
+        "month": "Jan",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-30",
+        "dayOfWeek": 5,
+        "month": "Jan",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-01-31",
+        "dayOfWeek": 6,
+        "month": "Jan",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-02-01",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-02",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-02-03",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-04",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-02-05",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-02-06",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-07",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-08",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-02-09",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-10",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-02-11",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-12",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-13",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-02-14",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-15",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-02-16",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-02-17",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-18",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-02-19",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-02-20",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-21",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-02-22",
+        "dayOfWeek": 0,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-23",
+        "dayOfWeek": 1,
+        "month": "Feb",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-02-24",
+        "dayOfWeek": 2,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-25",
+        "dayOfWeek": 3,
+        "month": "Feb",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-02-26",
+        "dayOfWeek": 4,
+        "month": "Feb",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-02-27",
+        "dayOfWeek": 5,
+        "month": "Feb",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-02-28",
+        "dayOfWeek": 6,
+        "month": "Feb",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-01",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-03-02",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-03",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-03-04",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-03-05",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-03-06",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-07",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-08",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-03-09",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-10",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-11",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-03-12",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-03-13",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-14",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-15",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-16",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-17",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-03-18",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-19",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-20",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-21",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-22",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-23",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-24",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-25",
+        "dayOfWeek": 3,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-26",
+        "dayOfWeek": 4,
+        "month": "Mar",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-03-27",
+        "dayOfWeek": 5,
+        "month": "Mar",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-28",
+        "dayOfWeek": 6,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-29",
+        "dayOfWeek": 0,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-30",
+        "dayOfWeek": 1,
+        "month": "Mar",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-31",
+        "dayOfWeek": 2,
+        "month": "Mar",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-01",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-02",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-04-03",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-04",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-05",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-06",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-04-07",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-04-08",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-09",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-04-10",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-11",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-12",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-04-13",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-04-14",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-04-15",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-04-16",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-17",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-18",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-04-19",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-04-20",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-04-21",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-04-22",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-04-23",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-24",
+        "dayOfWeek": 5,
+        "month": "Apr",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-04-25",
+        "dayOfWeek": 6,
+        "month": "Apr",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-04-26",
+        "dayOfWeek": 0,
+        "month": "Apr",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-04-27",
+        "dayOfWeek": 1,
+        "month": "Apr",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-04-28",
+        "dayOfWeek": 2,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-04-29",
+        "dayOfWeek": 3,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-04-30",
+        "dayOfWeek": 4,
+        "month": "Apr",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-05-01",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-05-02",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-03",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-04",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-05",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-06",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-07",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-05-08",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-05-09",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-10",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-11",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-05-12",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-13",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-14",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-15",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-16",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-17",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-05-18",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-05-19",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-05-20",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-05-21",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-22",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-05-23",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-24",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-05-25",
+        "dayOfWeek": 1,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-26",
+        "dayOfWeek": 2,
+        "month": "May",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-05-27",
+        "dayOfWeek": 3,
+        "month": "May",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-28",
+        "dayOfWeek": 4,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-29",
+        "dayOfWeek": 5,
+        "month": "May",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-30",
+        "dayOfWeek": 6,
+        "month": "May",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-05-31",
+        "dayOfWeek": 0,
+        "month": "May",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-01",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-06-02",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-03",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-04",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-05",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-06-06",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-07",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-08",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-09",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-10",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-11",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-12",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-13",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-06-14",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-06-15",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-16",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-17",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-06-18",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-19",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-20",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-21",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-06-22",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-23",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-24",
+        "dayOfWeek": 3,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-25",
+        "dayOfWeek": 4,
+        "month": "Jun",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-26",
+        "dayOfWeek": 5,
+        "month": "Jun",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-06-27",
+        "dayOfWeek": 6,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-28",
+        "dayOfWeek": 0,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-29",
+        "dayOfWeek": 1,
+        "month": "Jun",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-06-30",
+        "dayOfWeek": 2,
+        "month": "Jun",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-01",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-07-02",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-07-03",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-07-04",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-07-05",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-07-06",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-07",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-07-08",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-09",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-10",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-07-11",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-12",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-07-13",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-14",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-07-15",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-07-16",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-07-17",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-18",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-07-19",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-20",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-21",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-22",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-07-23",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-24",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-25",
+        "dayOfWeek": 6,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-26",
+        "dayOfWeek": 0,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-27",
+        "dayOfWeek": 1,
+        "month": "Jul",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-07-28",
+        "dayOfWeek": 2,
+        "month": "Jul",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-07-29",
+        "dayOfWeek": 3,
+        "month": "Jul",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-07-30",
+        "dayOfWeek": 4,
+        "month": "Jul",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-07-31",
+        "dayOfWeek": 5,
+        "month": "Jul",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-01",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-02",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-08-03",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-04",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-08-05",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-08-06",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-07",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-08",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-08-09",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-10",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-08-11",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-08-12",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-08-13",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-14",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-08-15",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-08-16",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-17",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-18",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-08-19",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-08-20",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-08-21",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-08-22",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-08-23",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-08-24",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-08-25",
+        "dayOfWeek": 2,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-08-26",
+        "dayOfWeek": 3,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-27",
+        "dayOfWeek": 4,
+        "month": "Aug",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-08-28",
+        "dayOfWeek": 5,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-29",
+        "dayOfWeek": 6,
+        "month": "Aug",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-08-30",
+        "dayOfWeek": 0,
+        "month": "Aug",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-08-31",
+        "dayOfWeek": 1,
+        "month": "Aug",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-01",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-09-02",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-09-03",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-09-04",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-09-05",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-06",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-07",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-08",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-09-09",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-10",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-11",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-12",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-13",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-09-14",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-09-15",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-16",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-17",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-09-18",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-19",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-09-20",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-21",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-22",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-23",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-09-24",
+        "dayOfWeek": 4,
+        "month": "Sep",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-09-25",
+        "dayOfWeek": 5,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-26",
+        "dayOfWeek": 6,
+        "month": "Sep",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-09-27",
+        "dayOfWeek": 0,
+        "month": "Sep",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-28",
+        "dayOfWeek": 1,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-09-29",
+        "dayOfWeek": 2,
+        "month": "Sep",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-09-30",
+        "dayOfWeek": 3,
+        "month": "Sep",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-10-01",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-10-02",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-10-03",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-10-04",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-10-05",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-10-06",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-10-07",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-10-08",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-10-09",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-10-10",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-10-11",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-10-12",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-13",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-14",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-15",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-16",
+        "dayOfWeek": 5,
+        "month": "Oct",
+        "count": 5,
+        "level": 3
+      },
+      {
+        "date": "2026-10-17",
+        "dayOfWeek": 6,
+        "month": "Oct",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-10-18",
+        "dayOfWeek": 0,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-19",
+        "dayOfWeek": 1,
+        "month": "Oct",
+        "count": 3,
+        "level": 2
+      },
+      {
+        "date": "2026-10-20",
+        "dayOfWeek": 2,
+        "month": "Oct",
+        "count": 4,
+        "level": 2
+      },
+      {
+        "date": "2026-10-21",
+        "dayOfWeek": 3,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-22",
+        "dayOfWeek": 4,
+        "month": "Oct",
+        "count": 0,
+        "level": 0
+      }
+    ]
+  }
+}

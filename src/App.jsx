@@ -1,39 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Navbar from "./components/Navbar";
 import HeroPlayground from "./components/HeroPlayground";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import AlgorithmSimulator from "./components/AlgorithmSimulator";
-import Experience from "./components/Experience";
-import ArchitectureVisualizer from "./components/ArchitectureVisualizer";
 import Projects from "./components/Projects";
-import GitHubStatsWidget from "./components/GitHubStatsWidget";
+import FreelanceSpotlight from "./components/FreelanceSpotlight";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import About from "./components/About";
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 import SocialSidebar from "./components/SocialSidebar";
 import BackToTop from "./components/BackToTop";
-import CmdKModal from "./components/CmdKModal";
-import ThreeMeshCanvas from "./components/ThreeMeshCanvas";
 import ScrollProgress from "./components/ScrollProgress";
-import MusicPlayer from "./components/MusicPlayer";
 import ParticleCursorTrail from "./components/ParticleCursorTrail";
-import InteractiveIDE from "./components/InteractiveIDE";
-import AIAssistantWidget from "./components/AIAssistantWidget";
-import PerformanceBenchmarker from "./components/PerformanceBenchmarker";
-import PhysicsTechSandbox from "./components/PhysicsTechSandbox";
+
+// Code-split heavy interactive and below-the-fold widgets for sub-second loading
+const ThreeMeshCanvas = lazy(() => import("./components/ThreeMeshCanvas"));
+const GitHubStatsWidget = lazy(() => import("./components/GitHubStatsWidget"));
+const CmdKModal = lazy(() => import("./components/CmdKModal"));
+const MusicPlayer = lazy(() => import("./components/MusicPlayer"));
+const AIAssistantWidget = lazy(() => import("./components/AIAssistantWidget"));
 
 function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved === 'dark';
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return true;
+      }
+    }
+    return false; // Light-first design as specified
+  });
   const [isCmdKOpen, setIsCmdKOpen] = useState(false);
 
   useEffect(() => {
     if (dark) {
       document.documentElement.classList.add("dark");
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem('theme', 'light');
     }
   }, [dark]);
 
@@ -59,57 +69,64 @@ function App() {
   const handleCloseCmdK = () => setIsCmdKOpen(false);
 
   return (
-    <div className="relative min-h-screen w-full max-w-full overflow-x-hidden bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans selection:bg-indigo-500/20 selection:text-indigo-900 dark:selection:text-indigo-200">
+    <div className="relative min-h-screen w-full max-w-full overflow-x-clip flex flex-col bg-[#F5F2EB] text-[#252722] dark:bg-[#1C1D19] dark:text-[#F5F2EB] font-sans selection:bg-[#777C62]/20 selection:text-[#252722] dark:selection:bg-[#ADB293]/25 dark:selection:text-[#F5F2EB]">
       
       {/* Background Decorators */}
       <ErrorBoundary><ParticleCursorTrail /></ErrorBoundary>
       <ErrorBoundary><ScrollProgress /></ErrorBoundary>
-      <ErrorBoundary><ThreeMeshCanvas /></ErrorBoundary>
+      <ErrorBoundary>
+        <Suspense fallback={null}>
+          <ThreeMeshCanvas />
+        </Suspense>
+      </ErrorBoundary>
 
       {/* Cmd+K Quick Search Command Palette */}
-      <ErrorBoundary><CmdKModal isOpen={isCmdKOpen} onClose={handleCloseCmdK} /></ErrorBoundary>
+      <ErrorBoundary>
+        <Suspense fallback={null}>
+          <CmdKModal isOpen={isCmdKOpen} onClose={handleCloseCmdK} />
+        </Suspense>
+      </ErrorBoundary>
 
       {/* Header Navigation */}
       <ErrorBoundary><Navbar dark={dark} toggleDark={toggleDark} onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
       
       {/* Main Page Sections */}
-      <main className="relative z-10">
+      <main className="relative z-10 flex-1">
         <ErrorBoundary><HeroPlayground onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
-        <ErrorBoundary><About /></ErrorBoundary>
-        <ErrorBoundary><Experience /></ErrorBoundary>
-        <ErrorBoundary><Education /></ErrorBoundary>
-        <ErrorBoundary><ArchitectureVisualizer /></ErrorBoundary>
         <ErrorBoundary><Projects /></ErrorBoundary>
-        <div className="max-w-6xl mx-auto px-6">
-          <ErrorBoundary><GitHubStatsWidget /></ErrorBoundary>
-          <ErrorBoundary><InteractiveIDE /></ErrorBoundary>
-          <ErrorBoundary><PerformanceBenchmarker /></ErrorBoundary>
+        <ErrorBoundary><FreelanceSpotlight /></ErrorBoundary>
+        <ErrorBoundary><Experience /></ErrorBoundary>
+        {/* <ErrorBoundary><Skills /></ErrorBoundary> */}
+        <ErrorBoundary><About /></ErrorBoundary>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <ErrorBoundary>
+            <Suspense fallback={<div className="h-48 flex items-center justify-center text-xs font-mono text-[#68675F]">Loading Telemetry...</div>}>
+              <GitHubStatsWidget />
+            </Suspense>
+          </ErrorBoundary>
         </div>
-        <ErrorBoundary><Skills /></ErrorBoundary>
-        <div className="max-w-6xl mx-auto px-6">
-          <ErrorBoundary><PhysicsTechSandbox /></ErrorBoundary>
-          <ErrorBoundary><AlgorithmSimulator /></ErrorBoundary>
-        </div>
+        <ErrorBoundary><Education /></ErrorBoundary>
         <ErrorBoundary><Certifications /></ErrorBoundary>
         <ErrorBoundary><Contact /></ErrorBoundary>
         <ErrorBoundary><CTA /></ErrorBoundary>
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 py-8 px-6 border-t border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-slate-950 text-center text-xs text-slate-500">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Adhi Vignesh. All rights reserved.</p>
-          <p>
-            Built with <span className="font-semibold text-slate-700 dark:text-slate-300">React</span>, <span className="font-semibold text-slate-700 dark:text-slate-300">Tailwind CSS</span> & <span className="font-semibold text-slate-700 dark:text-slate-300">Framer Motion</span>
-          </p>
-        </div>
-      </footer>
+      <ErrorBoundary><Footer onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
 
       {/* Floating Controls */}
       <ErrorBoundary><SocialSidebar /></ErrorBoundary>
       <ErrorBoundary><BackToTop /></ErrorBoundary>
-      <ErrorBoundary><MusicPlayer /></ErrorBoundary>
-      <ErrorBoundary><AIAssistantWidget /></ErrorBoundary>
+      <ErrorBoundary>
+        <Suspense fallback={null}>
+          <MusicPlayer />
+        </Suspense>
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Suspense fallback={null}>
+          <AIAssistantWidget />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }
