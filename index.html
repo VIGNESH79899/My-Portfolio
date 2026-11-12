@@ -34,8 +34,8 @@
     <meta name="theme-color" content="#1C1D19" media="(prefers-color-scheme: dark)" />
 
     <!-- Preload LCP Hero Portrait -->
-    <link rel="preload" as="image" type="image/webp" href="/images/developer-hoodie-mobile.webp" media="(max-width: 639px)" fetchpriority="high" />
-    <link rel="preload" as="image" type="image/webp" href="/images/developer-hoodie.webp" media="(min-width: 640px)" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/webp" href="./images/developer-hoodie-mobile.webp" media="(max-width: 639px)" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/webp" href="./images/developer-hoodie.webp" media="(min-width: 640px)" fetchpriority="high" />
 
     <!-- Fonts: Premium Editorial Typography (Non-blocking load to protect FCP/LCP) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,25 +63,28 @@
       })();
     </script>
     <style>
-      html,body{margin:0;background:#F5F2EB;color:#252722;font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+      html,body{margin:0;background:#F5F2EB;color:#252722;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased}
       html.dark,html.dark body{background:#1C1D19;color:#F5F2EB}
       .ssr-shell{min-height:100vh;display:flex;flex-direction:column}
-      .ssr-hero{padding:7rem 1rem 3.5rem;max-width:72rem;width:100%;margin:0 auto;box-sizing:border-box;display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
-      .ssr-hi{font-size:1.125rem;color:#5B5A53;margin:0 0 .5rem;font-weight:500}
-      html.dark .ssr-hi{color:#B8B7AE}
-      .ssr-h1{font-size:clamp(2.25rem,5.5vw,3.75rem);line-height:1.08;font-weight:800;letter-spacing:-0.025em;margin:0 0 1rem}
-      .ssr-lead{font-size:clamp(1.0625rem,2vw,1.25rem);line-height:1.55;color:#252722;margin:0 0 .75rem;font-weight:500}
-      html.dark .ssr-lead{color:#E6E4DC}
-      .ssr-sub{font-size:.9375rem;line-height:1.6;color:#5B5A53;margin:0 0 1.75rem}
-      html.dark .ssr-sub{color:#B8B7AE}
-      .ssr-ctas{display:flex;flex-wrap:wrap;gap:.75rem}
-      .ssr-btn-dark{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.35rem;border-radius:9999px;background:#1C1D19;color:#F5F2EB;font-weight:600;font-size:.875rem;text-decoration:none}
+      .ssr-hero{padding:7rem 1rem 0;max-width:72rem;width:100%;margin:0 auto;box-sizing:border-box;display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:end}
+      .ssr-col{padding-bottom:1rem}
+      .ssr-hi{font-size:1.125rem;color:#555A44;margin:0 0 .25rem;font-weight:500}
+      html.dark .ssr-hi{color:#ADB293}
+      .ssr-h1{font-family:'Manrope','Inter',system-ui,sans-serif;font-size:2.25rem;line-height:1.05;font-weight:700;letter-spacing:-0.035em;margin:0 0 1.25rem}
+      .ssr-lead{font-family:'Manrope','Inter',system-ui,sans-serif;font-size:1.5rem;line-height:1.3;color:#252722;margin:0 0 1.25rem;font-weight:500}
+      html.dark .ssr-lead{color:#F5F2EB}
+      .ssr-sub{font-size:1rem;line-height:1.625;color:#68675F;margin:0 0 1.25rem}
+      html.dark .ssr-sub{color:#C0BFB3}
+      .ssr-ctas{display:flex;flex-wrap:wrap;gap:.875rem;padding-top:.75rem}
+      .ssr-btn-dark{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.5rem;border-radius:9999px;background:#1C1D19;color:#F5F2EB;font-weight:700;font-size:.875rem;text-decoration:none}
       html.dark .ssr-btn-dark{background:#F5F2EB;color:#1C1D19}
-      .ssr-btn-light{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.35rem;border-radius:9999px;border:1px solid #C8C4B8;background:#FAF8F3;color:#252722;font-weight:600;font-size:.875rem;text-decoration:none}
+      .ssr-btn-light{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 1.5rem;border-radius:9999px;border:1px solid #C8C4B8;background:#FAF8F3;color:#252722;font-weight:700;font-size:.875rem;text-decoration:none}
       html.dark .ssr-btn-light{border-color:#3C3E36;background:#262822;color:#F5F2EB}
-      .ssr-media{display:flex;justify-content:center}
-      .ssr-img{display:block;width:min(16.5rem,72vw);height:auto;aspect-ratio:671/953;object-fit:contain}
-      @media(min-width:1024px){.ssr-hero{padding:8rem 1.5rem 4rem;grid-template-columns:1.15fr .85fr;gap:3rem}.ssr-img{width:min(22rem,100%)}}
+      .ssr-media{display:flex;justify-content:center;align-self:end}
+      .ssr-img{display:block;width:292px;max-width:100%;height:auto;max-height:430px;aspect-ratio:671/953;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(to bottom,#000 97%,transparent 100%);mask-image:linear-gradient(to bottom,#000 97%,transparent 100%)}
+      @media(min-width:640px){.ssr-hero{padding:8rem 1.5rem 0}.ssr-hi{font-size:1.25rem}.ssr-h1{font-size:3.75rem}.ssr-lead{font-size:1.875rem}.ssr-sub{font-size:1.125rem}.ssr-img{width:352px;max-height:510px}}
+      @media(min-width:768px){.ssr-img{width:382px}}
+      @media(min-width:1024px){.ssr-hero{padding:8rem 2rem 0;grid-template-columns:7fr 5fr;gap:2.5rem}.ssr-col{padding-bottom:5rem;align-self:center}.ssr-h1{font-size:76px}.ssr-lead{font-size:32px}.ssr-media{justify-content:flex-end}.ssr-img{width:min(442px,100%);max-height:590px}}
     </style>
   </head>
   <body class="bg-[#F5F2EB] text-[#252722] dark:bg-[#1C1D19] dark:text-[#F5F2EB] antialiased selection:bg-[#777C62]/20 selection:text-[#252722] dark:selection:bg-[#ADB293]/25 dark:selection:text-[#F5F2EB] font-sans">
@@ -89,7 +92,7 @@
     <div id="root">
       <div class="ssr-shell">
         <main class="ssr-hero">
-          <div>
+          <div class="ssr-col">
             <p class="ssr-hi">Hi, I'm</p>
             <h1 class="ssr-h1">Adhi Vignesh</h1>
             <p class="ssr-lead">I build high-performance web applications and intelligent AI systems that deliver real results.</p>

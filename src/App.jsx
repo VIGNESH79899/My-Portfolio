@@ -37,6 +37,42 @@ function App() {
   const [isCmdKOpen, setIsCmdKOpen] = useState(false);
   const [ambientReady, setAmbientReady] = useState(false);
   const [isFinePointer, setIsFinePointer] = useState(false);
+  const [belowFoldReady, setBelowFoldReady] = useState(() => {
+    if (typeof window !== "undefined" && window.location.hash && window.location.hash !== "#hero") {
+      return true;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    if (belowFoldReady) return;
+    const triggerBelowFold = () => setBelowFoldReady(true);
+    window.addEventListener("scroll", triggerBelowFold, { passive: true, once: true });
+    window.addEventListener("touchstart", triggerBelowFold, { passive: true, once: true });
+    window.addEventListener("pointerdown", triggerBelowFold, { passive: true, once: true });
+    window.addEventListener("keydown", triggerBelowFold, { passive: true, once: true });
+
+    let timerId;
+    if (typeof window.requestIdleCallback === "function") {
+      const idleId = window.requestIdleCallback(triggerBelowFold, { timeout: 1800 });
+      return () => {
+        window.removeEventListener("scroll", triggerBelowFold);
+        window.removeEventListener("touchstart", triggerBelowFold);
+        window.removeEventListener("pointerdown", triggerBelowFold);
+        window.removeEventListener("keydown", triggerBelowFold);
+        if (typeof window.cancelIdleCallback === "function") window.cancelIdleCallback(idleId);
+      };
+    }
+
+    timerId = window.setTimeout(triggerBelowFold, 1800);
+    return () => {
+      window.removeEventListener("scroll", triggerBelowFold);
+      window.removeEventListener("touchstart", triggerBelowFold);
+      window.removeEventListener("pointerdown", triggerBelowFold);
+      window.removeEventListener("keydown", triggerBelowFold);
+      window.clearTimeout(timerId);
+    };
+  }, [belowFoldReady]);
 
   useEffect(() => {
     const coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
@@ -48,7 +84,7 @@ function App() {
     };
 
     if (typeof window.requestIdleCallback === 'function') {
-      const idleId = window.requestIdleCallback(enableAmbient, { timeout: 900 });
+      const idleId = window.requestIdleCallback(enableAmbient, { timeout: 1200 });
       return () => {
         cancelled = true;
         if (typeof window.cancelIdleCallback === 'function') {
@@ -57,7 +93,7 @@ function App() {
       };
     }
 
-    const timerId = window.setTimeout(enableAmbient, 900);
+    const timerId = window.setTimeout(enableAmbient, 1200);
     return () => {
       cancelled = true;
       window.clearTimeout(timerId);
@@ -113,12 +149,14 @@ function App() {
         </>
       )}
 
-      {/* Cmd+K Quick Search Command Palette */}
-      <ErrorBoundary>
-        <Suspense fallback={null}>
-          <CmdKModal isOpen={isCmdKOpen} onClose={handleCloseCmdK} />
-        </Suspense>
-      </ErrorBoundary>
+      {/* Cmd+K Quick Search Command Palette (loaded on open) */}
+      {isCmdKOpen && (
+        <ErrorBoundary>
+          <Suspense fallback={null}>
+            <CmdKModal isOpen={isCmdKOpen} onClose={handleCloseCmdK} />
+          </Suspense>
+        </ErrorBoundary>
+      )}
 
       {/* Header Navigation */}
       <ErrorBoundary><Navbar dark={dark} toggleDark={toggleDark} onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
@@ -126,25 +164,42 @@ function App() {
       {/* Main Page Sections */}
       <main className="relative z-10 flex-1">
         <ErrorBoundary><HeroPlayground onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="projects" className="py-24 min-h-[600px]" aria-label="Projects" />}><Projects /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="freelance" className="py-20 min-h-[420px]" aria-label="Freelance Spotlight" />}><FreelanceSpotlight /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="experience" className="py-20 min-h-[420px]" aria-label="Experience" />}><Experience /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="about" className="py-20 min-h-[480px]" aria-label="About" />}><About /></Suspense></ErrorBoundary>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <ErrorBoundary>
-            <Suspense fallback={<div className="h-48 flex items-center justify-center text-xs font-mono text-[#5B5A53]">Loading Telemetry...</div>}>
-              <GitHubStatsWidget />
-            </Suspense>
-          </ErrorBoundary>
-        </div>
-        <ErrorBoundary><Suspense fallback={<section id="education" className="py-20 min-h-[360px]" aria-label="Education" />}><Education /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="certifications" className="py-20 min-h-[360px]" aria-label="Certifications" />}><Certifications /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="contact" className="py-20 min-h-[420px]" aria-label="Contact" />}><Contact /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={null}><CTA /></Suspense></ErrorBoundary>
+        {belowFoldReady ? (
+          <>
+            <ErrorBoundary><Suspense fallback={<section id="projects" className="py-24 min-h-[600px]" aria-label="Projects" />}><Projects /></Suspense></ErrorBoundary>
+            <ErrorBoundary><Suspense fallback={<section id="freelance" className="py-20 min-h-[420px]" aria-label="Freelance Spotlight" />}><FreelanceSpotlight /></Suspense></ErrorBoundary>
+            <ErrorBoundary><Suspense fallback={<section id="experience" className="py-20 min-h-[420px]" aria-label="Experience" />}><Experience /></Suspense></ErrorBoundary>
+            <ErrorBoundary><Suspense fallback={<section id="about" className="py-20 min-h-[480px]" aria-label="About" />}><About /></Suspense></ErrorBoundary>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+              <ErrorBoundary>
+                <Suspense fallback={<div className="h-48 flex items-center justify-center text-xs font-mono text-[#5B5A53]">Loading Telemetry...</div>}>
+                  <GitHubStatsWidget />
+                </Suspense>
+              </ErrorBoundary>
+            </div>
+            <ErrorBoundary><Suspense fallback={<section id="education" className="py-20 min-h-[360px]" aria-label="Education" />}><Education /></Suspense></ErrorBoundary>
+            <ErrorBoundary><Suspense fallback={<section id="certifications" className="py-20 min-h-[360px]" aria-label="Certifications" />}><Certifications /></Suspense></ErrorBoundary>
+            <ErrorBoundary><Suspense fallback={<section id="contact" className="py-20 min-h-[420px]" aria-label="Contact" />}><Contact /></Suspense></ErrorBoundary>
+            <ErrorBoundary><Suspense fallback={null}><CTA /></Suspense></ErrorBoundary>
+          </>
+        ) : (
+          <>
+            <section id="projects" className="py-24 min-h-[600px]" aria-label="Projects" />
+            <section id="freelance" className="py-20 min-h-[420px]" aria-label="Freelance Spotlight" />
+            <section id="experience" className="py-20 min-h-[420px]" aria-label="Experience" />
+            <section id="about" className="py-20 min-h-[480px]" aria-label="About" />
+            <div className="h-48" />
+            <section id="education" className="py-20 min-h-[360px]" aria-label="Education" />
+            <section id="certifications" className="py-20 min-h-[360px]" aria-label="Certifications" />
+            <section id="contact" className="py-20 min-h-[420px]" aria-label="Contact" />
+          </>
+        )}
       </main>
 
       {/* Footer */}
-      <ErrorBoundary><Suspense fallback={null}><Footer onOpenCmdK={handleOpenCmdK} /></Suspense></ErrorBoundary>
+      {belowFoldReady && (
+        <ErrorBoundary><Suspense fallback={null}><Footer onOpenCmdK={handleOpenCmdK} /></Suspense></ErrorBoundary>
+      )}
 
       {/* Floating Controls (deferred past first paint) */}
       {ambientReady && (

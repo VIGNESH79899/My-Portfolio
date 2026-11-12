@@ -1,6 +1,66 @@
 import React, { useState, useEffect } from "react";
-import { Search, Sun, Moon, Download, Menu, X, ArrowUpRight } from "lucide-react";
 import { playClickSound } from "../utils/sound";
+
+const iconProps = (className) => ({
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  className,
+  "aria-hidden": "true",
+});
+
+const Search = ({ className }) => (
+  <svg {...iconProps(className)}>
+    <circle cx="11" cy="11" r="8" />
+    <path d="m21 21-4.3-4.3" />
+  </svg>
+);
+
+const Sun = ({ className }) => (
+  <svg {...iconProps(className)}>
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+  </svg>
+);
+
+const Moon = ({ className }) => (
+  <svg {...iconProps(className)}>
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+  </svg>
+);
+
+const Download = ({ className }) => (
+  <svg {...iconProps(className)}>
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+    <polyline points="7 10 12 15 17 10" />
+    <line x1="12" x2="12" y1="15" y2="3" />
+  </svg>
+);
+
+const Menu = ({ className }) => (
+  <svg {...iconProps(className)}>
+    <line x1="4" x2="20" y1="12" y2="12" />
+    <line x1="4" x2="20" y1="6" y2="6" />
+    <line x1="4" x2="20" y1="18" y2="18" />
+  </svg>
+);
+
+const X = ({ className }) => (
+  <svg {...iconProps(className)}>
+    <path d="M18 6 6 18" />
+    <path d="m6 6 12 12" />
+  </svg>
+);
+
+const ArrowUpRight = ({ className }) => (
+  <svg {...iconProps(className)}>
+    <path d="M7 7h10v10" />
+    <path d="M7 17 17 7" />
+  </svg>
+);
 
 const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
   const [menuOpen, setMenuOpen] = useState(false);

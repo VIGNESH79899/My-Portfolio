@@ -1,6 +1,17 @@
 import React from 'react';
-import { FaDownload, FaArrowRight } from 'react-icons/fa';
 import { playClickSound } from '../utils/sound';
+
+const ArrowRightIcon = () => (
+  <svg width="10" height="10" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+  </svg>
+);
+
+const DownloadIcon = () => (
+  <svg width="10" height="10" viewBox="0 0 512 512" fill="currentColor" className="text-[#555A44] dark:text-[#ADB293]" aria-hidden="true">
+    <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+  </svg>
+);
 
 const HeroPlayground = () => {
   return (
@@ -40,18 +51,18 @@ const HeroPlayground = () => {
             <a
               href="#projects"
               onClick={() => { try { playClickSound(); } catch {} }}
-              className="btn-primary !px-6 !py-3.5 text-sm !font-bold tracking-tight"
+              className="btn-primary !px-6 !py-3.5 text-sm !font-bold tracking-tight inline-flex items-center gap-2"
             >
-              Explore Projects <FaArrowRight className="text-[10px]" />
+              <span>Explore Projects</span> <ArrowRightIcon />
             </a>
 
             <a
               href="/Adhi_Vignesh_Resume.pdf"
               download="Adhi_Vignesh_Resume.pdf"
               onClick={() => { try { playClickSound(); } catch {} }}
-              className="btn-secondary !px-6 !py-3.5 text-sm !font-bold tracking-tight"
+              className="btn-secondary !px-6 !py-3.5 text-sm !font-bold tracking-tight inline-flex items-center gap-2"
             >
-              <FaDownload className="text-[10px] text-[#777C62] dark:text-[#ADB293]" /> Resume (PDF)
+              <DownloadIcon /> <span>Resume (PDF)</span>
             </a>
           </div>
 
@@ -59,7 +70,7 @@ const HeroPlayground = () => {
 
         {/* Right Column (Col-5): Crisp Transparent Waist-Up Cutout Grounded at Hero Bottom */}
         <div className="lg:col-span-5 flex justify-center lg:justify-end self-end">
-          <div className="w-[290px] sm:w-[350px] md:w-[380px] lg:w-full max-w-[440px]">
+          <div className="w-[288px] sm:w-[348px] md:w-[378px] lg:w-full max-w-[438px]">
             <picture>
               <source
                 media="(max-width: 639px)"
