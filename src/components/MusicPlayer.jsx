@@ -285,6 +285,7 @@ const MusicPlayer = () => {
         <button
           ref={buttonRef}
           onClick={() => { try { playClickSound(); } catch (e) {} setIsOpen(!isOpen); }}
+          aria-label={`Open music player — ${currentTrack.title}`}
           className="btn-venom group inline-flex items-center gap-2.5 !py-2 !px-4 shadow-2xl cursor-pointer"
         >
           {/* Animated Equalizer Waves */}
@@ -322,6 +323,7 @@ const MusicPlayer = () => {
 
               <button
                 onClick={() => { try { playClickSound(); } catch (e) {} setIsOpen(false); }}
+                aria-label="Close music player"
                 className="p-1.5 rounded-full hover:bg-[#252620] text-[#C0BFB3] hover:text-[#F5F2EB] transition-colors cursor-pointer"
               >
                 <FaTimes size={14} />
@@ -335,7 +337,7 @@ const MusicPlayer = () => {
                   <span className="text-[10px] text-[#ADB293] font-mono font-bold uppercase tracking-wider block">
                     OFFICIAL TRACK #{currentTrackIndex + 1} OF {playlist.length}
                   </span>
-                  <h4 className="text-sm font-bold font-display text-[#F5F2EB] truncate">{currentTrack.title}</h4>
+                  <p className="text-sm font-bold font-display text-[#F5F2EB] truncate">{currentTrack.title}</p>
                   <p className="text-xs text-[#C0BFB3] truncate">{currentTrack.artist}</p>
                 </div>
                 <span className="text-[10px] font-mono text-[#C0BFB3] shrink-0">{currentTrack.duration}</span>

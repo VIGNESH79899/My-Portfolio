@@ -35,6 +35,34 @@ function App() {
     return false; // Light-first design as specified
   });
   const [isCmdKOpen, setIsCmdKOpen] = useState(false);
+  const [ambientReady, setAmbientReady] = useState(false);
+  const [isFinePointer, setIsFinePointer] = useState(false);
+
+  useEffect(() => {
+    const coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    setIsFinePointer(!coarse && window.innerWidth >= 768);
+
+    let cancelled = false;
+    const enableAmbient = () => {
+      if (!cancelled) setAmbientReady(true);
+    };
+
+    if (typeof window.requestIdleCallback === 'function') {
+      const idleId = window.requestIdleCallback(enableAmbient, { timeout: 900 });
+      return () => {
+        cancelled = true;
+        if (typeof window.cancelIdleCallback === 'function') {
+          window.cancelIdleCallback(idleId);
+        }
+      };
+    }
+
+    const timerId = window.setTimeout(enableAmbient, 900);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timerId);
+    };
+  }, []);
 
   useEffect(() => {
     if (dark) {
@@ -70,14 +98,20 @@ function App() {
   return (
     <div className="relative min-h-screen w-full max-w-full overflow-x-clip flex flex-col bg-[#F5F2EB] text-[#252722] dark:bg-[#1C1D19] dark:text-[#F5F2EB] font-sans selection:bg-[#777C62]/20 selection:text-[#252722] dark:selection:bg-[#ADB293]/25 dark:selection:text-[#F5F2EB]">
       
-      {/* Background Decorators */}
-      <ErrorBoundary><Suspense fallback={null}><ParticleCursorTrail /></Suspense></ErrorBoundary>
-      <ErrorBoundary><Suspense fallback={null}><ScrollProgress /></Suspense></ErrorBoundary>
-      <ErrorBoundary>
-        <Suspense fallback={null}>
-          <ThreeMeshCanvas />
-        </Suspense>
-      </ErrorBoundary>
+      {/* Background Decorators (deferred past first paint so Mobile LCP & main thread stay unblocked) */}
+      {ambientReady && isFinePointer && (
+        <ErrorBoundary><Suspense fallback={null}><ParticleCursorTrail /></Suspense></ErrorBoundary>
+      )}
+      {ambientReady && (
+        <>
+          <ErrorBoundary><Suspense fallback={null}><ScrollProgress /></Suspense></ErrorBoundary>
+          <ErrorBoundary>
+            <Suspense fallback={null}>
+              <ThreeMeshCanvas />
+            </Suspense>
+          </ErrorBoundary>
+        </>
+      )}
 
       {/* Cmd+K Quick Search Command Palette */}
       <ErrorBoundary>
@@ -92,39 +126,43 @@ function App() {
       {/* Main Page Sections */}
       <main className="relative z-10 flex-1">
         <ErrorBoundary><HeroPlayground onOpenCmdK={handleOpenCmdK} /></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="projects" className="py-24 min-h-[600px]" aria-hidden="true" />}><Projects /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="freelance" className="py-20 min-h-[420px]" aria-hidden="true" />}><FreelanceSpotlight /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="experience" className="py-20 min-h-[420px]" aria-hidden="true" />}><Experience /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="about" className="py-20 min-h-[480px]" aria-hidden="true" />}><About /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="projects" className="py-24 min-h-[600px]" aria-label="Projects" />}><Projects /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="freelance" className="py-20 min-h-[420px]" aria-label="Freelance Spotlight" />}><FreelanceSpotlight /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="experience" className="py-20 min-h-[420px]" aria-label="Experience" />}><Experience /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="about" className="py-20 min-h-[480px]" aria-label="About" />}><About /></Suspense></ErrorBoundary>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <ErrorBoundary>
-            <Suspense fallback={<div className="h-48 flex items-center justify-center text-xs font-mono text-[#68675F]">Loading Telemetry...</div>}>
+            <Suspense fallback={<div className="h-48 flex items-center justify-center text-xs font-mono text-[#5B5A53]">Loading Telemetry...</div>}>
               <GitHubStatsWidget />
             </Suspense>
           </ErrorBoundary>
         </div>
-        <ErrorBoundary><Suspense fallback={<section id="education" className="py-20 min-h-[360px]" aria-hidden="true" />}><Education /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="certifications" className="py-20 min-h-[360px]" aria-hidden="true" />}><Certifications /></Suspense></ErrorBoundary>
-        <ErrorBoundary><Suspense fallback={<section id="contact" className="py-20 min-h-[420px]" aria-hidden="true" />}><Contact /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="education" className="py-20 min-h-[360px]" aria-label="Education" />}><Education /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="certifications" className="py-20 min-h-[360px]" aria-label="Certifications" />}><Certifications /></Suspense></ErrorBoundary>
+        <ErrorBoundary><Suspense fallback={<section id="contact" className="py-20 min-h-[420px]" aria-label="Contact" />}><Contact /></Suspense></ErrorBoundary>
         <ErrorBoundary><Suspense fallback={null}><CTA /></Suspense></ErrorBoundary>
       </main>
 
       {/* Footer */}
       <ErrorBoundary><Suspense fallback={null}><Footer onOpenCmdK={handleOpenCmdK} /></Suspense></ErrorBoundary>
 
-      {/* Floating Controls */}
-      <ErrorBoundary><Suspense fallback={null}><SocialSidebar /></Suspense></ErrorBoundary>
-      <ErrorBoundary><Suspense fallback={null}><BackToTop /></Suspense></ErrorBoundary>
-      <ErrorBoundary>
-        <Suspense fallback={null}>
-          <MusicPlayer />
-        </Suspense>
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Suspense fallback={null}>
-          <AIAssistantWidget />
-        </Suspense>
-      </ErrorBoundary>
+      {/* Floating Controls (deferred past first paint) */}
+      {ambientReady && (
+        <>
+          <ErrorBoundary><Suspense fallback={null}><SocialSidebar /></Suspense></ErrorBoundary>
+          <ErrorBoundary><Suspense fallback={null}><BackToTop /></Suspense></ErrorBoundary>
+          <ErrorBoundary>
+            <Suspense fallback={null}>
+              <MusicPlayer />
+            </Suspense>
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Suspense fallback={null}>
+              <AIAssistantWidget />
+            </Suspense>
+          </ErrorBoundary>
+        </>
+      )}
     </div>
   );
 }

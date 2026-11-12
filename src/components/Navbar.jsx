@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Search, Sun, Moon, Download, Menu, X, ArrowUpRight } from "lucide-react";
 import { playClickSound } from "../utils/sound";
 
@@ -11,34 +10,42 @@ const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
-
-      const sections = [
-        "hero",
-        "projects",
-        "freelance",
-        "experience",
-        // "skills",
-        "about",
-        "education",
-        "certifications",
-        "contact"
-      ];
-      const scrollPos = window.scrollY + 140;
-      for (const section of sections) {
-        const el = document.getElementById(section);
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPos >= top && scrollPos < top + height) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleScroll();
+
+    const sectionIds = [
+      "hero",
+      "projects",
+      "freelance",
+      "experience",
+      "about",
+      "education",
+      "certifications",
+      "contact",
+    ];
+    let observer;
+    if (typeof IntersectionObserver !== "undefined") {
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              setActiveSection(entry.target.id);
+            }
+          }
+        },
+        { rootMargin: "-30% 0px -55% 0px", threshold: 0.01 }
+      );
+      sectionIds.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (observer) observer.disconnect();
+    };
   }, []);
 
   const navLinks = [
@@ -142,13 +149,11 @@ const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
             className="w-9 h-9 rounded-full bg-[#FFFDF9]/90 dark:bg-[#12130F]/90 hover:bg-[#F5F2EA] dark:hover:bg-[#1E2018] text-[#252722] dark:text-[#F5F2EB] border border-[#D8D1C5]/80 dark:border-white/12 shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,1),0_2px_8px_rgba(37,39,34,0.04)] dark:shadow-[inset_0_1.5px_1px_0_rgba(255,255,255,0.2),0_4px_14px_rgba(0,0,0,0.4)] hover:scale-110 active:scale-95 transition-all cursor-pointer flex items-center justify-center shrink-0"
             title={dark ? "Switch to light theme" : "Switch to dark theme"}
           >
-            <motion.div
-              initial={false}
-              animate={{ rotate: dark ? 180 : 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            <span
+              className={`inline-flex transition-transform duration-300 ${dark ? "rotate-180" : "rotate-0"}`}
             >
-              {dark ? <Sun className="w-4 h-4 text-[#C1A17F]" /> : <Moon className="w-4 h-4 text-[#777C62]" />}
-            </motion.div>
+              {dark ? <Sun className="w-4 h-4 text-[#C1A17F]" /> : <Moon className="w-4 h-4 text-[#555A44]" />}
+            </span>
           </button>
 
           {/* Resume Download CTA Button */}
@@ -197,15 +202,10 @@ const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
       </div>
 
       {/* Mobile Drawer */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.22, ease: "easeInOut" }}
-            className="lg:hidden mt-2 max-w-6xl mx-auto rounded-3xl bg-[#FFFDF9]/95 dark:bg-[#181914]/95 backdrop-blur-2xl border border-[#D8D1C5] dark:border-[#383A2F] p-4 flex flex-col gap-2 shadow-xl pointer-events-auto overflow-hidden"
-          >
+      {menuOpen && (
+        <div
+          className="lg:hidden mt-2 max-w-6xl mx-auto rounded-3xl bg-[#FFFDF9]/95 dark:bg-[#181914]/95 backdrop-blur-2xl border border-[#D8D1C5] dark:border-[#383A2F] p-4 flex flex-col gap-2 shadow-xl pointer-events-auto overflow-hidden transition-all"
+        >
             <div className="grid grid-cols-2 gap-1.5 pb-2">
               {navLinks.map((link) => {
                 const isActive = activeSection === link.id;
@@ -237,9 +237,8 @@ const Navbar = ({ dark, toggleDark, onOpenCmdK }) => {
               <span>Download Official Resume (PDF)</span>
               <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
             </a>
-          </motion.div>
-        )}
-      </AnimatePresence>
+        </div>
+      )}
     </header>
   );
 };

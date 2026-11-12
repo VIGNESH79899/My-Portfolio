@@ -362,9 +362,9 @@ const AIAssistantWidget = () => {
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-1.5">
-                      <h4 className="text-xs font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight whitespace-nowrap">
+                      <p className="text-xs font-bold text-[#252722] dark:text-[#F5F2EB] font-heading tracking-tight whitespace-nowrap">
                         Adhi AI Twin
-                      </h4>
+                      </p>
                       <span className="px-2 py-0.5 rounded-full bg-[#777C62]/10 dark:bg-[#ADB293]/15 text-[#5C614B] dark:text-[#C6CCAA] border border-[#777C62]/25 dark:border-[#ADB293]/30 text-[9px] font-mono font-bold shadow-2xs whitespace-nowrap shrink-0">
                         Live Grounded
                       </span>
@@ -380,6 +380,7 @@ const AIAssistantWidget = () => {
                   <button
                     onClick={handleClearHistory}
                     title="Reset Conversation"
+                    aria-label="Reset Conversation"
                     className="w-7 h-7 sm:w-8 sm:h-8 rounded-full pill-venom-inactive flex items-center justify-center text-[#68675F] dark:text-[#A8A79B] hover:text-[#252722] dark:hover:text-[#F5F2EB] transition-all cursor-pointer shadow-xs active:scale-95"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
