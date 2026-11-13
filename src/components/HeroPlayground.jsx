@@ -91,6 +91,9 @@ const HeroPlayground = () => {
                 decoding="async"
                 className="block w-full h-auto max-h-[430px] sm:max-h-[510px] lg:max-h-[590px] object-contain object-bottom select-none pointer-events-none"
                 style={{
+                  filter: 'blur(32px)',
+                  WebkitFilter: 'blur(32px)',
+                  transform: 'scale(1.02)',
                   maskImage: 'linear-gradient(to bottom, #000 97%, transparent 100%)',
                   WebkitMaskImage: 'linear-gradient(to bottom, #000 97%, transparent 100%)',
                 }}
